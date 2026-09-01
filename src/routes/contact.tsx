@@ -69,7 +69,7 @@ function Contact() {
                   icon: MapPin,
                   t: "Office",
                   d: COMPANY.address,
-                  href: "https://maps.google.com/?q=Office+no+6+Meznine+floor+Ratta+Mansion+Fazal-eHaq+Road+Blue+Area+Islamabad"
+                  href: "https://www.google.com/maps/search/?api=1&query=Ratta+Mansion+Fazal+e+Haq+Road+Blue+Area+Islamabad"
                 },
                 {
                   icon: Phone,
@@ -126,8 +126,8 @@ function Contact() {
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="overflow-hidden rounded-[2rem]">
                   <iframe
-                    title="RS Travel and Tours office in Blue Area, Islamabad"
-                    src="https://www.google.com/maps?q=Office+no+6+Meznine+floor+Ratta+Mansion+Fazal-eHaq+Road+Blue+Area+Islamabad&output=embed"
+                    title="RS Travel and Tours office at Ratta Mansion, Blue Area, Islamabad"
+                    src="https://maps.google.com/maps?q=Ratta%20Mansion%20Fazal%20e%20Haq%20Road%20Blue%20Area%20Islamabad&t=&z=16&ie=UTF8&iwloc=&output=embed"
                     loading="lazy"
                     className="h-[300px] w-full border-0 filter transition-all duration-500 group-hover:brightness-105"
                   />
