@@ -23,7 +23,8 @@ const staticRoutes = [
   '/testimonials',
   '/contact',
   '/privacy-policy',
-  '/terms'
+  '/terms',
+  '/thank-you'
 ];
 
 const routes = new Set(staticRoutes);
