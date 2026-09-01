@@ -55,11 +55,11 @@ export const Route = createFileRoute("/faq")({
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "FAQ — RS Travel and Tours | Pakistan's #1 Travel Agency" },
       { property: "og:description", content: "Quick answers about visa processing, fees, documentation & travel services." },
-      { property: "og:url", content: "https://rstravels.pk/faq" },
+      { property: "og:url", content: "https://www.rstravels.pk/faq" },
       { property: "og:type", content: "website" },
     ],
     links: [
-      { rel: "canonical", href: "https://rstravels.pk/faq" },
+      { rel: "canonical", href: "https://www.rstravels.pk/faq" },
     ],
   }),
   component: FAQPage,

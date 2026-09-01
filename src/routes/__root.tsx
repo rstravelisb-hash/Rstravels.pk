@@ -97,13 +97,13 @@ function RootComponent() {
     description:
       "Pakistan's No.1 Travel Agency & World-Class Visa Consultant. IATA-accredited, 15+ years of excellence, high success rate. Expert in Schengen, USA, UK, Canada, Australia visas, cheap flights, Umrah packages & hotel bookings from Islamabad.",
     slogan: "Pakistan's No.1 Travel Agency — Your Gateway to the World",
-    image: "https://rstravels.pk/og-image.jpg",
+    image: "https://www.rstravels.pk/og-image.jpg",
     logo: {
       "@type": "ImageObject",
-      url: "https://rstravels.pk/logo.png"
+      url: "https://www.rstravels.pk/logo.png"
     },
-    "@id": "https://rstravels.pk/#localbusiness",
-    url: "https://rstravels.pk",
+    "@id": "https://www.rstravels.pk/#localbusiness",
+    url: "https://www.rstravels.pk",
     telephone: COMPANY.phone,
     email: COMPANY.email,
     priceRange: "$$",
@@ -167,7 +167,7 @@ function RootComponent() {
       COMPANY.socials.instagram,
       COMPANY.socials.linkedin,
       COMPANY.socials.twitter,
-      "https://rstravels.pk",
+      "https://www.rstravels.pk",
     ],
     aggregateRating: {
       "@type": "AggregateRating",

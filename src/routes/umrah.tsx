@@ -46,7 +46,7 @@ export const Route = createFileRoute("/umrah")({
           "Trusted by 5000+ families. Economy to luxury Umrah packages from Islamabad with visa, flights & premium hotels near Haram.",
       },
       { property: "og:image", content: "/src/assets/umrah-hero.png" },
-      { property: "og:url", content: "https://rstravels.pk/umrah" },
+      { property: "og:url", content: "https://www.rstravels.pk/umrah" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_PK" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -54,7 +54,7 @@ export const Route = createFileRoute("/umrah")({
       { name: "twitter:description", content: "Economy to 5-Star luxury. Visa, flights & Haram-facing hotels from Islamabad." },
     ],
     links: [
-      { rel: "canonical", href: "https://rstravels.pk/umrah" },
+      { rel: "canonical", href: "https://www.rstravels.pk/umrah" },
     ],
   }),
   component: UmrahPage,

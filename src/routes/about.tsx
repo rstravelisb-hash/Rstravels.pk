@@ -27,15 +27,15 @@ export const Route = createFileRoute("/about")({
         content:
           "15+ years of excellence. 20,000+ happy clients. 98% approval rate. Learn about Pakistan's most trusted visa consultancy.",
       },
-      { property: "og:image", content: "https://rstravels.pk/src/assets/hero-travel.jpg" },
-      { property: "og:url", content: "https://rstravels.pk/about" },
+      { property: "og:image", content: "https://www.rstravels.pk/src/assets/hero-travel.jpg" },
+      { property: "og:url", content: "https://www.rstravels.pk/about" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "About RS Travel and Tours | Pakistan's #1 Since 2009" },
       { name: "twitter:description", content: "15+ years, 20K+ clients, 98% approval rate. The story of Pakistan's top visa agency." },
     ],
     links: [
-      { rel: "canonical", href: "https://rstravels.pk/about" },
+      { rel: "canonical", href: "https://www.rstravels.pk/about" },
     ],
   }),
   component: About,

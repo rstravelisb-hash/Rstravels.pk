@@ -20,7 +20,7 @@ export const Route = createFileRoute("/countries/europe-others/$country")({
       { name: "keywords", content: `${loaderData?.keywords || ""}, europe visa, travel agency pakistan` },
     ],
     links: [
-      { rel: "canonical", href: `https://rstravels.pk/countries/europe-others/${loaderData?.slug || ""}` },
+      { rel: "canonical", href: `https://www.rstravels.pk/countries/europe-others/${loaderData?.slug || ""}` },
     ],
   }),
   component: EuropeOthersCountryPage,

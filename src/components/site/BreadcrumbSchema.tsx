@@ -17,7 +17,7 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: item.url.startsWith("http") ? item.url : `https://rstravels.pk${item.url}`,
+      item: item.url.startsWith("http") ? item.url : `https://www.rstravels.pk${item.url}`,
     })),
   };
 

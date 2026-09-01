@@ -41,8 +41,8 @@ export const Route = createFileRoute("/visa-services")({
         content:
           "Expert visa consultancy for UK, USA, Canada, Schengen, Australia & 50+ countries. High approval rates and professional documentation from Blue Area, Islamabad.",
       },
-      { property: "og:image", content: "https://rstravels.pk/src/assets/hero-travel.jpg" },
-      { property: "og:url", content: "https://rstravels.pk/visa-services" },
+      { property: "og:image", content: "https://www.rstravels.pk/src/assets/hero-travel.jpg" },
+      { property: "og:url", content: "https://www.rstravels.pk/visa-services" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_PK" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -50,7 +50,7 @@ export const Route = createFileRoute("/visa-services")({
       { name: "twitter:description", content: "98% approval rate. UK, USA, Canada, Schengen & Australia visas from Islamabad." },
     ],
     links: [
-      { rel: "canonical", href: "https://rstravels.pk/visa-services" },
+      { rel: "canonical", href: "https://www.rstravels.pk/visa-services" },
     ],
   }),
   component: VisaServices,

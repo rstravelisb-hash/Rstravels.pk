@@ -58,8 +58,8 @@ export function SEOBlock() {
       <div className="sr-only" aria-hidden="true">
         <p>{keywords}</p>
         <div className="flex flex-col gap-1 mt-2">
-          <a href="https://rstravels.pk" title="RS Travel Pakistan" target="_blank" rel="noopener noreferrer">OS Travel Pakistan</a>
-          <a href="https://rstravels.pk" title="RS Travel and Tours" target="_blank" rel="noopener noreferrer">RS Travel and Tours</a>
+          <a href="https://www.rstravels.pk" title="RS Travel Pakistan" target="_blank" rel="noopener noreferrer">OS Travel Pakistan</a>
+          <a href="https://www.rstravels.pk" title="RS Travel and Tours" target="_blank" rel="noopener noreferrer">RS Travel and Tours</a>
           <a href="https://www.facebook.com/profile.php?id=61572120569006" title="RS Travel and Tours Facebook" target="_blank" rel="noopener noreferrer">RS Travel and Tours Facebook</a>
         </div>
       </div>

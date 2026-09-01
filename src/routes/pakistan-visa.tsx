@@ -15,11 +15,11 @@ export const Route = createFileRoute("/pakistan-visa")({
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Pakistan Inbound E-Visa Processing | RS Travel and Tours" },
       { property: "og:description", content: "Fast e-visa, business visa, and tourist visa services for traveling to Pakistan from anywhere globally." },
-      { property: "og:url", content: "https://rstravels.pk/pakistan-visa" },
+      { property: "og:url", content: "https://www.rstravels.pk/pakistan-visa" },
       { property: "og:type", content: "website" },
     ],
     links: [
-      { rel: "canonical", href: "https://rstravels.pk/pakistan-visa" },
+      { rel: "canonical", href: "https://www.rstravels.pk/pakistan-visa" },
     ],
   }),
   component: PakistanVisaPage,
@@ -31,11 +31,11 @@ function PakistanVisaPage() {
     "@type": ["WebPage", "Service"],
     name: "Pakistan Inbound Visa Consultancy — RS Travel and Tours",
     description: "Secure an inbound tourist, business, or e-visa for Pakistan smoothly.",
-    url: "https://rstravels.pk/pakistan-visa",
+    url: "https://www.rstravels.pk/pakistan-visa",
     provider: {
       "@type": "TravelAgency",
       name: "RS Travel and Tours",
-      url: "https://rstravels.pk",
+      url: "https://www.rstravels.pk",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Office 6, Mezzanine Floor, Ratta Mansion Plaza, Fazal ul Haq Road, Blue Area",

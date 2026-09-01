@@ -20,7 +20,7 @@ export const Route = createFileRoute("/countries/southern-africa/$country")({
       { name: "keywords", content: `${loaderData?.keywords || ""}, top travel agency pakistan, best in islamabad, travel agency` },
     ],
     links: [
-      { rel: "canonical", href: `https://rstravels.pk/countries/southern-africa/${loaderData?.slug || ""}` },
+      { rel: "canonical", href: `https://www.rstravels.pk/countries/southern-africa/${loaderData?.slug || ""}` },
     ],
   }),
   component: SouthernAfricaCountryPage,
@@ -34,7 +34,7 @@ function SouthernAfricaCountryPage() {
     "@type": "WebPage",
     name: country.title || `${country.name} Visa Consultant Islamabad`,
     description: country.description,
-    url: `https://rstravels.pk/countries/southern-africa/${country.slug}`,
+    url: `https://www.rstravels.pk/countries/southern-africa/${country.slug}`,
   };
 
   return (

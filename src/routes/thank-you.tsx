@@ -10,7 +10,7 @@ export const Route = createFileRoute("/thank-you")({
       { name: "robots", content: "index, follow" },
     ],
     links: [
-      { rel: "canonical", href: "https://rstravels.pk/thank-you" },
+      { rel: "canonical", href: "https://www.rstravels.pk/thank-you" },
     ],
   }),
   component: ThankYouPage,

@@ -50,7 +50,7 @@ export const Route = createFileRoute("/profile-assessment")({
       { property: "og:title", content: "World's #1 Visa Success Probability AI | Profile Assessment" },
       { property: "og:description", content: "Don't risk a refusal. Run your profile through our Global Visa Audit AI before applying to USA, UK, or Schengen." },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://rstravels.pk/profile-assessment" },
+      { property: "og:url", content: "https://www.rstravels.pk/profile-assessment" },
       // Twitter
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Visa Success Probability AI | Global Audit" },
@@ -79,7 +79,7 @@ export const Route = createFileRoute("/profile-assessment")({
           "author": {
             "@type": "Organization",
             "name": "RS Travel and Tours",
-            "url": "https://rstravels.pk"
+            "url": "https://www.rstravels.pk"
           }
         })
       }

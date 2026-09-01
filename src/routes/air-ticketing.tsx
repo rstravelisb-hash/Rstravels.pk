@@ -32,13 +32,13 @@ export const Route = createFileRoute("/air-ticketing")({
       { property: "og:site_name", content: "RS Travel and Tours" },
       { property: "og:title", content: "Best Air Ticketing Agency in Islamabad — Cheap International Flights | RS Travel and Tours" },
       { property: "og:description", content: "Book the cheapest international flights from Islamabad with IATA-certified RS Travel and Tours. Instant e-tickets on 300+ airlines. 24/7 WhatsApp support." },
-      { property: "og:url", content: "https://rstravels.pk/air-ticketing" },
+      { property: "og:url", content: "https://www.rstravels.pk/air-ticketing" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "#1 Air Ticketing Agency Islamabad — RS Travel and Tours" },
       { name: "twitter:description", content: "IATA-authorized. Cheapest flights from ISB to London, Dubai, Toronto, New York & more. Instant booking." },
     ],
     links: [
-      { rel: "canonical", href: "https://rstravels.pk/air-ticketing" },
+      { rel: "canonical", href: "https://www.rstravels.pk/air-ticketing" },
     ],
   }),
   component: AirTicketing,
@@ -340,9 +340,9 @@ function AirTicketing() {
               "@type": "TravelAgency",
               "name": "RS Travel and Tours",
               "alternateName": "RS Travel and Tours Air Ticketing",
-              "url": "https://rstravels.pk/air-ticketing",
-              "logo": "https://rstravels.pk/logo.png",
-              "image": "https://rstravels.pk/air_ticketing_hero_1777294022698.png",
+              "url": "https://www.rstravels.pk/air-ticketing",
+              "logo": "https://www.rstravels.pk/logo.png",
+              "image": "https://www.rstravels.pk/air_ticketing_hero_1777294022698.png",
               "description": "Islamabad's #1 IATA-authorized air ticketing agency. Cheap international flights, group bookings, student discounts, Umrah packages, and 24/7 WhatsApp support from Blue Area.",
               "telephone": "+92-51-2021700",
               "email": "info@rstravels.pk",
@@ -371,8 +371,8 @@ function AirTicketing() {
             {
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rstravels.pk" },
-                { "@type": "ListItem", "position": 2, "name": "Air Ticketing", "item": "https://rstravels.pk/air-ticketing" }
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rstravels.pk" },
+                { "@type": "ListItem", "position": 2, "name": "Air Ticketing", "item": "https://www.rstravels.pk/air-ticketing" }
               ]
             }
           ]

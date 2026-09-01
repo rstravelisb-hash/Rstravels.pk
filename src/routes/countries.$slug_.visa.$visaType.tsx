@@ -22,7 +22,7 @@ export const Route = createFileRoute("/countries/$slug_/visa/$visaType")({
       { name: "keywords", content: loaderData?.visa.keywords || "" },
     ],
     links: [
-      { rel: "canonical", href: `https://rstravels.pk/countries/${loaderData?.destination.slug}/visa/${loaderData?.visa.slug}` },
+      { rel: "canonical", href: `https://www.rstravels.pk/countries/${loaderData?.destination.slug}/visa/${loaderData?.visa.slug}` },
     ],
   }),
   component: VisaSubPage,

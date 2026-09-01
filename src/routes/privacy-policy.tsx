@@ -13,9 +13,9 @@ export const Route = createFileRoute("/privacy-policy")({
       },
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Privacy Policy | RS Travel and Tours" },
-      { property: "og:url", content: "https://rstravels.pk/privacy-policy" },
+      { property: "og:url", content: "https://www.rstravels.pk/privacy-policy" },
     ],
-    links: [{ rel: "canonical", href: "https://rstravels.pk/privacy-policy" }],
+    links: [{ rel: "canonical", href: "https://www.rstravels.pk/privacy-policy" }],
   }),
   component: PrivacyPolicyPage,
 });
