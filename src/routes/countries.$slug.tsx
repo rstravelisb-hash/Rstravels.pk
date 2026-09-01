@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { ContactForm } from "@/components/site/ContactForm";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { BreadcrumbSchema } from "@/components/site/BreadcrumbSchema";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import {
@@ -82,6 +83,13 @@ function DestinationHub() {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "All Destinations", url: "/countries" },
+          { name: `${dest.name} Visa`, url: `/countries/${dest.slug}` },
+        ]}
+      />
       <PageHero
         eyebrow="Destination Guide"
         title={`${dest.name} Visa Services`}
