@@ -21,7 +21,9 @@ const staticRoutes = [
   '/pakistan-visa',
   '/faq',
   '/testimonials',
-  '/contact'
+  '/contact',
+  '/privacy-policy',
+  '/terms'
 ];
 
 const routes = new Set(staticRoutes);
