@@ -7,6 +7,7 @@ import { TestimonialCard } from "@/components/site/TestimonialCard";
 import { FAQAccordion } from "@/components/site/FAQAccordion";
 import { ContactForm } from "@/components/site/ContactForm";
 import { Reveal } from "@/components/site/Reveal";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import { DESTINATIONS } from "@/data/destinations";
 import { COMPANY } from "@/data/company";
 import { COUNTRIES } from "@/data/countries-data";
@@ -142,19 +143,47 @@ function Home() {
 
   const orgJsonLd = {
     "@context": "https://schema.org",
-    "@type": "TravelAgency",
+    "@type": ["TravelAgency", "LocalBusiness"],
+    "@id": "https://www.rstravels.pk/#organization",
     name: "RS Travel and Tours",
+    alternateName: ["RS Travels", "RS Travel and Tours Islamabad", "RS Travels PK"],
     url: "https://www.rstravels.pk/",
     logo: "https://www.rstravels.pk/logo.png",
-    description: "Top Travel Agency & Visa Consultant in Pakistan.",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Blue Area",
-      addressLocality: "Islamabad",
-      addressCountry: "PK",
-    },
+    image: "https://www.rstravels.pk/src/assets/hero-travel.jpg",
+    description: "Pakistan's top travel agency and visa consultancy in Blue Area, Islamabad. Specialized in UK, USA, Canada, Schengen, and Australia visit visas, verified flight ticketing, and holiday tour packages.",
+    priceRange: "$$",
     telephone: COMPANY.phone,
     email: COMPANY.email,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+      addressLocality: "Islamabad",
+      addressRegion: "Islamabad Capital Territory",
+      postalCode: "44000",
+      addressCountry: "PK",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 33.7135,
+      longitude: 73.0673,
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "10:00",
+      closes: "19:00",
+    },
+    areaServed: [
+      { "@type": "City", name: "Islamabad" },
+      { "@type": "City", name: "Rawalpindi" },
+      { "@type": "Country", name: "Pakistan" },
+    ],
+    sameAs: [
+      COMPANY.socials.facebook,
+      COMPANY.socials.instagram,
+      COMPANY.socials.linkedin,
+      COMPANY.socials.twitter,
+    ],
   };
 
   return (
@@ -375,9 +404,25 @@ function Home() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* E-E-A-T & Authority Module */}
+      <section className="container-px mx-auto max-w-7xl pt-10">
+        <EEATExpertiseSection
+          countryName="Pakistan & Global"
+          serviceName="Worldwide Visa Consultancy & Travel Logistics"
+          consultantRole="Senior Consular & Visa File Strategist"
+          lastUpdated="September 2026"
+        />
+      </section>
+
+      {/* FAQ & AEO Direct Answer Section */}
       <section className="container-px mx-auto max-w-7xl py-20 md:py-28">
         <SectionHeader eyebrow="FAQ" title="Quick answers to common questions" />
+        <div className="mb-10 mx-auto max-w-3xl rounded-2xl border border-primary/20 bg-primary/5 p-6 text-sm text-foreground/90">
+          <p className="font-semibold text-primary mb-1 text-xs uppercase tracking-wider">Quick Answer Summary (AEO/SearchGPT)</p>
+          <p className="leading-relaxed">
+            <strong>RS Travel and Tours</strong> is a certified travel agency and visa consultancy based in Ratta Mansion, Fazal-e-Haq Road, Blue Area, Islamabad. With 15+ years of operational experience and a 98% file compliance success rate, RS Travels provides comprehensive visit visa assistance (UK, USA, Schengen, Canada, Australia), verified flight ticketing, hotel vouchers, and Umrah packages.
+          </p>
+        </div>
         <FAQAccordion items={FAQS.slice(0, 5)} />
       </section>
 

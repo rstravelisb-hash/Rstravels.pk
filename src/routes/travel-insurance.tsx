@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import { ShieldCheck, HeartPulse, CalendarX2, Globe2, ArrowRight, CheckCircle2, Award, FileText, Briefcase } from "lucide-react";
 
 export const Route = createFileRoute("/travel-insurance")({
@@ -35,6 +36,23 @@ export const Route = createFileRoute("/travel-insurance")({
 });
 
 function TravelInsurance() {
+  const insuranceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.rstravels.pk/travel-insurance#service",
+    "name": "Schengen & Global Travel Medical Insurance Islamabad",
+    "serviceType": "Embassy Approved Travel Insurance",
+    "description": "Instant Schengen-compliant travel medical insurance with €30,000 to $100,000 coverage issued via Jubilee, Adamjee, and EFU from Blue Area, Islamabad.",
+    "provider": {
+      "@type": "TravelAgency",
+      "@id": "https://www.rstravels.pk/#organization",
+      "name": "RS Travel and Tours",
+      "telephone": "+92 51 2000147",
+      "url": "https://www.rstravels.pk/"
+    },
+    "areaServed": "Pakistan"
+  };
+
   const PARTNERS = [
     { name: "Jubilee Insurance", desc: "Premium Global Coverage" },
     { name: "Adamjee Insurance", desc: "Trusted Embassy Approved" },
@@ -44,6 +62,7 @@ function TravelInsurance() {
 
   return (
     <>
+      <script type="application/ld+json">{JSON.stringify(insuranceSchema)}</script>
       <PageHero
         eyebrow="Travel Insurance"
         title="Travel covered. Mind at ease."
@@ -215,6 +234,15 @@ function TravelInsurance() {
               </div>
             </div>
 
+            {/* E-E-A-T Travel Medical Compliance Section */}
+            <div className="mt-12">
+              <EEATExpertiseSection
+                countryName="Schengen & Global"
+                serviceName="Consular Approved Travel Medical Coverage (€30,000+)"
+                consultantRole="Certified Travel Medical Insurance Underwriter"
+                lastUpdated="September 2026"
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -3,6 +3,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { SectionHeader } from "@/components/site/SectionHeader";
 import { Reveal } from "@/components/site/Reveal";
 import { ServiceCard } from "@/components/site/ServiceCard";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import {
@@ -59,8 +60,38 @@ export const Route = createFileRoute("/visa-services")({
 const ICONS = [Plane, Heart, Users, Globe2, GraduationCap, Briefcase];
 
 function VisaServices() {
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.rstravels.pk/visa-services#service",
+    "name": "Visit & Tourist Visa Consultancy Islamabad",
+    "serviceType": "International Visa Consultation & File Preparation",
+    "description": "Comprehensive documentation, appointment scheduling, interview preparation, and file auditing for UK, USA, Canada, Schengen, and Australia visas.",
+    "provider": {
+      "@type": "TravelAgency",
+      "@id": "https://www.rstravels.pk/#organization",
+      "name": "RS Travel and Tours",
+      "url": "https://www.rstravels.pk/",
+      "telephone": "+92 51 2000147",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+        "addressLocality": "Islamabad",
+        "addressRegion": "Islamabad Capital Territory",
+        "postalCode": "44000",
+        "addressCountry": "PK"
+      }
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Islamabad" },
+      { "@type": "City", "name": "Rawalpindi" },
+      { "@type": "Country", "name": "Pakistan" }
+    ]
+  };
+
   return (
     <>
+      <script type="application/ld+json">{JSON.stringify(serviceJsonLd)}</script>
       <PageHero
         eyebrow="Visa Services"
         title="Visas tailored to your journey"
@@ -238,6 +269,14 @@ function VisaServices() {
               </div>
             </div>
           </Reveal>
+
+          {/* E-E-A-T Quality & Consular Authority Section */}
+          <EEATExpertiseSection
+            countryName="Worldwide"
+            serviceName="International Visa Consultancy & Consular Documentation"
+            consultantRole="Senior Consular & Visa File Review Desk"
+            lastUpdated="September 2026"
+          />
         </div>
       </section>
     </>

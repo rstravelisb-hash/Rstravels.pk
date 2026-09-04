@@ -5,6 +5,7 @@ import { Plane, Globe2, BadgeCheck, Banknote, Clock4, ArrowRight, Star } from "l
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import { FAQAccordion } from "@/components/site/FAQAccordion";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 
 const TICKETING_FAQS = [
   { q: "Is RS Travel and Tours an IATA-authorized travel agency?", a: "Yes. RS Travel and Tours holds full IATA accreditation, allowing us to issue tickets directly on 300+ airlines worldwide with guaranteed fare accuracy and instant e-ticket confirmation." },
@@ -45,8 +46,48 @@ export const Route = createFileRoute("/air-ticketing")({
 });
 
 function AirTicketing() {
+  const ticketingSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://www.rstravels.pk/air-ticketing#service",
+        "name": "IATA Air Ticketing & Flight Reservation Islamabad",
+        "serviceType": "Domestic and International Flight Booking",
+        "description": "IATA-authorized flight ticketing from Islamabad to London, Dubai, Toronto, New York, Jeddah, and 300+ worldwide destinations with instant live fares and student discounts.",
+        "provider": {
+          "@type": "TravelAgency",
+          "@id": "https://www.rstravels.pk/#organization",
+          "name": "RS Travel and Tours",
+          "telephone": "+92 51 2000147",
+          "url": "https://www.rstravels.pk/",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+            "addressLocality": "Islamabad",
+            "addressCountry": "PK"
+          }
+        },
+        "areaServed": "Pakistan"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.rstravels.pk/air-ticketing#faq",
+        "mainEntity": TICKETING_FAQS.slice(0, 5).map(f => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": f.a
+          }
+        }))
+      }
+    ]
+  };
+
   return (
     <>
+      <script type="application/ld+json">{JSON.stringify(ticketingSchema)}</script>
       <PageHero
         eyebrow="Air Ticketing"
         title="IATA-authorized tickets at the best fares"
@@ -329,6 +370,14 @@ function AirTicketing() {
         <div className="rounded-[2.5rem] bg-card/30 backdrop-blur-xl border border-border/50 p-6 md:p-10 shadow-xl">
           <FAQAccordion items={TICKETING_FAQS} />
         </div>
+
+        {/* E-E-A-T IATA & Airline Certification Section */}
+        <EEATExpertiseSection
+          countryName="Global Aviation"
+          serviceName="IATA Accredited Air Ticketing & Global GDS Reservations"
+          consultantRole="Senior Aviation Ticketing & Tariff Specialist"
+          lastUpdated="September 2026"
+        />
       </section>
 
       {/* JSON-LD Structured Data */}

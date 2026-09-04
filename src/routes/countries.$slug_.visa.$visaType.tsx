@@ -3,6 +3,8 @@ import { DESTINATIONS } from "@/data/destinations";
 import { PageHero } from "@/components/site/PageHero";
 import { CheckCircle2, FileText, Banknote, Clock, MapPin } from "lucide-react";
 import { ContactForm } from "@/components/site/ContactForm";
+import { BreadcrumbSchema } from "@/components/site/BreadcrumbSchema";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import { COMPANY } from "@/data/site";
@@ -20,6 +22,14 @@ export const Route = createFileRoute("/countries/$slug_/visa/$visaType")({
       { title: loaderData?.visa.seoTitle || "Visa Consultant Islamabad" },
       { name: "description", content: loaderData?.visa.seoDescription || "" },
       { name: "keywords", content: loaderData?.visa.keywords || "" },
+      { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
+      { property: "og:title", content: loaderData?.visa.seoTitle || "Visa Consultant Islamabad" },
+      { property: "og:description", content: loaderData?.visa.seoDescription || "" },
+      { property: "og:url", content: `https://www.rstravels.pk/countries/${loaderData?.destination.slug}/visa/${loaderData?.visa.slug}` },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: loaderData?.visa.seoTitle || "" },
+      { name: "twitter:description", content: loaderData?.visa.seoDescription || "" },
     ],
     links: [
       { rel: "canonical", href: `https://www.rstravels.pk/countries/${loaderData?.destination.slug}/visa/${loaderData?.visa.slug}` },
@@ -31,9 +41,43 @@ export const Route = createFileRoute("/countries/$slug_/visa/$visaType")({
 function VisaSubPage() {
   const { destination, visa } = Route.useLoaderData();
 
+  const subVisaSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `https://www.rstravels.pk/countries/${destination.slug}/visa/${visa.slug}#service`,
+    "name": `${destination.name} ${visa.name} Consultancy Islamabad`,
+    "serviceType": `${destination.name} ${visa.name} Filing & Documentation`,
+    "description": visa.seoDescription || visa.heroText,
+    "provider": {
+      "@type": "TravelAgency",
+      "@id": "https://www.rstravels.pk/#organization",
+      "name": "RS Travel and Tours",
+      "url": "https://www.rstravels.pk/",
+      "telephone": COMPANY.phone,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+        "addressLocality": "Islamabad",
+        "addressRegion": "ICT",
+        "postalCode": "44000",
+        "addressCountry": "PK"
+      }
+    },
+    "areaServed": "Pakistan"
+  };
+
   return (
     <>
-      <PageHero eyebrow={`${destination.name} Visas`} title={visa.name} subtitle={visa.heroText} />
+      <script type="application/ld+json">{JSON.stringify(subVisaSchema)}</script>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Countries", url: "/countries" },
+          { name: `${destination.name} Visa`, url: `/countries/${destination.slug}` },
+          { name: `${visa.name}`, url: `/countries/${destination.slug}/visa/${visa.slug}` },
+        ]}
+      />
+      <PageHero eyebrow={`${destination.name} Visas`} title={`${destination.name} ${visa.name} Consultant Islamabad`} subtitle={visa.heroText} />
 
       <div className="-mt-20 relative z-50 container-px mx-auto max-w-7xl">
         <Suspense fallback={<div className="h-[200px] w-full animate-pulse rounded-3xl bg-white/5 backdrop-blur-md border border-white/10" />}><BookingWidget initialTab="visa" /></Suspense>
@@ -107,6 +151,13 @@ function VisaSubPage() {
             )}
           </div>
         </div>
+
+        {/* E-E-A-T Quality & Consular Authority Section */}
+        <EEATExpertiseSection
+          countryName={destination.name}
+          serviceName={`${destination.name} ${visa.name} Filing & Documentation`}
+          consultantRole="Senior Consular & Visa Review Officer"
+        />
       </section>
 
       {/* Trust & Contact Section */}

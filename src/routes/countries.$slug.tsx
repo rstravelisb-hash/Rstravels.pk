@@ -81,8 +81,59 @@ function getIconForVisa(slug: string) {
 function DestinationHub() {
   const dest = Route.useLoaderData();
 
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": `https://www.rstravels.pk/countries/${dest.slug}#service`,
+        "name": `${dest.name} Visa Consultancy Islamabad`,
+        "serviceType": "Visit & Tourist Visa Application Service",
+        "description": dest.seoDescription || dest.shortDesc,
+        "provider": {
+          "@type": "TravelAgency",
+          "@id": "https://www.rstravels.pk/#organization",
+          "name": "RS Travel and Tours",
+          "url": "https://www.rstravels.pk/",
+          "telephone": COMPANY.phone,
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+            "addressLocality": "Islamabad",
+            "addressRegion": "Islamabad Capital Territory",
+            "postalCode": "44000",
+            "addressCountry": "PK"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 33.7135,
+            "longitude": 73.0673
+          }
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Islamabad" },
+          { "@type": "City", "name": "Rawalpindi" },
+          { "@type": "Country", "name": "Pakistan" }
+        ]
+      },
+      ...(dest.faqs && dest.faqs.length > 0 ? [{
+        "@type": "FAQPage",
+        "@id": `https://www.rstravels.pk/countries/${dest.slug}#faq`,
+        "mainEntity": dest.faqs.map((faq: { q: string; a: string }) => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
+          }
+        }))
+      }] : [])
+    ]
+  };
+
   return (
     <>
+      <script type="application/ld+json">{JSON.stringify(serviceJsonLd)}</script>
       <BreadcrumbSchema
         items={[
           { name: "Home", url: "/" },

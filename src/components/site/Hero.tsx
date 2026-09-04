@@ -40,10 +40,10 @@ export function Hero() {
         >
           <div className="mb-6 text-center px-4">
             <h1 className="text-2xl xs:text-3xl font-black tracking-tight text-white md:text-4xl lg:text-5xl uppercase leading-[1.1]">
-              Book Your Global <span className="gradient-text-accent">Travel Now</span>
+              Best Travel Agency in Islamabad & <span className="gradient-text-accent">Top Visa Consultant</span>
             </h1>
-            <p className="mt-2 text-sm font-medium text-white/60 tracking-[0.2em] uppercase hidden sm:block">
-              Pakistan's No. 1 Travel Agency & Visit Visa Expert
+            <p className="mt-2 text-sm font-semibold text-white/80 tracking-[0.15em] uppercase hidden sm:block">
+              Pakistan's #1 Visit Visa Consultancy, Cheap Air Tickets & Umrah Packages · Blue Area
             </p>
 
             {/* Quick CTAs Above the Fold */}

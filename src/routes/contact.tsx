@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { ContactForm } from "@/components/site/ContactForm";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import { Phone, Mail, MapPin, MessageCircle, Clock, Facebook } from "lucide-react";
 import { COMPANY } from "@/data/site";
 
@@ -45,10 +46,39 @@ export const Route = createFileRoute("/contact")({
 });
 
 function Contact() {
-  const REAL_ADDRESS = "Office no 6 Meznine floor Ratta Mansion Fazal-eHaq Road Blue Area Islamabad";
+  const contactJsonLd = {
+    "@context": "https://schema.org",
+    "@type": ["TravelAgency", "LocalBusiness"],
+    "@id": "https://www.rstravels.pk/contact#localbusiness",
+    "name": "RS Travel and Tours",
+    "url": "https://www.rstravels.pk/contact",
+    "telephone": COMPANY.phone,
+    "email": COMPANY.email,
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+      "addressLocality": "Islamabad",
+      "addressRegion": "Islamabad Capital Territory",
+      "postalCode": "44000",
+      "addressCountry": "PK"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.7135,
+      "longitude": 73.0673
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "10:00",
+      "closes": "19:00"
+    }
+  };
 
   return (
     <>
+      <script type="application/ld+json">{JSON.stringify(contactJsonLd)}</script>
       <PageHero
         eyebrow="Contact"
         title="We'd love to hear from you"
@@ -151,6 +181,16 @@ function Contact() {
               </div>
             </div>
 
+          </div>
+
+          {/* E-E-A-T Physical Office & Local Authority Verification */}
+          <div className="mt-16">
+            <EEATExpertiseSection
+              countryName="Islamabad, Pakistan"
+              serviceName="In-Person Consular File Assessment & Walk-in Office"
+              consultantRole="Branch Manager & Senior Visa Intake Officer"
+              lastUpdated="September 2026"
+            />
           </div>
         </div>
       </section>

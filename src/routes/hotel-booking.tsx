@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import { Hotel, Crown, Wallet, Globe2, ArrowRight } from "lucide-react";
@@ -41,8 +42,26 @@ export const Route = createFileRoute("/hotel-booking")({
 });
 
 function HotelBooking() {
+  const hotelSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.rstravels.pk/hotel-booking#service",
+    "name": "Worldwide Hotel Booking & Embassy Vouchers Islamabad",
+    "serviceType": "Hotel Reservation & Travel Lodging",
+    "description": "Embassy-verifiable hotel reservations and confirmed vouchers for Schengen, UK, US, and Canadian visa applications, as well as luxury stays in Makkah, Madinah, Dubai, and Europe.",
+    "provider": {
+      "@type": "TravelAgency",
+      "@id": "https://www.rstravels.pk/#organization",
+      "name": "RS Travel and Tours",
+      "telephone": "+92 51 2000147",
+      "url": "https://www.rstravels.pk/"
+    },
+    "areaServed": "Pakistan"
+  };
+
   return (
     <>
+      <script type="application/ld+json">{JSON.stringify(hotelSchema)}</script>
       <PageHero
         eyebrow="Hotels"
         title="Stay where you love, save where it matters"
@@ -113,6 +132,16 @@ function HotelBooking() {
               the best rates. Stop searching endlessly online; let the best travel agent for hotels
               in Blue Area handle your itinerary seamlessly.
             </p>
+          </div>
+
+          {/* E-E-A-T Hotel & Consular Voucher Section */}
+          <div className="mt-12">
+            <EEATExpertiseSection
+              countryName="Global Hospitality"
+              serviceName="Embassy Verifiable Hotel Reservations & B2B Vouchers"
+              consultantRole="Senior Corporate Hospitality Coordinator"
+              lastUpdated="September 2026"
+            />
           </div>
         </div>
       </section>

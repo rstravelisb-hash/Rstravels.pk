@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { FAQAccordion } from "@/components/site/FAQAccordion";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import { HelpCircle, MessageCircle, ArrowRight, Sparkles } from "lucide-react";
 
 // Highly SEO-optimized FAQs targeting top search intents in Pakistan
@@ -147,6 +148,15 @@ function FAQPage() {
             </div>
           </div>
 
+          {/* E-E-A-T Editorial Verification Module */}
+          <div className="mt-16">
+            <EEATExpertiseSection
+              countryName="Pakistan & Global"
+              serviceName="Consular Visa Information & Direct Answers"
+              consultantRole="Senior Compliance & Editorial Verification Desk"
+              lastUpdated="September 2026"
+            />
+          </div>
         </div>
       </section>
     </>

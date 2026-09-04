@@ -55,6 +55,10 @@ export const Route = createFileRoute("/profile-assessment")({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Visa Success Probability AI | Global Audit" },
       { name: "twitter:description", content: "Assess your global visa chances in 60 seconds." },
+      { name: "robots", content: "index, follow" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://www.rstravels.pk/profile-assessment" },
     ],
     scripts: [
       {

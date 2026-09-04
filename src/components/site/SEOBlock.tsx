@@ -54,13 +54,25 @@ export function SEOBlock() {
       </p>
 
 
-      {/* Hidden Keywords & Backlinks for SEO */}
-      <div className="sr-only" aria-hidden="true">
-        <p>{keywords}</p>
-        <div className="flex flex-col gap-1 mt-2">
-          <a href="https://www.rstravels.pk" title="RS Travel Pakistan" target="_blank" rel="noopener noreferrer">OS Travel Pakistan</a>
-          <a href="https://www.rstravels.pk" title="RS Travel and Tours" target="_blank" rel="noopener noreferrer">RS Travel and Tours</a>
-          <a href="https://www.facebook.com/profile.php?id=61572120569006" title="RS Travel and Tours Facebook" target="_blank" rel="noopener noreferrer">RS Travel and Tours Facebook</a>
+      {/* Semantic Keyword Cluster & Quick Nav */}
+      <div className="mt-8 border-t border-white/10 pt-4">
+        <p className="text-[11px] font-bold uppercase tracking-wider text-white/50 mb-2">
+          Popular Search Services in Islamabad:
+        </p>
+        <div className="flex flex-wrap gap-2 text-xs text-white/60">
+          <Link to="/countries/uk" className="hover:text-accent transition-colors">UK Visit Visa Consultant</Link>
+          <span>•</span>
+          <Link to="/countries/usa" className="hover:text-accent transition-colors">USA B1/B2 Visa Islamabad</Link>
+          <span>•</span>
+          <Link to="/countries/schengen" className="hover:text-accent transition-colors">Schengen Visa Agents Blue Area</Link>
+          <span>•</span>
+          <Link to="/countries/canada" className="hover:text-accent transition-colors">Canada Visitor Visa Pakistan</Link>
+          <span>•</span>
+          <Link to="/air-ticketing" className="hover:text-accent transition-colors">Cheap International Flights</Link>
+          <span>•</span>
+          <Link to="/umrah" className="hover:text-accent transition-colors">Best Umrah Packages 2026</Link>
+          <span>•</span>
+          <Link to="/travel-insurance" className="hover:text-accent transition-colors">Embassy Travel Insurance</Link>
         </div>
       </div>
     </div>

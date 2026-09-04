@@ -3,6 +3,8 @@ import { SCHENGEN_COUNTRIES } from "@/data/regions/schengen-countries";
 import { PageHero } from "@/components/site/PageHero";
 import { CheckCircle2, FileText, Globe2, ArrowRight } from "lucide-react";
 import { ContactForm } from "@/components/site/ContactForm";
+import { BreadcrumbSchema } from "@/components/site/BreadcrumbSchema";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import { COMPANY } from "@/data/company";
@@ -74,10 +76,18 @@ function SchengenCountryPage() {
   return (
     <>
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Countries", url: "/countries" },
+          { name: "Schengen Visa", url: "/countries/schengen" },
+          { name: `${country.name} Visa`, url: `/countries/schengen/${country.slug}` },
+        ]}
+      />
       <PageHero
         eyebrow="Schengen Area"
-        title={country.name}
-        subtitle={`Expert visa consultancy for ${country.name} in Islamabad.`}
+        title={`${country.name} Visit Visa Consultant Islamabad`}
+        subtitle={`Expert ${country.name} Schengen visa consultancy, appointments, and file preparation in Blue Area, Islamabad.`}
         backgroundImage={country.image}
       />
 
@@ -147,6 +157,12 @@ function SchengenCountryPage() {
             </div>
           </div>
         </div>
+
+        {/* E-E-A-T Authority Module */}
+        <EEATExpertiseSection
+          countryName={country.name}
+          serviceName={`${country.name} Schengen Tourist & Business Visa Filing`}
+        />
       </section>
 
       {/* Trust & Contact Section */}

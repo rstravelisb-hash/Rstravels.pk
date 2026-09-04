@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import { Award, Target, Eye, Users, Globe2, Sparkles, ArrowRight, ShieldCheck, Clock, Building2, MapPin, CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
@@ -42,8 +43,34 @@ export const Route = createFileRoute("/about")({
 });
 
 function About() {
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://www.rstravels.pk/about#webpage",
+    "url": "https://www.rstravels.pk/about",
+    "name": "About RS Travel and Tours Islamabad",
+    "mainEntity": {
+      "@type": "TravelAgency",
+      "@id": "https://www.rstravels.pk/#organization",
+      "name": "RS Travel and Tours",
+      "foundingDate": "2009",
+      "description": "Pakistan's premier visit visa consultancy and IATA travel agency based in Blue Area, Islamabad with over 15 years of consular experience and 20,000+ satisfied clients.",
+      "telephone": "+92 51 2000147",
+      "email": "info@rstravels.pk",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+        "addressLocality": "Islamabad",
+        "addressRegion": "ICT",
+        "postalCode": "44000",
+        "addressCountry": "PK"
+      }
+    }
+  };
+
   return (
     <>
+      <script type="application/ld+json">{JSON.stringify(aboutSchema)}</script>
       <PageHero
         eyebrow="Our Story"
         title="Premium visa consultancy from the heart of Islamabad"
@@ -259,6 +286,16 @@ function About() {
                 ))}
               </div>
             </div>
+          </div>
+
+          {/* E-E-A-T Experience & Trust Authority Section */}
+          <div className="mt-16">
+            <EEATExpertiseSection
+              countryName="Pakistan & Global Destinations"
+              serviceName="15+ Years Consular Visa Filing & Travel Management"
+              consultantRole="Managing Director & Chief Immigration Strategist"
+              lastUpdated="September 2026"
+            />
           </div>
         </div>
       </section>

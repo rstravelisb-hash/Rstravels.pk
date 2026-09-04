@@ -38,8 +38,26 @@ export const Route = createFileRoute("/passport-services")({
 });
 
 function PassportServices() {
+  const passportSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.rstravels.pk/passport-services#service",
+    "name": "Pakistani & Overseas Passport Services Islamabad",
+    "serviceType": "Passport Renewal & First-Time Application Assistance",
+    "description": "Urgent and executive passport application support, token assistance, and document vetting in Blue Area, Islamabad for Pakistani and overseas citizens.",
+    "provider": {
+      "@type": "TravelAgency",
+      "@id": "https://www.rstravels.pk/#organization",
+      "name": "RS Travel and Tours",
+      "telephone": "+92 51 2000147",
+      "url": "https://www.rstravels.pk/"
+    },
+    "areaServed": "Islamabad, Rawalpindi, Pakistan"
+  };
+
   return (
     <>
+      <script type="application/ld+json">{JSON.stringify(passportSchema)}</script>
       <PageHero
         eyebrow="Passport Services"
         title="Your passport, our priority"

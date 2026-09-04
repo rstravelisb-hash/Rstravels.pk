@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { SectionHeader } from "@/components/site/SectionHeader";
 import { Reveal } from "@/components/site/Reveal";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import {
@@ -100,8 +101,69 @@ const UMRAH_PACKAGES = [
 ];
 
 function UmrahPage() {
+  const umrahSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TouristTrip",
+        "@id": "https://www.rstravels.pk/umrah#trip",
+        "name": "Umrah Packages 2026 from Pakistan",
+        "description": "Comprehensive economy, 3-star, 4-star and luxury 5-star Umrah packages from Islamabad, Pakistan including visa processing, confirmed return flights, and hotels in Makkah & Madinah.",
+        "touristType": "Pilgrims",
+        "provider": {
+          "@type": "TravelAgency",
+          "@id": "https://www.rstravels.pk/#organization",
+          "name": "RS Travel and Tours",
+          "telephone": "+92 51 2000147",
+          "url": "https://www.rstravels.pk/"
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Economy Umrah Package",
+            "price": "185000",
+            "priceCurrency": "PKR",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2026-01-01"
+          },
+          {
+            "@type": "Offer",
+            "name": "5-Star VIP Umrah Package",
+            "price": "395000",
+            "priceCurrency": "PKR",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2026-01-01"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.rstravels.pk/umrah#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is included in RS Travels Umrah packages from Islamabad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All packages include Saudi electronic Umrah visa processing, roundtrip airfare from Islamabad, hotel accommodations in Makkah and Madinah, air-conditioned ground transfers, and 24/7 dedicated support."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long before travel should I apply for an Umrah visa in Pakistan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "E-visa approval typically takes 24 to 72 hours, but we recommend booking your complete package 3 to 4 weeks in advance to secure optimal flight rates and preferred hotels near the Haram."
+            }
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <>
+      <script type="application/ld+json">{JSON.stringify(umrahSchema)}</script>
       <div className="relative">
         <PageHero
           eyebrow="Spiritual Journey"
@@ -355,6 +417,14 @@ function UmrahPage() {
               ))}
             </div>
           </div>
+
+          {/* E-E-A-T Religious Pilgrimage & Consular Authority */}
+          <EEATExpertiseSection
+            countryName="Saudi Arabia"
+            serviceName="Authorized Umrah Pilgrimage & Ground Operations"
+            consultantRole="Senior Religious Travel Specialist"
+            lastUpdated="September 2026"
+          />
         </div>
       </section>
     </>
