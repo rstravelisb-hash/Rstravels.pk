@@ -24,7 +24,7 @@ export const Route = createFileRoute("/countries/oceania/$country")({
       { name: "geo.placename", content: "Islamabad" },
       { property: "og:title", content: `${loaderData?.name || "Oceania"} Visa Consultant Islamabad — Pakistan's #1 | RS Travel and Tours` },
       { property: "og:description", content: loaderData?.description || "" },
-      { property: "og:url", content: `https://www.rstravels.pk/countries/oceania/${loaderData?.slug || ""}` },
+      { property: "og:url", content: `https://rstravels.pk/countries/oceania/${loaderData?.slug || ""}` },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_PK" },
       { property: "og:site_name", content: "RS Travel and Tours — Pakistan's No.1 Travel Agency" },
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/countries/oceania/$country")({
       { name: "twitter:image", content: loaderData?.image || "" },
     ],
     links: [
-      { rel: "canonical", href: `https://www.rstravels.pk/countries/oceania/${loaderData?.slug || ""}` },
+      { rel: "canonical", href: `https://rstravels.pk/countries/oceania/${loaderData?.slug || ""}` },
     ],
   }),
   component: OceaniaCountryPage,
@@ -49,11 +49,11 @@ function OceaniaCountryPage() {
     "@type": ["WebPage", "Service"],
     name: `${country.name} Visa Consultancy — RS Travel and Tours Islamabad`,
     description: country.description,
-    url: `https://www.rstravels.pk/countries/oceania/${country.slug}`,
+    url: `https://rstravels.pk/countries/oceania/${country.slug}`,
     provider: {
       "@type": "TravelAgency",
       name: "RS Travel and Tours",
-      url: "https://www.rstravels.pk",
+      url: "https://rstravels.pk",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Office 6, Mezzanine Floor, Ratta Mansion Plaza, Fazal ul Haq Road, Blue Area",

@@ -5,14 +5,13 @@ function updateUrlsInFile(filePath) {
   if (!fs.existsSync(filePath)) return;
   let content = fs.readFileSync(filePath, 'utf-8');
   
-  // Replace https://rstravels.pk with https://rstravels.pk (avoiding www.www)
+  // Replace https://rstravels.pk with https://rstravels.pk
   const updated = content
-    .replace(/https:\/\/rstravels\.pk/g, 'https://rstravels.pk')
-    .replace(/https:\/\/www\.www\.rstravels\.pk/g, 'https://rstravels.pk');
+    .replace(/https:\/\/www\.rstravels\.pk/g, 'https://rstravels.pk');
 
   if (updated !== content) {
     fs.writeFileSync(filePath, updated, 'utf-8');
-    console.log(`Updated URLs in: ${filePath}`);
+    console.log(`Updated URLs to non-www in: ${filePath}`);
   }
 }
 
@@ -30,9 +29,9 @@ function processDirectory(dir) {
   }
 }
 
-console.log("Starting www.rstravels.pk URL standardization across entire codebase...");
+console.log("Starting https://rstravels.pk (non-www) standardization across entire codebase...");
 processDirectory(path.resolve('src'));
 processDirectory(path.resolve('public'));
 processDirectory(path.resolve('scripts'));
 updateUrlsInFile(path.resolve('index.html'));
-console.log("URL update complete!");
+console.log("Non-www URL update complete!");

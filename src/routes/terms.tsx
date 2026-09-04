@@ -13,9 +13,9 @@ export const Route = createFileRoute("/terms")({
       },
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Terms & Conditions | RS Travel and Tours" },
-      { property: "og:url", content: "https://www.rstravels.pk/terms" },
+      { property: "og:url", content: "https://rstravels.pk/terms" },
     ],
-    links: [{ rel: "canonical", href: "https://www.rstravels.pk/terms" }],
+    links: [{ rel: "canonical", href: "https://rstravels.pk/terms" }],
   }),
   component: TermsPage,
 });

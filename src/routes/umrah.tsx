@@ -47,7 +47,7 @@ export const Route = createFileRoute("/umrah")({
           "Trusted by 5000+ families. Economy to luxury Umrah packages from Islamabad with visa, flights & premium hotels near Haram.",
       },
       { property: "og:image", content: "/src/assets/umrah-hero.png" },
-      { property: "og:url", content: "https://www.rstravels.pk/umrah" },
+      { property: "og:url", content: "https://rstravels.pk/umrah" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_PK" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -55,7 +55,7 @@ export const Route = createFileRoute("/umrah")({
       { name: "twitter:description", content: "Economy to 5-Star luxury. Visa, flights & Haram-facing hotels from Islamabad." },
     ],
     links: [
-      { rel: "canonical", href: "https://www.rstravels.pk/umrah" },
+      { rel: "canonical", href: "https://rstravels.pk/umrah" },
     ],
   }),
   component: UmrahPage,
@@ -106,16 +106,16 @@ function UmrahPage() {
     "@graph": [
       {
         "@type": "TouristTrip",
-        "@id": "https://www.rstravels.pk/umrah#trip",
+        "@id": "https://rstravels.pk/umrah#trip",
         "name": "Umrah Packages 2026 from Pakistan",
         "description": "Comprehensive economy, 3-star, 4-star and luxury 5-star Umrah packages from Islamabad, Pakistan including visa processing, confirmed return flights, and hotels in Makkah & Madinah.",
         "touristType": "Pilgrims",
         "provider": {
           "@type": "TravelAgency",
-          "@id": "https://www.rstravels.pk/#organization",
+          "@id": "https://rstravels.pk/#organization",
           "name": "RS Travel and Tours",
           "telephone": "+92 51 2000147",
-          "url": "https://www.rstravels.pk/"
+          "url": "https://rstravels.pk/"
         },
         "offers": [
           {
@@ -138,7 +138,7 @@ function UmrahPage() {
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.rstravels.pk/umrah#faq",
+        "@id": "https://rstravels.pk/umrah#faq",
         "mainEntity": [
           {
             "@type": "Question",

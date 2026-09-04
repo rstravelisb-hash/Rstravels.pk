@@ -29,14 +29,14 @@ export const Route = createFileRoute("/countries/")({
         content:
           "Expert visa consultancy for North America, Europe, Oceania, Asia, Middle East & Africa. 98% approval rate from Islamabad.",
       },
-      { property: "og:url", content: "https://www.rstravels.pk/countries" },
+      { property: "og:url", content: "https://rstravels.pk/countries" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "50+ Visa Destinations | RS Travel and Tours Pakistan" },
       { name: "twitter:description", content: "USA, UK, Canada, Schengen, Australia & 50+ more. Apply from Islamabad." },
     ],
     links: [
-      { rel: "canonical", href: "https://www.rstravels.pk/countries" },
+      { rel: "canonical", href: "https://rstravels.pk/countries" },
     ],
   }),
   component: CountriesPage,

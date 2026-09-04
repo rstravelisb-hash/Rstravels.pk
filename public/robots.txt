@@ -1,4 +1,4 @@
-# robots.txt for RS Travel and Tours (https://www.rstravels.pk)
+# robots.txt for RS Travel and Tours (https://rstravels.pk)
 # Optimized for Googlebot, Bingbot, and AI Search Crawlers
 
 User-agent: *
@@ -45,4 +45,4 @@ User-agent: CCBot
 Allow: /
 
 # Sitemap Index
-Sitemap: https://www.rstravels.pk/sitemap.xml
+Sitemap: https://rstravels.pk/sitemap.xml

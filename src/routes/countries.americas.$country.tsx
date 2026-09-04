@@ -20,7 +20,7 @@ export const Route = createFileRoute("/countries/americas/$country")({
       { name: "keywords", content: `${loaderData?.keywords || ""}, americas visa, travel agency islamabad` },
     ],
     links: [
-      { rel: "canonical", href: `https://www.rstravels.pk/countries/americas/${loaderData?.slug || ""}` },
+      { rel: "canonical", href: `https://rstravels.pk/countries/americas/${loaderData?.slug || ""}` },
     ],
   }),
   component: AmericasCountryPage,

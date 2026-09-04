@@ -54,18 +54,18 @@ export const Route = createFileRoute("/countries/$slug")({
       { name: "geo.placename", content: "Islamabad" },
       { property: "og:title", content: `${loaderData?.seoTitle || "Visa Consultant Islamabad"} | RS Travel and Tours` },
       { property: "og:description", content: loaderData?.seoDescription || "" },
-      { property: "og:url", content: `https://www.rstravels.pk/countries/${loaderData?.slug || ""}` },
-      { property: "og:image", content: loaderData?.image || "https://www.rstravels.pk/logo.png" },
+      { property: "og:url", content: `https://rstravels.pk/countries/${loaderData?.slug || ""}` },
+      { property: "og:image", content: loaderData?.image || "https://rstravels.pk/logo.png" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_PK" },
       { property: "og:site_name", content: "RS Travel and Tours — Pakistan's No.1 Travel Agency" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: `${loaderData?.name || ""} Visa Consultant Islamabad | RS Travel and Tours` },
       { name: "twitter:description", content: loaderData?.seoDescription || "" },
-      { name: "twitter:image", content: loaderData?.image || "https://www.rstravels.pk/logo.png" },
+      { name: "twitter:image", content: loaderData?.image || "https://rstravels.pk/logo.png" },
     ],
     links: [
-      { rel: "canonical", href: `https://www.rstravels.pk/countries/${loaderData?.slug || ""}` },
+      { rel: "canonical", href: `https://rstravels.pk/countries/${loaderData?.slug || ""}` },
     ],
   }),
   component: DestinationHub,
@@ -86,15 +86,15 @@ function DestinationHub() {
     "@graph": [
       {
         "@type": "Service",
-        "@id": `https://www.rstravels.pk/countries/${dest.slug}#service`,
+        "@id": `https://rstravels.pk/countries/${dest.slug}#service`,
         "name": `${dest.name} Visa Consultancy Islamabad`,
         "serviceType": "Visit & Tourist Visa Application Service",
         "description": dest.seoDescription || dest.shortDesc,
         "provider": {
           "@type": "TravelAgency",
-          "@id": "https://www.rstravels.pk/#organization",
+          "@id": "https://rstravels.pk/#organization",
           "name": "RS Travel and Tours",
-          "url": "https://www.rstravels.pk/",
+          "url": "https://rstravels.pk/",
           "telephone": COMPANY.phone,
           "address": {
             "@type": "PostalAddress",
@@ -118,7 +118,7 @@ function DestinationHub() {
       },
       ...(dest.faqs && dest.faqs.length > 0 ? [{
         "@type": "FAQPage",
-        "@id": `https://www.rstravels.pk/countries/${dest.slug}#faq`,
+        "@id": `https://rstravels.pk/countries/${dest.slug}#faq`,
         "mainEntity": dest.faqs.map((faq: { q: string; a: string }) => ({
           "@type": "Question",
           "name": faq.q,

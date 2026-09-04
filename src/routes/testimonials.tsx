@@ -20,11 +20,11 @@ export const Route = createFileRoute("/testimonials")({
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Client Reviews — RS Travel and Tours | 98% Approval Rate" },
       { property: "og:description", content: "Real approval stories from 20,000+ happy travelers. Pakistan's most trusted visa agency." },
-      { property: "og:url", content: "https://www.rstravels.pk/testimonials" },
+      { property: "og:url", content: "https://rstravels.pk/testimonials" },
       { property: "og:type", content: "website" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.rstravels.pk/testimonials" },
+      { rel: "canonical", href: "https://rstravels.pk/testimonials" },
     ],
   }),
   component: TestimonialsPage,
