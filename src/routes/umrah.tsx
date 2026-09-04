@@ -35,7 +35,7 @@ export const Route = createFileRoute("/umrah")({
       {
         name: "keywords",
         content:
-          "best umrah packages from pakistan 2026, cheapest umrah packages islamabad, #1 umrah travel agency pakistan, customized umrah packages 2026, economy umrah packages islamabad, luxury 5 star umrah packages pakistan, umrah visa processing islamabad, makkah madinah hotel booking pakistan, group umrah packages islamabad, family umrah packages 2026, umrah with flights from islamabad, umrah agents blue area islamabad, ramadan umrah packages pakistan, last minute umrah deals pakistan",
+          "best umrah packages from pakistan 2026, cheapest umrah packages islamabad, #1 umrah travel agency pakistan, customized umrah packages from pakistan, economy umrah packages, executive umrah packages, umrah e visa from pakistan, 15 days umrah packages from pakistan, ramzan umrah packages, luxury 5 star umrah packages pakistan, umrah visa processing islamabad, makkah madinah hotel booking pakistan, group umrah packages islamabad, family umrah packages 2026, umrah with flights from islamabad, umrah agents blue area islamabad, ramadan umrah packages pakistan, last minute umrah deals pakistan, rehman travels umrah deals",
       },
       { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
       { name: "geo.region", content: "PK-IS" },

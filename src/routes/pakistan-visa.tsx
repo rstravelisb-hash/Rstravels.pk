@@ -11,7 +11,7 @@ export const Route = createFileRoute("/pakistan-visa")({
     meta: [
       { title: "Pakistan Visa Consultant Islamabad | Pakistan Inbound E-Visa 2026" },
       { name: "description", content: "Expert assistance for Pakistan inbound visa (E-Visa, tourist, business, work) at RS Travel and Tours Islamabad. 100% online, hassle-free processing." },
-      { name: "keywords", content: "pakistan inbound visa, pakistan e-visa islamabad, pakistan tourist visa, apply pakistan visa 2026, travel to pakistan visa consultancy, best visa agent pakistan" },
+      { name: "keywords", content: "pakistan inbound visa, pakistan e-visa islamabad, pakistan tourist visa online, apply pakistan visa 2026, nadra pakistan visa portal, pakistan business visa invitation, foreign tourist visa pakistan, travel to pakistan visa consultancy, best visa agent pakistan, pakistan visa fees 2026" },
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Pakistan Inbound E-Visa Processing | RS Travel and Tours" },
       { property: "og:description", content: "Fast e-visa, business visa, and tourist visa services for traveling to Pakistan from anywhere globally." },

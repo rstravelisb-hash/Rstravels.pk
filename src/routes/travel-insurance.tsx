@@ -16,7 +16,7 @@ export const Route = createFileRoute("/travel-insurance")({
       {
         name: "keywords",
         content:
-          "best travel insurance pakistan 2026, schengen approved travel insurance islamabad, cheapest travel insurance pakistan, travel medical insurance ISB, jubilee travel insurance, adamjee travel insurance, united insurance pakistan, official travel insurance partner islamabad, trip cancellation cover pakistan, buy travel insurance blue area, europe visa insurance islamabad, instant travel insurance policy islamabad",
+          "best travel insurance pakistan 2026, schengen approved travel insurance islamabad, cheapest travel insurance pakistan, travel medical insurance ISB, jubilee travel insurance pakistan, adamjee travel insurance online, united insurance pakistan, EFU travel insurance, 30000 euro travel insurance pakistan, student travel insurance pakistan, family travel insurance blue area, buy travel insurance islamabad, europe visa insurance islamabad, instant travel insurance policy islamabad, travel insurance for visit visa",
       },
       { name: "robots", content: "index, follow" },
       { name: "geo.region", content: "PK-IS" },

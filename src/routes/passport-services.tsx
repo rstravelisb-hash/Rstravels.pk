@@ -15,7 +15,7 @@ export const Route = createFileRoute("/passport-services")({
       {
         name: "keywords",
         content:
-          "passport services islamabad, fast passport renewal ISB, USA passport application pakistan, passport processing agency blue area, apply for new passport islamabad, urgent passport renewal islamabad, passport agent near me islamabad, overseas passport processing pakistan, passport renewal fees pakistan 2026, best passport agent islamabad",
+          "passport services islamabad, fast passport renewal ISB, urgent passport fee pakistan 2026, dgip token appointment islamabad, passport agent blue area islamabad, apply for new passport pakistan, overseas pakistani passport renewal, fast track passport islamabad, executive passport office islamabad, best passport consultant islamabad, child passport application pakistan",
       },
       { name: "robots", content: "index, follow" },
       { name: "geo.region", content: "PK-IS" },

@@ -18,7 +18,7 @@ export const Route = createFileRoute("/hotel-booking")({
       {
         name: "keywords",
         content:
-          "best hotel booking agent islamabad, cheap hotel reservations for visa ISB, schengen visa hotel booking islamabad, uk visa hotel booking pakistan, best travel agent for hotels blue area, dubai hotel booking islamabad, international hotel reservations pakistan, luxury hotel booking islamabad, budget hotel booking pakistan, visa compliant hotel reservation, makkah hotel booking pakistan, europe hotel booking agent",
+          "best hotel booking agent islamabad, hotels in makkah and madinah, cheap hotel reservations for visa ISB, schengen visa hotel booking islamabad, uk visa hotel booking pakistan, serena hotel islamabad booking, marriott hotel islamabad deals, best travel agent for hotels blue area, dubai hotel booking islamabad, international hotel reservations pakistan, luxury hotel booking islamabad, budget hotel booking pakistan, visa compliant hotel reservation, makkah hotel booking pakistan, europe hotel booking agent, rehman travels hotel deals",
       },
       { name: "robots", content: "index, follow" },
       { name: "geo.region", content: "PK-IS" },

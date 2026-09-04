@@ -51,7 +51,8 @@ export const Route = createFileRoute("/faq")({
       },
       {
         name: "keywords",
-        content: "visa FAQ pakistan, schengen visa requirements pakistan, bank statement for uk visa, umrah visa only pakistan, travel agency questions islamabad, rs travel and tours FAQ, cheap flights islamabad FAQ",
+        content:
+          "visa FAQ pakistan, schengen visa requirements pakistan, bank statement for uk visa, umrah visa only pakistan, travel agency questions islamabad, how to apply schengen visa from pakistan, visa refusal reasons pakistan, cheapest flights to uk FAQ, rs travel and tours FAQ, blue area visa office timings",
       },
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "FAQ — RS Travel and Tours | Pakistan's #1 Travel Agency" },

@@ -46,7 +46,7 @@ const defaultVisas = (countryName: string): VisaType[] => [
     name: "Visit Visa",
     seoTitle: `${countryName} Visit Visa Consultant in Islamabad | RS Travel and Tours`,
     seoDescription: `Apply for a ${countryName} visit visa from Pakistan. Complete documentation, fast processing, and high approval rates from our Blue Area office.`,
-    keywords: `${countryName} visit visa, ${countryName} tourist visa Pakistan, ${countryName} visa consultant Islamabad`,
+    keywords: `${countryName} visit visa, ${countryName} tourist visa Pakistan, ${countryName} visa consultant Islamabad, ${countryName} visa requirements for pakistani citizens, apply ${countryName} visa online, best visa agent for ${countryName} islamabad`,
     heroText: `Explore ${countryName} with a hassle-free visit visa. We handle all documentation and appointment scheduling.`,
     requirements: [
       "Original Passport with at least 6 months validity (with copies of previous visas)",
@@ -75,7 +75,7 @@ const defaultVisas = (countryName: string): VisaType[] => [
     name: "Business Visa",
     seoTitle: `${countryName} Business Visa Agent Islamabad | Fast Processing`,
     seoDescription: `Apply for a ${countryName} business visa from Pakistan. Expert documentation for conferences, meetings, and trade shows.`,
-    keywords: `${countryName} business visa Islamabad, attend conference in ${countryName}, business visa consultant Pakistan`,
+    keywords: `${countryName} business visa Islamabad, attend conference in ${countryName}, business visa consultant Pakistan, corporate visa invitation ${countryName}, trade visit visa`,
     heroText: `Expand your global network. We provide seamless business visa processing for conferences, meetings, and trade shows in ${countryName}.`,
     requirements: [
       "Valid Passport",
@@ -106,7 +106,7 @@ export const DESTINATIONS: Destination[] = [
     seoDescription:
       "Apply for Schengen visa from Pakistan. RS Travel and Tours provides expert documentation, fast processing, and high approval rates for all 29 European countries.",
     keywords:
-      "Schengen visa Islamabad, best visa consultant Islamabad, Europe visa from Pakistan, apply Schengen visit visa ISB",
+      "Schengen visa Islamabad, best visa consultant Islamabad, Europe visa from Pakistan, apply Schengen visit visa ISB, schengen visa appointment Gerrys islamabad, VFS schengen appointment pakistan, BLS spain visa appointment islamabad, 90 euro schengen fee, europe tourist visa requirements pakistan 2026",
     intro:
       "The Schengen Area offers unparalleled access to 29 European countries. Due to strict embassy regulations, applying for a Schengen visa from Pakistan requires meticulous preparation. We provide end-to-end support for Germany, France, Italy, Spain, and more.",
     generalRequirements: [
@@ -153,7 +153,7 @@ export const DESTINATIONS: Destination[] = [
     seoDescription:
       "Expert USA visa consultants in Islamabad. We handle DS-160 forms, appointment scheduling, and provide intensive interview preparation.",
     keywords:
-      "USA visa consultant Pakistan, US visa Islamabad, B1/B2 visa Pakistan",
+      "USA visa consultant Pakistan, US visa Islamabad, B1/B2 visa Pakistan, DS 160 form filling service islamabad, US embassy interview appointment islamabad, us tourist visa documents pakistan, usa visa fee payment cgi federal, usa visa refusal 214b help pakistan",
     intro:
       "Securing a US visa requires a flawlessly completed DS-160 and exceptional interview skills. We specialize in B1/B2 visitor visas, providing complete profile assessments and mock interviews to ensure you face the consular officer with confidence.",
     generalRequirements: [
@@ -205,7 +205,7 @@ export const DESTINATIONS: Destination[] = [
         seoDescription:
           "Expert assistance for USA B1/B2 visitor visas in Islamabad. Complete DS-160 filling, interview coaching, and documentation support.",
         keywords:
-          "USA tourist visa Pakistan, US B1/B2 visa consultant Islamabad, apply US visit visa ISB",
+          "USA tourist visa Pakistan, US B1/B2 visa consultant Islamabad, apply US visit visa ISB, DS-160 filling service, US embassy appointment islamabad, 5 year multiple entry US visa pakistan",
         heroText:
           "The B1/B2 visa is for people traveling to the United States temporarily for business (B1) or for pleasure or medical treatment (B2).",
         requirements: [
@@ -242,7 +242,7 @@ export const DESTINATIONS: Destination[] = [
     seoDescription:
       "Apply for a UK visa from Islamabad. Expert processing for UK standard visitor and business visas with high success rates.",
     keywords:
-      "UK visa consultant Islamabad, UK visit visa Pakistan, apply UK visa ISB",
+      "UK visa consultant Islamabad, UK visit visa Pakistan, apply UK visa ISB, uk standard visitor visa requirements pakistan, ukvi document upload gerrys islamabad, uk visa approval rate pakistan 2026, 6 month uk visit visa fee pakistan",
     intro:
       "From historic London to the Scottish Highlands, the UK is a top destination for Pakistanis. We offer expert guidance on UK Standard Visitor Visas, ensuring strict compliance with UKVI rules.",
     generalRequirements: [
@@ -326,7 +326,7 @@ export const DESTINATIONS: Destination[] = [
     seoDescription:
       "Top Canada visa consultant in Islamabad. We assist with Canada visit visas and provide expert tourism guidance.",
     keywords:
-      "Canada visit visa consultant ISB, Canada visa Islamabad, IRCC authorized consultant",
+      "Canada visit visa consultant ISB, Canada visa Islamabad, IRCC authorized consultant, apply canada tourist visa pakistan, canada biometrics appointment vfs islamabad, temporary resident visa TRV pakistan, canada visa refusal section 179 help, canada portal submission islamabad",
     intro:
       "Canada's welcoming policies make it a dream destination. However, IRCC processing requires extreme attention to detail. We assist with Temporary Resident Visas (TRV) and tourist applications.",
     generalRequirements: [
@@ -379,7 +379,7 @@ export const DESTINATIONS: Destination[] = [
         seoDescription:
           "Apply for a Canada Temporary Resident Visa (TRV) from Islamabad. Expert guidance for documentation, SOPs, and financial proofs.",
         keywords:
-          "Canada tourist visa Pakistan, Canada TRV consultant Islamabad, apply Canada visit visa ISB",
+          "Canada tourist visa Pakistan, Canada TRV consultant Islamabad, apply Canada visit visa ISB, IRCC portal TRV documentation, canada visa approval rate pakistan",
         heroText:
           "The Temporary Resident Visa (TRV) allows you to visit Canada for tourism, family visits, or business meetings.",
         requirements: [
@@ -687,7 +687,7 @@ export const DESTINATIONS: Destination[] = [
     shortDesc: "Subclass 600 visitor visa processing and expert documentation.",
     seoTitle: "Australia Visa Consultant Islamabad | Subclass 600 Visa Pakistan",
     seoDescription: "Apply for an Australia visit visa from Pakistan. RS Travel and Tours provides expert subclass 600 documentation, online submission, and high approval rates from Islamabad.",
-    keywords: "Australia visa consultant Islamabad, Australia visit visa Pakistan, subclass 600 visa Pakistan, Australia tourist visa Islamabad",
+    keywords: "Australia visa consultant Islamabad, Australia visit visa Pakistan, subclass 600 visa Pakistan, Australia tourist visa Islamabad, immiaccount online visa submission pakistan, vfs australia biometrics islamabad, genuine temporary entrant GTE pakistan, 3 year multiple entry australia visa",
     intro: "Australia offers magnificent beaches, unique wildlife, and vibrant multicultural cities. However, the Australian Home Affairs department requires a solid, well-documented online application. We guide you through every step of the Subclass 600 visitor visa process.",
     generalRequirements: [
       "Original Passport (Valid for at least 6 months + previous passports)",
@@ -718,7 +718,7 @@ export const DESTINATIONS: Destination[] = [
         name: "Visitor Visa (Subclass 600)",
         seoTitle: "Australia Subclass 600 Visitor Visa Consultant Islamabad",
         seoDescription: "Expert assistance for Australian Subclass 600 visitor visas in Islamabad. Complete ImmiAccount management and documentation support.",
-        keywords: "Australia subclass 600 visa Pakistan, Australia tourist visa consultant ISB",
+        keywords: "Australia subclass 600 visa Pakistan, Australia tourist visa consultant ISB, immiaccount filing support, australia visa approval rate pakistan 2026",
         heroText: "The Visitor visa (subclass 600) lets you visit Australia as a tourist, to see family and friends or for purposes other than business or medical treatment.",
         requirements: [
           "Scan of all passport pages (including stamps and previous visas)",
