@@ -18,7 +18,7 @@ export const Route = createFileRoute("/hotel-booking")({
       {
         name: "keywords",
         content:
-          "best hotel booking agent islamabad, hotels in makkah and madinah, cheap hotel reservations for visa ISB, schengen visa hotel booking islamabad, uk visa hotel booking pakistan, serena hotel islamabad booking, marriott hotel islamabad deals, best travel agent for hotels blue area, dubai hotel booking islamabad, international hotel reservations pakistan, luxury hotel booking islamabad, budget hotel booking pakistan, visa compliant hotel reservation, makkah hotel booking pakistan, europe hotel booking agent, rehman travels hotel deals",
+          "best hotel booking agent islamabad, book hotel online pakistan, hotels in makkah near haram walking distance, haram view room makkah booking pkr, madinah hotel booking for umrah, jabal omar makkah hotel package, hilton suites makkah booking pakistan, clock tower fairmont makkah reservation, cheap hotel reservations for visa application ISB, schengen visa hotel booking islamabad, uk visa hotel reservation pakistan, dubai hotel booking from pakistan, international hotel reservations agent pakistan, luxury hotel booking islamabad, budget hotel booking pakistan, visa compliant hotel reservation letter, makkah clock tower hotel booking pkr, madinah shuttle service hotel umrah, 5 star makkah hotel near haram for umrah, europe hotel booking for schengen visa, turkey istanbul hotel booking islamabad, honeymoon hotel packages from islamabad",
       },
       { name: "robots", content: "index, follow" },
       { name: "geo.region", content: "PK-IS" },

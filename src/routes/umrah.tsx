@@ -26,16 +26,16 @@ import umrahHero from "@/assets/umrah-hero.png";
 export const Route = createFileRoute("/umrah")({
   head: () => ({
     meta: [
-      { title: "Best Umrah Packages from Pakistan 2026 — Pakistan's #1 Umrah Travel Agency | RS Travel and Tours" },
+      { title: "Best Umrah Packages from Pakistan 2026 — Economy to 5-Star Luxury | Hajj Booking | RS Travel and Tours" },
       {
         name: "description",
         content:
-          "Pakistan's #1 Umrah travel agency. Book cheap Umrah packages from Islamabad 2026. Economy, 3-Star, 4-Star & 5-Star packages with visa, flights & hotels in Makkah & Madinah. Trusted by 5000+ families. RS Travel and Tours Blue Area.",
+          "Pakistan's #1 Umrah & Hajj travel agency. Book cheap Umrah packages from Islamabad 2026. Economy, 3-Star, 4-Star & 5-Star packages with visa, flights & hotels in Makkah & Madinah. Ziyarat included. Hajj 2027 advance booking open. Trusted by 5000+ families. RS Travel and Tours Blue Area.",
       },
       {
         name: "keywords",
         content:
-          "best umrah packages from pakistan 2026, cheapest umrah packages islamabad, #1 umrah travel agency pakistan, customized umrah packages from pakistan, economy umrah packages, executive umrah packages, umrah e visa from pakistan, 15 days umrah packages from pakistan, ramzan umrah packages, luxury 5 star umrah packages pakistan, umrah visa processing islamabad, makkah madinah hotel booking pakistan, group umrah packages islamabad, family umrah packages 2026, umrah with flights from islamabad, umrah agents blue area islamabad, ramadan umrah packages pakistan, last minute umrah deals pakistan, rehman travels umrah deals",
+          "best umrah packages from pakistan 2026, cheapest umrah packages islamabad, book umrah package online pakistan, economy umrah packages from islamabad, 3 star umrah packages pakistan, 4 star umrah packages islamabad, 5 star luxury umrah packages makkah clock tower, executive umrah packages, umrah e visa processing islamabad, 15 days umrah packages from pakistan price, 10 days short umrah package, ramzan umrah packages 2026, ramadan last 10 days umrah pakistan, umrah visa processing islamabad, makkah madinah hotel booking pakistan, group umrah packages islamabad, family umrah packages 2026, umrah with direct flights from islamabad, umrah agents blue area islamabad, umrah package price in pkr, walking distance haram hotel umrah package, saudi airlines umrah ticket islamabad, umrah with ziyarat package from pakistan, women only umrah group islamabad, couple umrah package first time, nusuk umrah registration help, hajj 2027 advance booking pakistan, umrah travel insurance mandatory, umrah packages from lahore karachi rawalpindi, shifting umrah package makkah to madinah train, umrah package with laundry and meals",
       },
       { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
       { name: "geo.region", content: "PK-IS" },
@@ -154,6 +154,30 @@ function UmrahPage() {
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "E-visa approval typically takes 24 to 72 hours, but we recommend booking your complete package 3 to 4 weeks in advance to secure optimal flight rates and preferred hotels near the Haram."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the cheapest Umrah package from Pakistan in 2026?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our economy Umrah package starts from PKR 185,000 per person, including 15 days stay, return flights from Islamabad, Umrah e-visa, standard hotel accommodation in Makkah and Madinah, and shared ground transport."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Ziyarat included in your Umrah packages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Our 4-Star and 5-Star Umrah packages include guided Ziyarat tours to all major holy sites in Makkah and Madinah including Jabal-e-Noor, Jabal-e-Uhud, Masjid Quba, Jannat-ul-Baqi, and more. Economy packages offer Ziyarat as an optional add-on."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I book a Hajj package for 2027 in advance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. RS Travel and Tours accepts advance Hajj bookings. Early registration secures preferred hotel proximity to the Haram, better airfares, and ensures your government Hajj quota application is processed on time. Contact us for current Hajj 2027 pricing."
             }
           }
         ]

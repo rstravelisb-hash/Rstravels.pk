@@ -28,7 +28,7 @@ export const SOUTH_ASIA_COUNTRIES = [
     description:
       "Apply for Thailand visit visa from Pakistan. Expert documentation for sticker and e-visas.",
     keywords:
-      "Thailand visa consultant Islamabad, Thailand visit visa Pakistan, Thai embassy Islamabad",
+      "Thailand visa consultant Islamabad, Thailand visit visa Pakistan, Thai embassy Islamabad, thailand tour package from pakistan price, 5 days bangkok phuket package from islamabad, thailand honeymoon package with visa, cheap thailand holiday package 2026, bangkok pattaya tour from pakistan, phuket beach package from islamabad, thailand family vacation package pkr",
     intro:
       "Thailand is a favorite for Pakistani tourists. Whether you need a tourist sticker visa or an e-visa, we handle the entire process, including hotel vouchers and flight bookings.",
     docs: [
@@ -53,7 +53,7 @@ export const SOUTH_ASIA_COUNTRIES = [
     code: "my",
     title: "Malaysia Visa Consultant in Islamabad",
     description: "Get your Malaysia e-visa or sticker visa processed quickly in Islamabad.",
-    keywords: "Malaysia visa consultant Islamabad, Malaysia e-visa Pakistan",
+    keywords: "Malaysia visa consultant Islamabad, Malaysia e-visa Pakistan, malaysia tour package from pakistan price, 5 days kuala lumpur genting package from islamabad, malaysia honeymoon package with visa, langkawi island package from pakistan, malaysia singapore combo tour 2026, cheap malaysia holiday from pakistan",
     intro:
       "Malaysia offers a mix of modern cities and beautiful rainforests. We specialize in rapid e-visa processing for Pakistani citizens.",
     docs: [
@@ -95,7 +95,7 @@ export const SOUTH_ASIA_COUNTRIES = [
     title: "Maldives Travel Guide for Pakistanis",
     description:
       "Guidance on Maldives visa on arrival and mandatory travel declarations for Pakistanis.",
-    keywords: "Maldives visa for Pakistanis, Maldives travel agent Islamabad",
+    keywords: "Maldives visa for Pakistanis, Maldives travel agent Islamabad, maldives honeymoon package from pakistan price, 4 nights maldives resort package from islamabad, cheap maldives package 2026 pkr, maldives water villa package from pakistan, maldives all inclusive resort deal, maldives trip cost from pakistan",
     intro:
       "Maldives offers visa-on-arrival for Pakistanis. We assist with 'Imuga' declarations and mandatory hotel bookings to ensure a smooth entry.",
     docs: [

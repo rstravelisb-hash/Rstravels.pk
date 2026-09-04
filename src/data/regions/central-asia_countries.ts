@@ -6,7 +6,7 @@ export const CENTRAL_ASIA_COUNTRIES = [
     title: "Turkey Visa Consultant in Islamabad",
     description: "Expert assistance for Turkey sticker and e-visas in Islamabad.",
     keywords:
-      "Turkey visa consultant Islamabad, Turkey visit visa Pakistan, Anatolia Gerrys Turkey",
+      "Turkey visa consultant Islamabad, Turkey visit visa Pakistan, Anatolia Gerrys Turkey, turkey tour package from islamabad price, istanbul cappadocia 7 days package, turkey honeymoon package with visa, antalya all inclusive package from pakistan, cheap turkey holiday 2026",
     intro:
       "Turkey is the bridge between East and West. We provide complete file preparation for Turkish sticker visas (via Anatolia/Gerry's) and instant e-visas for those with valid Schengen/US visas.",
     docs: [
@@ -29,7 +29,7 @@ export const CENTRAL_ASIA_COUNTRIES = [
     code: "az",
     title: "Azerbaijan E-Visa Expert in Islamabad",
     description: "Instant Azerbaijan ASAN e-visa processing for Pakistani tourists.",
-    keywords: "Azerbaijan visa Pakistan, Baku visa consultant Islamabad",
+    keywords: "Azerbaijan visa Pakistan, Baku visa consultant Islamabad, baku tour package from islamabad price, 4 nights baku azerbaijan package with flights, baku honeymoon package from pakistan, azerbaijan direct flight from islamabad package, cheap baku holiday 2026",
     intro:
       "Baku, the city of winds, is just a few clicks away. We process your Azerbaijan e-visa within 3 hours to 3 days with minimum documentation.",
     docs: [
@@ -46,7 +46,7 @@ export const CENTRAL_ASIA_COUNTRIES = [
     code: "uz",
     title: "Uzbekistan Visa Consultant in Islamabad",
     description: "Apply for Uzbekistan e-visa or sticker visa from Pakistan.",
-    keywords: "Uzbekistan visa Pakistan, Tashkent visa consultant Islamabad",
+    keywords: "Uzbekistan visa Pakistan, Tashkent visa consultant Islamabad, uzbekistan silk road tour package from pakistan, samarkand bukhara tour 2026, tashkent tour package from islamabad",
     intro:
       "Explore the Silk Road cities of Samarkand and Bukhara. We provide fast e-visa services for Uzbekistan for all Pakistani passport holders.",
     docs: [

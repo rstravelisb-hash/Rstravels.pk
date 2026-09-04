@@ -15,6 +15,11 @@ import {
   Users,
   CheckCircle2,
   ArrowRight,
+  FileText,
+  BadgeCheck,
+  Building2,
+  HelpCircle,
+  FileCheck,
 } from "lucide-react";
 import { VISA_SERVICES } from "@/data/site";
 
@@ -30,7 +35,7 @@ export const Route = createFileRoute("/visa-services")({
       {
         name: "keywords",
         content:
-          "best visa consultant islamabad 2026, #1 visa agency pakistan, uk visit visa islamabad, usa B1/B2 visa consultant islamabad, canada immigration agent islamabad, schengen visa consultant islamabad blue area, dubai visa agent pakistan, turkey visa consultant ISB, business visa islamabad, family visa consultant pakistan, visa rejection help islamabad, visa refusal appeal pakistan, best visa approval rate pakistan, trusted visa company islamabad, affordable visa services pakistan, express visa processing islamabad",
+          "best visa consultant islamabad 2026, #1 visa agency pakistan, visa processing services islamabad, visa documentation services pakistan, hire visa agent islamabad, visa file preparation islamabad, visa cover letter writing service pakistan, bank statement maintenance for visa pakistan, sponsor letter format visa pakistan, FRC nadra verification for visa, dummy ticket for visa application pakistan, schengen travel itinerary booking, uk visit visa filing islamabad, usa B1/B2 visa consultant islamabad, ds 160 form filling service islamabad, canada TRV immigration agent islamabad, schengen visa consultant islamabad blue area, dubai 30 day visit visa agent pakistan, turkey sticker visa consultant ISB, australia subclass 600 agent islamabad, visa rejection help islamabad, visa refusal appeal consultant pakistan, best visa approval rate pakistan, trusted visa company islamabad, express visa processing islamabad, student visa documentation islamabad, work visa agent pakistan",
       },
       { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
       { name: "author", content: "RS Travel and Tours" },
@@ -81,6 +86,44 @@ function VisaServices() {
         "postalCode": "44000",
         "addressCountry": "PK"
       }
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Visa Processing & Documentation Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Embassy Visa File Preparation & Documentation Auditing",
+            "description": "Professional vetting of NADRA FRC, MRC, tax returns (FBR), and employment records according to strict embassy requirements."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Custom Visa Cover Letter & Travel Itinerary Drafting",
+            "description": "Legally structured, embassy-compliant cover letters, purpose of visit statements, and verified day-by-day travel plans."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Bank Statement Evaluation & Financial Proof Alignment",
+            "description": "Analysis of closing balance, cash-flow credibility, and tax filing consistency to satisfy consular officer requirements."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Visa Refusal & Rejection Appeal Review",
+            "description": "Comprehensive analysis of refusal letters (Section 214b, Paragraph V 4.2, etc.) and corrective file re-submission strategy."
+          }
+        }
+      ]
     },
     "areaServed": [
       { "@type": "City", "name": "Islamabad" },
@@ -224,6 +267,103 @@ function VisaServices() {
               <p className="text-muted-foreground leading-relaxed">
                 Looking for reliable visit visa pathways? We handle visitor applications for Canada (TRV) and Australia (Subclass 600) with the highest level of professionalism and accuracy. Let our international visa experts simplify the process for you.
               </p>
+            </div>
+          </div>
+
+          {/* Dedicated Category D: Visa Documentation & File Preparation Services */}
+          <div className="space-y-10">
+            <div className="text-center max-w-3xl mx-auto space-y-3">
+              <span className="text-xs uppercase tracking-widest text-primary font-semibold">Specialized Embassy Support</span>
+              <h2 className="text-3xl font-bold tracking-tight">Visa Processing & Documentation Services in Islamabad</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                90% of visa rejections happen due to improper paperwork, weak ties, or inconsistent bank statements. Our consular documentation desk prepares audit-proof visa files recognized by all foreign embassies and VAC centers (VFS Global, Gerry's, Gerry's FedEx, TLScontact, BLS).
+              </p>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="rounded-2xl border border-border bg-card p-6 shadow-sm hover:border-primary/50 transition-colors space-y-3">
+                <div className="h-10 w-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                  <FileText size={20} />
+                </div>
+                <h3 className="text-lg font-semibold">Custom Cover Letter & Itinerary</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Tailored purpose-of-travel statements, day-by-day flight & hotel itineraries, and sponsor cover letters formatted to embassy guidelines.
+                </p>
+                <ul className="text-xs space-y-1.5 text-muted-foreground pt-2">
+                  <li className="flex items-center gap-2"><CheckCircle2 size={13} className="text-primary" /> Personalized purpose statement</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 size={13} className="text-primary" /> Verifiable hotel & flight reservations</li>
+                </ul>
+              </div>
+
+              <div className="rounded-2xl border border-border bg-card p-6 shadow-sm hover:border-primary/50 transition-colors space-y-3">
+                <div className="h-10 w-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                  <BadgeCheck size={20} />
+                </div>
+                <h3 className="text-lg font-semibold">Bank Statement & Ties Audit</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Pre-submission audit of 6-month bank statements, source of funds, salary slips, FBR tax returns, and property asset documentation.
+                </p>
+                <ul className="text-xs space-y-1.5 text-muted-foreground pt-2">
+                  <li className="flex items-center gap-2"><CheckCircle2 size={13} className="text-primary" /> Cash-flow credibility verification</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 size={13} className="text-primary" /> Strong home ties proof documentation</li>
+                </ul>
+              </div>
+
+              <div className="rounded-2xl border border-border bg-card p-6 shadow-sm hover:border-primary/50 transition-colors space-y-3">
+                <div className="h-10 w-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                  <FileCheck size={20} />
+                </div>
+                <h3 className="text-lg font-semibold">NADRA & Family Records Vetting</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  NADRA Family Registration Certificate (FRC), Marriage Registration Certificate (MRC), Birth Certificates, and legal English translations.
+                </p>
+                <ul className="text-xs space-y-1.5 text-muted-foreground pt-2">
+                  <li className="flex items-center gap-2"><CheckCircle2 size={13} className="text-primary" /> FRC & MRC Apostille/attestation guidance</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 size={13} className="text-primary" /> Official certified translations</li>
+                </ul>
+              </div>
+
+              <div className="rounded-2xl border border-border bg-card p-6 shadow-sm hover:border-primary/50 transition-colors space-y-3">
+                <div className="h-10 w-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                  <Building2 size={20} />
+                </div>
+                <h3 className="text-lg font-semibold">Embassy Appointment Scheduling</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Fast appointment bookings for VFS Global, Gerry's Visa Drop Box, TLScontact, BLS Spain, and US Embassy consular interview slots.
+                </p>
+                <ul className="text-xs space-y-1.5 text-muted-foreground pt-2">
+                  <li className="flex items-center gap-2"><CheckCircle2 size={13} className="text-primary" /> Gerry's Islamabad appointment booking</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 size={13} className="text-primary" /> US DS-160 interview scheduling</li>
+                </ul>
+              </div>
+
+              <div className="rounded-2xl border border-border bg-card p-6 shadow-sm hover:border-primary/50 transition-colors space-y-3">
+                <div className="h-10 w-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                  <HelpCircle size={20} />
+                </div>
+                <h3 className="text-lg font-semibold">Visa Rejection & Appeal Review</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Forensic analysis of previous visa refusals (UK, Schengen, USA Section 214b, Canada TRV) to rectify deficiencies and reapply with confidence.
+                </p>
+                <ul className="text-xs space-y-1.5 text-muted-foreground pt-2">
+                  <li className="flex items-center gap-2"><CheckCircle2 size={13} className="text-primary" /> Refusal grounds root-cause assessment</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 size={13} className="text-primary" /> Comprehensive appeal representation letter</li>
+                </ul>
+              </div>
+
+              <div className="rounded-2xl border border-border bg-card p-6 shadow-sm hover:border-primary/50 transition-colors space-y-3">
+                <div className="h-10 w-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                  <CheckCircle2 size={20} />
+                </div>
+                <h3 className="text-lg font-semibold">Complete File Audit & Mock Interview</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Full 360-degree consular mock interview coaching with realistic questioning, body language tips, and dossier indexing in Islamabad Blue Area.
+                </p>
+                <ul className="text-xs space-y-1.5 text-muted-foreground pt-2">
+                  <li className="flex items-center gap-2"><CheckCircle2 size={13} className="text-primary" /> Embassy-specific mock interview session</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 size={13} className="text-primary" /> 100% document checklist compliance</li>
+                </ul>
+              </div>
             </div>
           </div>
 

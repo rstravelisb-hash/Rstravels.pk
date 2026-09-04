@@ -14,7 +14,8 @@ export const Route = createFileRoute("/consultation")({
       },
       {
         name: "keywords",
-        content: "free visa consultation islamabad, book visa appointment pakistan, visa expert consultation blue area, free immigration advice islamabad, visa rejection appeal assessment, schengen visa file evaluation, uk visa refusal help islamabad, rs travel and tours consultation, visa pathway assessment pakistan",
+        content:
+          "free visa consultation islamabad, book visa appointment pakistan, visa documentation consultation blue area, visa file evaluation pakistan, free immigration advice islamabad, visa rejection appeal assessment, schengen visa file audit, uk visa refusal appeal help islamabad, bank statement assessment for visa, dummy ticket consultation, rs travel and tours consultation, visa pathway assessment pakistan",
       },
       { name: "robots", content: "index, follow" },
       { name: "geo.region", content: "PK-IS" },

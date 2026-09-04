@@ -5,7 +5,7 @@ export const MIDDLE_EAST_COUNTRIES = [
     code: "ae",
     title: "Dubai & UAE Visa Consultant in Islamabad",
     description: "Fast-track UAE and Dubai visit visas from Pakistan. 24-48 hour processing.",
-    keywords: "Dubai visa consultant Islamabad, UAE visit visa Pakistan, Dubai visa price",
+    keywords: "Dubai visa consultant Islamabad, UAE visit visa Pakistan, Dubai visa price, dubai tour package from pakistan with visa and hotel, 5 days dubai holiday package from islamabad, dubai 30 day visit visa price, cheap dubai package from pakistan 2026, abu dhabi day tour from dubai package, dubai family vacation package pkr, dubai honeymoon package from pakistan, dubai shopping festival package 2026",
     intro: "The UAE, particularly Dubai, is the most popular destination for Pakistanis. We provide instant e-visa services for 30, 60, and 90 days, handling all sponsorships and documentation for a guaranteed smooth entry.",
     docs: [
       "Digital Color Scan of Passport (First 2 pages)",
@@ -23,7 +23,7 @@ export const MIDDLE_EAST_COUNTRIES = [
     code: "sa",
     title: "Saudi Tourist & Umrah Visa Specialist Islamabad",
     description: "Apply for Saudi Arabia tourist and Umrah visas from Pakistan. Instant processing.",
-    keywords: "Saudi visa consultant Islamabad, Umrah visa Pakistan, Saudi tourist visa ISB",
+    keywords: "Saudi visa consultant Islamabad, Umrah visa Pakistan, Saudi tourist visa ISB, umrah e visa processing islamabad, nusuk registration help pakistan, hajj 2027 advance booking islamabad, saudi arabia tour package from pakistan, riyadh tourist visa package, jeddah stopover tour package, makkah hotel booking near haram, madinah hotel reservation pakistan, ziyarat tour makkah madinah package, saudi entertainment season package from islamabad, umrah visa fee pakistan 2026",
     intro: "Saudi Arabia has opened its doors to the world with the new Tourist Visa. We process both Tourist and Umrah visas instantly, providing complete support for Nusuk registration and hotel bookings.",
     docs: [
       "Digital Scan of Passport (First page)",
@@ -112,7 +112,7 @@ export const MIDDLE_EAST_COUNTRIES = [
     code: "tr",
     title: "Turkey Visa Consultant in Islamabad",
     description: "Expert assistance for Turkey sticker and eVisas from Pakistan.",
-    keywords: "Turkey visa consultant Islamabad, Turkey visit visa Pakistan",
+    keywords: "Turkey visa consultant Islamabad, Turkey visit visa Pakistan, turkey tour package from pakistan price, 7 days istanbul cappadocia tour package, turkey honeymoon package from islamabad, antalya beach holiday package pakistan, turkey package with visa and flights, cheap turkey package 2026 from isb",
     intro: "Experience the incredible blend of cultures, historic landmarks, and stunning coastlines in Turkey. We assist you with complete file preparation for smooth processing.",
     docs: [
       "Original Passport",

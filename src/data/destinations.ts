@@ -413,7 +413,7 @@ export const DESTINATIONS: Destination[] = [
     seoDescription:
       "Top visa agency for Middle East travel in Islamabad. Fast Dubai visit visas, Saudi tourist visas, and Oman eVisas.",
     keywords:
-      "Dubai visit visa services ISB, Saudi tourist visa Pakistan, Middle East visa consultant Islamabad",
+      "Dubai visit visa services ISB, dubai 30 day visit visa price pakistan, dubai 60 day visa agent islamabad, Saudi tourist visa Pakistan, saudi evisa online islamabad, oman tourist visa pakistani passport, bahrain visa from pakistan, qatar visa agent islamabad, Middle East visa consultant Islamabad, uae visa 24 hour processing islamabad",
     intro:
       "We are your premier partner for Middle Eastern travel. From instant Dubai (UAE) eVisas to the new Saudi Tourist visas and Oman applications, we provide rapid, reliable service with minimum documentation required.",
     generalRequirements: [
@@ -446,7 +446,7 @@ export const DESTINATIONS: Destination[] = [
     seoTitle: "South Asia Visa Agent Islamabad | Sri Lanka & Maldives",
     seoDescription:
       "Expert travel assistance for South Asian destinations. Apply for Sri Lanka ETA and get guidance for Maldives visa on arrival.",
-    keywords: "Sri Lanka visa Pakistan, Maldives travel agent Islamabad",
+    keywords: "Sri Lanka visa Pakistan, Sri Lanka ETA online islamabad, Maldives travel agent Islamabad, maldives honeymoon package from pakistan, maldives visa on arrival pakistani passport, sri lanka tour package from islamabad, nepal visa from pakistan",
     intro:
       "Planning a tropical getaway? We handle Sri Lanka ETA (Electronic Travel Authorization) applications instantly and provide complete guidance on required documents for destinations offering visa-on-arrival, like the Maldives.",
     generalRequirements: [
@@ -478,7 +478,7 @@ export const DESTINATIONS: Destination[] = [
     seoTitle: "Central Asia & Turkey Visa Consultant Islamabad",
     seoDescription:
       "Reliable visa processing for Turkey, Azerbaijan, and Uzbekistan from Pakistan.",
-    keywords: "Turkey visa consultant Islamabad, Azerbaijan eVisa Pakistan",
+    keywords: "Turkey visa consultant Islamabad, turkey sticker visa fee pakistan 2026, turkey evisa pakistani passport with schengen, Azerbaijan eVisa Pakistan, baku azerbaijan tour package from islamabad, uzbekistan evisa pakistan, turkey tour package from pakistan with visa, istanbul cappadocia package islamabad",
     intro:
       "Central Asia is rapidly growing as a tourism hotspot. We provide lightning-fast eVisa services for Azerbaijan and Uzbekistan, and offer complete file preparation for Turkish sticker visas (or eVisas for valid Schengen/US visa holders).",
     generalRequirements: [
@@ -510,7 +510,7 @@ export const DESTINATIONS: Destination[] = [
     seoTitle: "Egypt & Morocco Visa Consultant Islamabad",
     seoDescription:
       "Apply for Egypt and Morocco visas from Pakistan. Professional file preparation in Islamabad.",
-    keywords: "Egypt visa Pakistan, Morocco visa consultant Islamabad",
+    keywords: "Egypt visa Pakistan, egypt tourist visa from islamabad, Morocco visa consultant Islamabad, morocco sticker visa pakistan, egypt tour package from pakistan, cairo alexandria tour 2026",
     intro:
       "Explore the pyramids of Egypt or the vibrant markets of Morocco. We assist in preparing robust applications for North African embassies, ensuring all required approvals and hotel vouchers are in place.",
     generalRequirements: [
@@ -546,7 +546,7 @@ export const DESTINATIONS: Destination[] = [
     seoTitle: "Southern & East Africa Visa Consultant Islamabad",
     seoDescription:
       "Reliable visa processing for South Africa, Mauritius, and Kenya from Pakistan.",
-    keywords: "South Africa visa Pakistan, Mauritius visa consultant Islamabad",
+    keywords: "South Africa visa Pakistan, south africa tourist visa from islamabad, Mauritius visa consultant Islamabad, kenya evisa pakistani passport, mauritius honeymoon package from pakistan, seychelles visa on arrival pakistan",
     intro:
       "Southern and East Africa offer breathtaking safaris and tropical paradises. We handle sticker visas for South Africa and electronic travel authorizations for Mauritius, Kenya, and Seychelles.",
     generalRequirements: [
@@ -582,7 +582,7 @@ export const DESTINATIONS: Destination[] = [
     seoTitle: "East Asia Visa Consultant Islamabad | Japan & South Korea",
     seoDescription:
       "Reliable visa processing for Japan, South Korea, and China from Pakistan.",
-    keywords: "Japan visa Pakistan, South Korea visa consultant Islamabad",
+    keywords: "Japan visa Pakistan, japan tourist visa from islamabad, South Korea visa consultant Islamabad, china visa agent pakistan, japan tour package from islamabad, south korea visit visa fee pakistan 2026",
     intro:
       "East Asia is a hub of technological advancement and rich cultural heritage. We provide expert assistance for securing visas to Japan, South Korea, and China.",
     generalRequirements: [
@@ -618,7 +618,7 @@ export const DESTINATIONS: Destination[] = [
     seoTitle: "South America Visa Agent Islamabad | Brazil & Argentina",
     seoDescription:
       "Reliable visa processing for Brazil, Argentina, Colombia from Pakistan.",
-    keywords: "Brazil visa Pakistan, Argentina visa consultant Islamabad",
+    keywords: "Brazil visa Pakistan, brazil tourist visa from islamabad, Argentina visa consultant Islamabad, colombia visa pakistani passport, south america tour package from pakistan",
     intro:
       "Explore the diverse cultures and landscapes of South America. We provide expert assistance for securing tourist and business visas.",
     generalRequirements: [
@@ -653,7 +653,7 @@ export const DESTINATIONS: Destination[] = [
     seoTitle: "Oceania Visa Agent Islamabad | Australia & New Zealand",
     seoDescription:
       "Expert visa assistance for Australia and New Zealand from Pakistan.",
-    keywords: "Australia visa Pakistan, New Zealand visa consultant Islamabad",
+    keywords: "Australia visa Pakistan, australia visitor visa subclass 600 islamabad, New Zealand visa consultant Islamabad, new zealand tourist visa from pakistan, fiji visa pakistani passport, oceania tour package 2026",
     intro:
       "From pristine beaches and coral reefs to magnificent mountains, Oceania has it all. We provide comprehensive visa assistance.",
     generalRequirements: [

@@ -18,7 +18,7 @@ export const Route = createFileRoute("/countries/")({
       {
         name: "keywords",
         content:
-          "visa destinations from pakistan, all countries visa consultant islamabad, schengen visa from pakistan, USA visa from islamabad, UK visa destinations ISB, canada immigration islamabad, australia visit visa ISB, top visa destinations pakistan, europe visa consultancy blue area, dubai visa agent islamabad, turkey visa pakistan, malaysia visa consultant islamabad, best visa consultancy for all countries pakistan",
+          "visa destinations from pakistan, all countries visa consultant islamabad, international tour packages from pakistan, schengen visa from pakistan, USA visa from islamabad, UK visa destinations ISB, canada immigration islamabad, australia visit visa ISB, dubai tour package from pakistan, turkey holiday package from islamabad, thailand tour from pakistan, malaysia package 2026, baku azerbaijan package, maldives honeymoon from pakistan, best outbound holiday packages islamabad, cheap international tours from pakistan, top visa destinations pakistan, europe visa consultancy blue area",
       },
       { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
       { name: "geo.region", content: "PK-IS" },
