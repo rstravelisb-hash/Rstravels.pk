@@ -443,25 +443,38 @@ function Home() {
               subtitle="Drop us a message and our team will respond within 1 business hour."
             />
             <ul className="space-y-3 text-sm">
-              <li className="flex gap-3">
-                <MapPin className="text-primary mt-0.5" size={18} /> Blue Area, Islamabad, Pakistan
+              <li className="flex gap-3 items-start">
+                <MapPin className="text-primary mt-0.5 shrink-0" size={18} />
+                <div>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Ratta+Mansion+Fazal-e-Haq+Road+Blue+Area+Islamabad"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-primary font-medium transition-colors"
+                  >
+                    {COMPANY.address}
+                  </a>
+                  <span className="block text-xs text-primary/80 font-bold mt-0.5">
+                    📍 Open in Google Maps ↗
+                  </span>
+                </div>
               </li>
-              <li className="flex gap-3">
-                <Phone className="text-primary mt-0.5" size={18} />{" "}
-                <a className="hover:text-primary" href={`tel:${COMPANY.phone.replace(/\s/g, "")}`}>
+              <li className="flex gap-3 items-center">
+                <Phone className="text-primary shrink-0" size={18} />
+                <a className="hover:text-primary font-medium transition-colors" href={`tel:${COMPANY.phone.replace(/\s/g, "")}`}>
                   {COMPANY.phone}
                 </a>
               </li>
-              <li className="flex gap-3">
-                <Mail className="text-primary mt-0.5" size={18} />{" "}
-                <a className="hover:text-primary" href={`mailto:${COMPANY.email}`}>
+              <li className="flex gap-3 items-center">
+                <Mail className="text-primary shrink-0" size={18} />
+                <a className="hover:text-primary font-medium transition-colors" href={`mailto:${COMPANY.email}`}>
                   {COMPANY.email}
                 </a>
               </li>
-              <li className="flex gap-3">
-                <Facebook className="text-primary mt-0.5" size={18} />{" "}
+              <li className="flex gap-3 items-center">
+                <Facebook className="text-primary shrink-0" size={18} />
                 <a
-                  className="hover:text-primary"
+                  className="hover:text-primary font-medium transition-colors"
                   href={COMPANY.socials.facebook}
                   target="_blank"
                   rel="noreferrer"
@@ -470,12 +483,22 @@ function Home() {
                 </a>
               </li>
             </ul>
-            <div className="mt-6 overflow-hidden rounded-2xl border border-border shadow-soft">
+            <div className="mt-6 relative overflow-hidden rounded-2xl border border-border shadow-soft group">
+              <div className="absolute top-3 right-3 z-10">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Ratta+Mansion+Fazal-e-Haq+Road+Blue+Area+Islamabad"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-xl bg-background/90 px-3 py-1.5 text-xs font-bold text-foreground shadow-md backdrop-blur-md hover:bg-primary hover:text-white transition-all border border-border/50"
+                >
+                  <MapPin size={13} className="text-primary group-hover:text-white" /> Open in Maps ↗
+                </a>
+              </div>
               <iframe
-                title="Office location"
-                src="https://www.google.com/maps?q=Blue%20Area%2C%20Islamabad&output=embed"
+                title="RS Travel and Tours - Ratta Mansion, Fazal-e-Haq Road, Blue Area, Islamabad"
+                src="https://maps.google.com/maps?q=Ratta%20Mansion%2C%20Fazal-e-Haq%20Road%2C%20Blue%20Area%2C%20Islamabad&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 loading="lazy"
-                className="h-64 w-full"
+                className="h-72 w-full border-0"
               />
             </div>
           </div>

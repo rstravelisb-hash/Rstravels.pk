@@ -154,6 +154,16 @@ function Contact() {
               {/* Map Iframe with Glassmorphic Wrapper */}
               <div className="group relative overflow-hidden rounded-[2.5rem] border border-border/50 bg-card/30 p-2 shadow-xl backdrop-blur-md transition-all duration-500 hover:border-primary/30 mt-8">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                <div className="absolute top-5 right-5 z-20">
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Ratta+Mansion+Fazal-e-Haq+Road+Blue+Area+Islamabad"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-full bg-background/90 px-3.5 py-1.5 text-xs font-bold text-foreground shadow-lg backdrop-blur-md hover:bg-primary hover:text-white transition-all border border-border/50"
+                  >
+                    <MapPin size={13} className="text-primary group-hover:text-white" /> Open in Maps ↗
+                  </a>
+                </div>
                 <div className="overflow-hidden rounded-[2rem]">
                   <iframe
                     title="RS Travel and Tours office at Ratta Mansion, Blue Area, Islamabad"
