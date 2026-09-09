@@ -27,10 +27,13 @@ function DefaultErrorComponent({ error, reset }: { error: Error; reset: () => vo
         <p className="mt-2 text-sm text-muted-foreground">
           An unexpected error occurred. Please try again.
         </p>
-        {import.meta.env.DEV && error.message && (
-          <pre className="mt-4 max-h-40 overflow-auto rounded-md bg-muted p-3 text-left font-mono text-xs text-destructive">
-            {error.message}
-          </pre>
+        {error && (
+          <div className="mt-4 max-h-60 overflow-auto rounded-xl bg-slate-900/90 p-4 text-left font-mono text-xs text-red-400 border border-red-500/30">
+            <p className="font-bold text-red-300">{error.name}: {error.message}</p>
+            {error.stack && (
+              <pre className="mt-2 text-[10px] text-slate-400 whitespace-pre-wrap">{error.stack}</pre>
+            )}
+          </div>
         )}
         <div className="mt-6 flex items-center justify-center gap-3">
           <button

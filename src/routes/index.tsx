@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/site/FAQAccordion";
 import { ContactForm } from "@/components/site/ContactForm";
 import { Reveal } from "@/components/site/Reveal";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { SEOBlock } from "@/components/site/SEOBlock";
 import { DESTINATIONS } from "@/data/destinations";
 import { COMPANY } from "@/data/company";
 import { COUNTRIES } from "@/data/countries-data";

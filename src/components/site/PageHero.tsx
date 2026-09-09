@@ -45,10 +45,7 @@ export function PageHero({
     <section
       className={`relative overflow-hidden ${!backgroundImage ? "bg-gradient-to-br from-primary via-[oklch(0.32_0.16_258)] to-[oklch(0.45_0.18_30)]" : "bg-black"} text-white`}
     >
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
+      <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
       {!backgroundImage && (
         <>
           <div className="absolute inset-0 mesh-bg opacity-40" />
