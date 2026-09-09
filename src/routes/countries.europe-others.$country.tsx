@@ -15,10 +15,25 @@ export const Route = createFileRoute("/countries/europe-others/$country")({
   },
   head: ({ loaderData }) => ({
     meta: [
-      { title: loaderData?.title || "European Visa Consultant Islamabad" },
-      { name: "description", content: loaderData?.description || "" },
-      { name: "keywords", content: `${loaderData?.keywords || ""}, europe visa, travel agency pakistan` },
-    ],
+      { title: `${loaderData?.title || "European Visa Consultant Islamabad"} | Pakistan's #1 Visa Agency 2026` },
+      { name: "description", content: loaderData?.description ? `${loaderData.description} RS Travel and Tours Islamabad — Pakistan's #1 visa agency. 98% approval rate, IATA-accredited, Blue Area office.` : "" },
+      { name: "keywords", content: `${loaderData?.keywords || ""}, ${loaderData?.name || ""} visit visa pakistan, ${loaderData?.name || ""} visa requirements islamabad, apply ${loaderData?.name || ""} visa online pakistan, best visa consultant islamabad, top travel agency pakistan, blue area visa consultant` },
+      { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
+      { name: "author", content: "RS Travel and Tours" },
+      { name: "geo.region", content: "PK-IS" },
+      { name: "geo.placename", content: "Islamabad" },
+      { property: "og:title", content: `${loaderData?.name || "Europe"} Visa Consultant Islamabad — Pakistan's #1 | RS Travel and Tours` },
+      { property: "og:description", content: loaderData?.description || "" },
+      { property: "og:url", content: `https://rstravels.pk/countries/europe-others/${loaderData?.slug || ""}` },
+      { property: "og:type", content: "website" },
+      { property: "og:locale", content: "en_PK" },
+      { property: "og:site_name", content: "RS Travel and Tours — Pakistan's No.1 Travel Agency" },
+      { property: "og:image", content: loaderData?.image || "" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: `${loaderData?.name || ""} Visa Consultant Islamabad | RS Travel and Tours` },
+      { name: "twitter:description", content: loaderData?.description || "" },
+      { name: "twitter:image", content: loaderData?.image || "" },
+     ],
     links: [
       { rel: "canonical", href: `https://rstravels.pk/countries/europe-others/${loaderData?.slug || ""}` },
     ],
@@ -35,6 +50,11 @@ function EuropeOthersCountryPage() {
         eyebrow="Europe"
         title={country.name}
         subtitle={`Expert visa consultancy for ${country.name} in Islamabad.`}
+        breadcrumbs={[
+          { name: "Countries", url: "/countries" },
+          { name: "Europe", url: "/countries" },
+          { name: country.name }
+        ]}
         backgroundImage={country.image}
       />
 

@@ -89,9 +89,13 @@ Object.entries(regionFileMap).forEach(([file, regionSlug]) => {
   }
 });
 
-// Build the dynamic high-SEO XML Sitemap
+const today = new Date().toISOString().split('T')[0];
+
+// Build the dynamic high-SEO XML Sitemap with Image and Mobile namespaces
 let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 `;
 
 const routeList = Array.from(routes);
@@ -113,8 +117,14 @@ routeList.forEach(route => {
 
   sitemapXml += `  <url>
     <loc>${SITE_URL}${route}</loc>
+    <lastmod>${today}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
+    <image:image>
+      <image:loc>${SITE_URL}/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
 `;
 });
@@ -123,4 +133,4 @@ sitemapXml += `</urlset>`;
 
 // Write to public folder
 fs.writeFileSync(SITEMAP_PATH, sitemapXml);
-console.log(`Generated comprehensive sitemap with ${routeList.length} URLs at ${SITEMAP_PATH}`);
+console.log(`Generated comprehensive image-enabled sitemap with ${routeList.length} URLs at ${SITEMAP_PATH}`);

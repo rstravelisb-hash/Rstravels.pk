@@ -426,8 +426,13 @@ function Home() {
         <FAQAccordion items={FAQS.slice(0, 5)} />
       </section>
 
+      {/* Organic Traffic Magnet Cluster */}
+      <section className="container-px mx-auto max-w-7xl">
+        <SEOBlock />
+      </section>
+
       {/* Contact */}
-      <section className="container-px mx-auto max-w-7xl pb-20">
+      <section className="container-px mx-auto max-w-7xl py-20">
         <div className="grid items-start gap-10 lg:grid-cols-2">
           <div>
             <SectionHeader

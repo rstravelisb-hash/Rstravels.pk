@@ -1,848 +1,1864 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://rstravels.pk/</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/about</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/visa-services</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/air-ticketing</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/hotel-booking</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/travel-insurance</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/passport-services</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/profile-assessment</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/consultation</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/umrah</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/pakistan-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/faq</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/testimonials</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/contact</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/privacy-policy</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/terms</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/thank-you</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/united-states</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/united-states/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/united-states/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/united-states/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/b1-b2-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/b1-b2-visa/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/b1-b2-visa/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/b1-b2-visa/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/united-kingdom</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/united-kingdom/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/united-kingdom/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/united-kingdom/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/standard-visitor-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/standard-visitor-visa/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/standard-visitor-visa/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/standard-visitor-visa/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/canada</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/canada/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/canada/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/canada/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/visitor-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/visitor-visa/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/visitor-visa/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/visitor-visa/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/middle-east</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/middle-east/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/middle-east/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/middle-east/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-asia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-asia/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-asia/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-asia/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/central-asia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/central-asia/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/central-asia/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/central-asia/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/north-africa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/north-africa/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/north-africa/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/north-africa/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/southern-africa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/southern-africa/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/southern-africa/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/southern-africa/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/east-asia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/east-asia/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/east-asia/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/east-asia/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-america</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-america/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-america/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-america/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/oceania</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/oceania/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/oceania/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/oceania/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/australia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/australia/visa/visit-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/australia/visa/tourist-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/australia/visa/business-visa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/germany</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/france</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/italy</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/spain</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/netherlands</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/switzerland</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/austria</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/belgium</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/denmark</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/greece</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/norway</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/portugal</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/sweden</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/czech-republic</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/estonia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/finland</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/hungary</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/iceland</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/latvia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/lithuania</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/luxembourg</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/malta</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/poland</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/slovakia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/slovenia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/liechtenstein</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/croatia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/bulgaria</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/schengen/romania</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-asia/pakistan</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-asia/thailand</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-asia/malaysia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-asia/sri-lanka</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-asia/maldives</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-asia/nepal</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-asia/indonesia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-asia/vietnam</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-asia/bangladesh</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-asia/cambodia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/central-asia/turkey</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/central-asia/azerbaijan</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/central-asia/uzbekistan</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/central-asia/kazakhstan</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/central-asia/kyrgyzstan</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/north-africa/egypt</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/north-africa/morocco</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/north-africa/tunisia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/north-africa/algeria</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/southern-africa/south-africa</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/southern-africa/mauritius</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/southern-africa/kenya</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/southern-africa/seychelles</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/southern-africa/zimbabwe</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/southern-africa/zambia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/southern-africa/tanzania</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/middle-east/united-arab-emirates</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/middle-east/saudi-arabia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/middle-east/oman</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/middle-east/kuwait</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/middle-east/qatar</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/middle-east/bahrain</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/middle-east/turkey</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/middle-east/jordan</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/middle-east/lebanon</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/east-asia/china</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/east-asia/japan</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/east-asia/south-korea</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/east-asia/taiwan</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/east-asia/hong-kong</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/east-asia/mongolia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/east-asia/macau</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/americas/mexico</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/americas/brazil</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/europe-others/ireland</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-america/brazil</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-america/argentina</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-america/colombia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-america/peru</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-america/chile</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-america/ecuador</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-america/bolivia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-america/uruguay</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-america/venezuela</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/south-america/paraguay</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/oceania/australia</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/oceania/new-zealand</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://rstravels.pk/countries/oceania/fiji</loc>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rstravels.pk/logo.png</image:loc>
+      <image:title>RS Travel and Tours Islamabad</image:title>
+      <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
+    </image:image>
   </url>
 </urlset>

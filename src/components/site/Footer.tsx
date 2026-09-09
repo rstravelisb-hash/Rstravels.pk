@@ -132,7 +132,37 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6">
+        {/* Outbound Authority Trust Network & Verification Hub */}
+        <div className="mt-12 pt-8 border-t border-white/5">
+          <p className="text-[10px] font-bold text-white/40 uppercase tracking-[0.2em] mb-4 text-center md:text-left">
+            Official Consular & Travel Authority Verification Portals:
+          </p>
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs text-white/50 justify-center md:justify-start">
+            <a href="https://www.iata.org" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+              <span>↗</span> IATA Official Member
+            </a>
+            <a href="https://www.gov.uk/browse/visas-immigration" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+              <span>↗</span> UK Visas & Immigration (UKVI)
+            </a>
+            <a href="https://ceac.state.gov" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+              <span>↗</span> US Department of State (CEAC)
+            </a>
+            <a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+              <span>↗</span> IRCC Canada Immigration
+            </a>
+            <a href="https://immi.homeaffairs.gov.au" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+              <span>↗</span> Australian Home Affairs
+            </a>
+            <a href="https://visa.nadra.gov.pk" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+              <span>↗</span> NADRA Pakistan E-Visa
+            </a>
+            <a href="https://www.nusuk.sa" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+              <span>↗</span> Saudi Nusuk Official Portal
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-8 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-[11px] font-medium text-white/30 tracking-wider">
             © {year} <span className="text-white/60 font-bold">{COMPANY.name.toUpperCase()}</span>. ALL RIGHTS RESERVED.
           </p>

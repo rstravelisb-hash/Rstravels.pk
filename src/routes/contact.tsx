@@ -12,7 +12,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Contact Pakistan's best visa consultancy. Visit RS Travel and Tours in Blue Area, Islamabad or reach us via phone +92 51 2021700, WhatsApp, or email. Open Mon-Sat 10AM-7PM. Expert visa & travel guidance.",
+          "Contact Pakistan's best visa consultancy. Visit RS Travel and Tours in Blue Area, Islamabad or reach us via phone +92 51 2000147, WhatsApp, or email. Open Mon-Sat 10AM-7PM. Expert visa & travel guidance.",
       },
       {
         name: "keywords",

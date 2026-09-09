@@ -202,10 +202,64 @@ function RootComponent() {
     numberOfEmployees: { "@type": "QuantitativeValue", value: "25+" },
   };
 
+  const pageIndexGraph = {
+    "@context": "https://schema.org",
+    "@graph": [
+      jsonLd,
+      {
+        "@type": "WebSite",
+        "@id": "https://rstravels.pk/#website",
+        "url": "https://rstravels.pk",
+        "name": "RS Travel and Tours",
+        "description": "Pakistan's #1 Visa Consultant & Travel Agency in Islamabad",
+        "publisher": { "@id": "https://rstravels.pk/#localbusiness" },
+        "inLanguage": ["en-PK", "en-US", "en-GB", "ur-PK"],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://rstravels.pk/countries?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "@id": "https://rstravels.pk/#navigation",
+        "name": [
+          "Visa Services",
+          "Destinations Hub",
+          "Air Ticketing",
+          "Umrah Packages 2026",
+          "Travel Insurance",
+          "Hotel Booking",
+          "Passport Services",
+          "Profile Assessment AI",
+          "Consultation",
+          "About Us",
+          "Contact"
+        ],
+        "url": [
+          "https://rstravels.pk/visa-services",
+          "https://rstravels.pk/countries",
+          "https://rstravels.pk/air-ticketing",
+          "https://rstravels.pk/umrah",
+          "https://rstravels.pk/travel-insurance",
+          "https://rstravels.pk/hotel-booking",
+          "https://rstravels.pk/passport-services",
+          "https://rstravels.pk/profile-assessment",
+          "https://rstravels.pk/consultation",
+          "https://rstravels.pk/about",
+          "https://rstravels.pk/contact"
+        ]
+      }
+    ]
+  };
+
   return (
     <div className="flex min-h-screen flex-col w-full max-w-full overflow-x-hidden">
       <HeadContent />
-      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      <script type="application/ld+json">{JSON.stringify(pageIndexGraph)}</script>
       <TopBar />
       <Navbar />
       <main className="flex-1">
