@@ -32,16 +32,16 @@ export function SEOBlock() {
             <MapPin size={14} className="text-accent" /> Islamabad & Rawalpindi Visa Hubs
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-medium text-white/70">
-            <li><Link to="/countries/uk" className="hover:text-accent transition-colors">→ UK Visit Visa Islamabad</Link></li>
-            <li><Link to="/countries/united-states" className="hover:text-accent transition-colors">→ USA B1/B2 Interview Prep</Link></li>
-            <li><Link to="/countries/schengen" className="hover:text-accent transition-colors">→ Schengen Visa Blue Area</Link></li>
-            <li><Link to="/countries/canada" className="hover:text-accent transition-colors">→ Canada TRV Portal Support</Link></li>
-            <li><Link to="/countries/australia" className="hover:text-accent transition-colors">→ Australia Subclass 600</Link></li>
-            <li><Link to="/countries/schengen/germany" className="hover:text-accent transition-colors">→ Germany Visa Gerry's</Link></li>
-            <li><Link to="/countries/schengen/italy" className="hover:text-accent transition-colors">→ Italy Visa Gerry's ISB</Link></li>
-            <li><Link to="/countries/schengen/spain" className="hover:text-accent transition-colors">→ Spain BLS Appointment</Link></li>
-            <li><Link to="/countries/middle-east/dubai" className="hover:text-accent transition-colors">→ Dubai 30/60 Days E-Visa</Link></li>
-            <li><Link to="/countries/south-asia/turkey" className="hover:text-accent transition-colors">→ Turkey Sticker Visa Agent</Link></li>
+            <li><Link to="/countries/$slug" params={{ slug: "united-kingdom" }} className="hover:text-accent transition-colors">→ UK Visit Visa Islamabad</Link></li>
+            <li><Link to="/countries/$slug" params={{ slug: "united-states" }} className="hover:text-accent transition-colors">→ USA B1/B2 Interview Prep</Link></li>
+            <li><Link to="/countries/$slug" params={{ slug: "schengen" }} className="hover:text-accent transition-colors">→ Schengen Visa Blue Area</Link></li>
+            <li><Link to="/countries/$slug" params={{ slug: "canada" }} className="hover:text-accent transition-colors">→ Canada TRV Portal Support</Link></li>
+            <li><Link to="/countries/$slug" params={{ slug: "australia" }} className="hover:text-accent transition-colors">→ Australia Subclass 600</Link></li>
+            <li><Link to="/countries/schengen/$country" params={{ country: "germany" }} className="hover:text-accent transition-colors">→ Germany Visa Gerry's</Link></li>
+            <li><Link to="/countries/schengen/$country" params={{ country: "italy" }} className="hover:text-accent transition-colors">→ Italy Visa Gerry's ISB</Link></li>
+            <li><Link to="/countries/schengen/$country" params={{ country: "spain" }} className="hover:text-accent transition-colors">→ Spain BLS Appointment</Link></li>
+            <li><Link to="/countries/middle-east/$country" params={{ country: "united-arab-emirates" }} className="hover:text-accent transition-colors">→ Dubai 30/60 Days E-Visa</Link></li>
+            <li><Link to="/countries/south-asia/$country" params={{ country: "thailand" }} className="hover:text-accent transition-colors">→ Thailand Tourist Visa Agent</Link></li>
           </ul>
         </div>
 
