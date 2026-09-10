@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const SITE_URL = 'https://rstravels.pk';
+const SITE_URL = 'https://rstravel.pk';
 const SITEMAP_PATH = path.resolve('public/sitemap.xml');
 const REGIONS_DIR = path.resolve('src/data/regions');
 

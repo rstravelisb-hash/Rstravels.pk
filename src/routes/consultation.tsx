@@ -24,11 +24,11 @@ export const Route = createFileRoute("/consultation")({
         property: "og:description",
         content: "15 minutes with a senior visa consultant — no obligation. Expert pathway & document checklist.",
       },
-      { property: "og:url", content: "https://rstravels.pk/consultation" },
+      { property: "og:url", content: "https://rstravel.pk/consultation" },
       { property: "og:type", content: "website" },
     ],
     links: [
-      { rel: "canonical", href: "https://rstravels.pk/consultation" },
+      { rel: "canonical", href: "https://rstravel.pk/consultation" },
     ],
   }),
   component: Consultation,

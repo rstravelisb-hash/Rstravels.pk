@@ -28,14 +28,14 @@ export const Route = createFileRoute("/hotel-booking")({
         property: "og:description",
         content: "Global hotel partners. Best rates for visa applications & holidays. Luxury to budget worldwide.",
       },
-      { property: "og:url", content: "https://rstravels.pk/hotel-booking" },
+      { property: "og:url", content: "https://rstravel.pk/hotel-booking" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Hotel Booking Agent Islamabad | RS Travel and Tours" },
       { name: "twitter:description", content: "Cheapest hotel reservations for visas & holidays from Islamabad." },
     ],
     links: [
-      { rel: "canonical", href: "https://rstravels.pk/hotel-booking" },
+      { rel: "canonical", href: "https://rstravel.pk/hotel-booking" },
     ],
   }),
   component: HotelBooking,
@@ -45,16 +45,16 @@ function HotelBooking() {
   const hotelSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://rstravels.pk/hotel-booking#service",
+    "@id": "https://rstravel.pk/hotel-booking#service",
     "name": "Worldwide Hotel Booking & Embassy Vouchers Islamabad",
     "serviceType": "Hotel Reservation & Travel Lodging",
     "description": "Embassy-verifiable hotel reservations and confirmed vouchers for Schengen, UK, US, and Canadian visa applications, as well as luxury stays in Makkah, Madinah, Dubai, and Europe.",
     "provider": {
       "@type": "TravelAgency",
-      "@id": "https://rstravels.pk/#organization",
+      "@id": "https://rstravel.pk/#organization",
       "name": "RS Travel and Tours",
       "telephone": "+92 51 2000147",
-      "url": "https://rstravels.pk/"
+      "url": "https://rstravel.pk/"
     },
     "areaServed": "Pakistan"
   };

@@ -5,10 +5,10 @@ function updateUrlsInFile(filePath) {
   if (!fs.existsSync(filePath)) return;
   let content = fs.readFileSync(filePath, 'utf-8');
   
-  // Replace https://rstravels.pk with https://rstravels.pk (avoiding www.www)
+  // Replace https://rstravel.pk with https://rstravel.pk (avoiding www.www)
   const updated = content
-    .replace(/https:\/\/rstravels\.pk/g, 'https://rstravels.pk')
-    .replace(/https:\/\/www\.www\.rstravels\.pk/g, 'https://rstravels.pk');
+    .replace(/https:\/\/rstravels\.pk/g, 'https://rstravel.pk')
+    .replace(/https:\/\/www\.www\.rstravels\.pk/g, 'https://rstravel.pk');
 
   if (updated !== content) {
     fs.writeFileSync(filePath, updated, 'utf-8');
@@ -30,7 +30,7 @@ function processDirectory(dir) {
   }
 }
 
-console.log("Starting www.rstravels.pk URL standardization across entire codebase...");
+console.log("Starting www.rstravel.pk URL standardization across entire codebase...");
 processDirectory(path.resolve('src'));
 processDirectory(path.resolve('public'));
 processDirectory(path.resolve('scripts'));

@@ -37,7 +37,7 @@ export function PageHero({
       "@type": "ListItem",
       position: index + 1,
       name: c.name,
-      ...(c.url ? { item: c.url.startsWith("http") ? c.url : `https://rstravels.pk${c.url}` } : {}),
+      ...(c.url ? { item: c.url.startsWith("http") ? c.url : `https://rstravel.pk${c.url}` } : {}),
     })),
   };
 

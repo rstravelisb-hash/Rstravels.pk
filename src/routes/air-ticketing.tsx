@@ -33,13 +33,13 @@ export const Route = createFileRoute("/air-ticketing")({
       { property: "og:site_name", content: "RS Travel and Tours" },
       { property: "og:title", content: "Best Air Ticketing Agency in Islamabad — Cheap International Flights | RS Travel and Tours" },
       { property: "og:description", content: "Book the cheapest international flights from Islamabad with IATA-certified RS Travel and Tours. Instant e-tickets on 300+ airlines. 24/7 WhatsApp support." },
-      { property: "og:url", content: "https://rstravels.pk/air-ticketing" },
+      { property: "og:url", content: "https://rstravel.pk/air-ticketing" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "#1 Air Ticketing Agency Islamabad — RS Travel and Tours" },
       { name: "twitter:description", content: "IATA-authorized. Cheapest flights from ISB to London, Dubai, Toronto, New York & more. Instant booking." },
     ],
     links: [
-      { rel: "canonical", href: "https://rstravels.pk/air-ticketing" },
+      { rel: "canonical", href: "https://rstravel.pk/air-ticketing" },
     ],
   }),
   component: AirTicketing,
@@ -51,16 +51,16 @@ function AirTicketing() {
     "@graph": [
       {
         "@type": "Service",
-        "@id": "https://rstravels.pk/air-ticketing#service",
+        "@id": "https://rstravel.pk/air-ticketing#service",
         "name": "IATA Air Ticketing & Flight Reservation Islamabad",
         "serviceType": "Domestic and International Flight Booking",
         "description": "IATA-authorized flight ticketing from Islamabad to London, Dubai, Toronto, New York, Jeddah, and 300+ worldwide destinations with instant live fares and student discounts.",
         "provider": {
           "@type": "TravelAgency",
-          "@id": "https://rstravels.pk/#organization",
+          "@id": "https://rstravel.pk/#organization",
           "name": "RS Travel and Tours",
           "telephone": "+92 51 2000147",
-          "url": "https://rstravels.pk/",
+          "url": "https://rstravel.pk/",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
@@ -72,7 +72,7 @@ function AirTicketing() {
       },
       {
         "@type": "FAQPage",
-        "@id": "https://rstravels.pk/air-ticketing#faq",
+        "@id": "https://rstravel.pk/air-ticketing#faq",
         "mainEntity": TICKETING_FAQS.slice(0, 5).map(f => ({
           "@type": "Question",
           "name": f.q,
@@ -389,12 +389,12 @@ function AirTicketing() {
               "@type": "TravelAgency",
               "name": "RS Travel and Tours",
               "alternateName": "RS Travel and Tours Air Ticketing",
-              "url": "https://rstravels.pk/air-ticketing",
-              "logo": "https://rstravels.pk/logo.png",
-              "image": "https://rstravels.pk/air_ticketing_hero_1777294022698.png",
+              "url": "https://rstravel.pk/air-ticketing",
+              "logo": "https://rstravel.pk/logo.png",
+              "image": "https://rstravel.pk/air_ticketing_hero_1777294022698.png",
               "description": "Islamabad's #1 IATA-authorized air ticketing agency. Cheap international flights, group bookings, student discounts, Umrah packages, and 24/7 WhatsApp support from Blue Area.",
               "telephone": "+92-51-2021700",
-              "email": "info@rstravels.pk",
+              "email": "info@rstravel.pk",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Office 6, Mezzanine Floor, Ratta Mansion Plaza, Fazal ul Haq Road, Blue Area",
@@ -407,7 +407,7 @@ function AirTicketing() {
               "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "10:00", "closes": "19:00" },
               "priceRange": "$$",
               "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "847", "bestRating": "5" },
-              "sameAs": ["https://www.facebook.com/profile.php?id=61572120569006", "https://www.instagram.com/rstravels.pk/", "https://www.linkedin.com/company/os-consultants/"]
+              "sameAs": ["https://www.facebook.com/profile.php?id=61572120569006", "https://www.instagram.com/rstravel.pk/", "https://www.linkedin.com/company/os-consultants/"]
             },
             {
               "@type": "FAQPage",
@@ -420,8 +420,8 @@ function AirTicketing() {
             {
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rstravels.pk" },
-                { "@type": "ListItem", "position": 2, "name": "Air Ticketing", "item": "https://rstravels.pk/air-ticketing" }
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rstravel.pk" },
+                { "@type": "ListItem", "position": 2, "name": "Air Ticketing", "item": "https://rstravel.pk/air-ticketing" }
               ]
             }
           ]

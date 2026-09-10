@@ -23,13 +23,13 @@ export const Route = createFileRoute("/travel-insurance")({
       { name: "geo.placename", content: "Islamabad" },
       { property: "og:title", content: "Best Travel Insurance Pakistan — Schengen Compliant | RS Travel and Tours" },
       { property: "og:description", content: "Instant Schengen-compliant travel insurance. Official partners of top insurers in Pakistan. €30,000+ medical cover." },
-      { property: "og:url", content: "https://rstravels.pk/travel-insurance" },
+      { property: "og:url", content: "https://rstravel.pk/travel-insurance" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:title", content: "Travel Insurance Pakistan | RS Travel and Tours" },
     ],
     links: [
-      { rel: "canonical", href: "https://rstravels.pk/travel-insurance" },
+      { rel: "canonical", href: "https://rstravel.pk/travel-insurance" },
     ],
   }),
   component: TravelInsurance,
@@ -39,16 +39,16 @@ function TravelInsurance() {
   const insuranceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://rstravels.pk/travel-insurance#service",
+    "@id": "https://rstravel.pk/travel-insurance#service",
     "name": "Schengen & Global Travel Medical Insurance Islamabad",
     "serviceType": "Embassy Approved Travel Insurance",
     "description": "Instant Schengen-compliant travel medical insurance with €30,000 to $100,000 coverage issued via Jubilee, Adamjee, and EFU from Blue Area, Islamabad.",
     "provider": {
       "@type": "TravelAgency",
-      "@id": "https://rstravels.pk/#organization",
+      "@id": "https://rstravel.pk/#organization",
       "name": "RS Travel and Tours",
       "telephone": "+92 51 2000147",
-      "url": "https://rstravels.pk/"
+      "url": "https://rstravel.pk/"
     },
     "areaServed": "Pakistan"
   };

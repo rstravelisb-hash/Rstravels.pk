@@ -97,13 +97,13 @@ function RootComponent() {
     description:
       "Pakistan's No.1 Travel Agency & World-Class Visa Consultant. IATA-accredited, 15+ years of excellence, high success rate. Expert in Schengen, USA, UK, Canada, Australia visas, cheap flights, Umrah packages & hotel bookings from Islamabad.",
     slogan: "Pakistan's No.1 Travel Agency — Your Gateway to the World",
-    image: "https://rstravels.pk/og-image.jpg",
+    image: "https://rstravel.pk/og-image.jpg",
     logo: {
       "@type": "ImageObject",
-      url: "https://rstravels.pk/logo.png"
+      url: "https://rstravel.pk/logo.png"
     },
-    "@id": "https://rstravels.pk/#localbusiness",
-    url: "https://rstravels.pk",
+    "@id": "https://rstravel.pk/#localbusiness",
+    url: "https://rstravel.pk",
     telephone: COMPANY.phone,
     email: COMPANY.email,
     priceRange: "$$",
@@ -167,7 +167,7 @@ function RootComponent() {
       COMPANY.socials.instagram,
       COMPANY.socials.linkedin,
       COMPANY.socials.twitter,
-      "https://rstravels.pk",
+      "https://rstravel.pk",
     ],
     aggregateRating: {
       "@type": "AggregateRating",
@@ -208,24 +208,24 @@ function RootComponent() {
       jsonLd,
       {
         "@type": "WebSite",
-        "@id": "https://rstravels.pk/#website",
-        "url": "https://rstravels.pk",
+        "@id": "https://rstravel.pk/#website",
+        "url": "https://rstravel.pk",
         "name": "RS Travel and Tours",
         "description": "Pakistan's #1 Visa Consultant & Travel Agency in Islamabad",
-        "publisher": { "@id": "https://rstravels.pk/#localbusiness" },
+        "publisher": { "@id": "https://rstravel.pk/#localbusiness" },
         "inLanguage": ["en-PK", "en-US", "en-GB", "ur-PK"],
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://rstravels.pk/countries?q={search_term_string}"
+            "urlTemplate": "https://rstravel.pk/countries?q={search_term_string}"
           },
           "query-input": "required name=search_term_string"
         }
       },
       {
         "@type": "SiteNavigationElement",
-        "@id": "https://rstravels.pk/#navigation",
+        "@id": "https://rstravel.pk/#navigation",
         "name": [
           "Visa Services",
           "Destinations Hub",
@@ -240,17 +240,17 @@ function RootComponent() {
           "Contact"
         ],
         "url": [
-          "https://rstravels.pk/visa-services",
-          "https://rstravels.pk/countries",
-          "https://rstravels.pk/air-ticketing",
-          "https://rstravels.pk/umrah",
-          "https://rstravels.pk/travel-insurance",
-          "https://rstravels.pk/hotel-booking",
-          "https://rstravels.pk/passport-services",
-          "https://rstravels.pk/profile-assessment",
-          "https://rstravels.pk/consultation",
-          "https://rstravels.pk/about",
-          "https://rstravels.pk/contact"
+          "https://rstravel.pk/visa-services",
+          "https://rstravel.pk/countries",
+          "https://rstravel.pk/air-ticketing",
+          "https://rstravel.pk/umrah",
+          "https://rstravel.pk/travel-insurance",
+          "https://rstravel.pk/hotel-booking",
+          "https://rstravel.pk/passport-services",
+          "https://rstravel.pk/profile-assessment",
+          "https://rstravel.pk/consultation",
+          "https://rstravel.pk/about",
+          "https://rstravel.pk/contact"
         ]
       }
     ]

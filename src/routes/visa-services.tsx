@@ -47,8 +47,8 @@ export const Route = createFileRoute("/visa-services")({
         content:
           "Expert visa consultancy for UK, USA, Canada, Schengen, Australia & 50+ countries. High approval rates and professional documentation from Blue Area, Islamabad.",
       },
-      { property: "og:image", content: "https://rstravels.pk/src/assets/hero-travel.jpg" },
-      { property: "og:url", content: "https://rstravels.pk/visa-services" },
+      { property: "og:image", content: "https://rstravel.pk/src/assets/hero-travel.jpg" },
+      { property: "og:url", content: "https://rstravel.pk/visa-services" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_PK" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -56,7 +56,7 @@ export const Route = createFileRoute("/visa-services")({
       { name: "twitter:description", content: "98% approval rate. UK, USA, Canada, Schengen & Australia visas from Islamabad." },
     ],
     links: [
-      { rel: "canonical", href: "https://rstravels.pk/visa-services" },
+      { rel: "canonical", href: "https://rstravel.pk/visa-services" },
     ],
   }),
   component: VisaServices,
@@ -68,15 +68,15 @@ function VisaServices() {
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://rstravels.pk/visa-services#service",
+    "@id": "https://rstravel.pk/visa-services#service",
     "name": "Visit & Tourist Visa Consultancy Islamabad",
     "serviceType": "International Visa Consultation & File Preparation",
     "description": "Comprehensive documentation, appointment scheduling, interview preparation, and file auditing for UK, USA, Canada, Schengen, and Australia visas.",
     "provider": {
       "@type": "TravelAgency",
-      "@id": "https://rstravels.pk/#organization",
+      "@id": "https://rstravel.pk/#organization",
       "name": "RS Travel and Tours",
-      "url": "https://rstravels.pk/",
+      "url": "https://rstravel.pk/",
       "telephone": "+92 51 2000147",
       "address": {
         "@type": "PostalAddress",

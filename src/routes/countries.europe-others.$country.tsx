@@ -24,7 +24,7 @@ export const Route = createFileRoute("/countries/europe-others/$country")({
       { name: "geo.placename", content: "Islamabad" },
       { property: "og:title", content: `${loaderData?.name || "Europe"} Visa Consultant Islamabad — Pakistan's #1 | RS Travel and Tours` },
       { property: "og:description", content: loaderData?.description || "" },
-      { property: "og:url", content: `https://rstravels.pk/countries/europe-others/${loaderData?.slug || ""}` },
+      { property: "og:url", content: `https://rstravel.pk/countries/europe-others/${loaderData?.slug || ""}` },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_PK" },
       { property: "og:site_name", content: "RS Travel and Tours — Pakistan's No.1 Travel Agency" },
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/countries/europe-others/$country")({
       { name: "twitter:image", content: loaderData?.image || "" },
      ],
     links: [
-      { rel: "canonical", href: `https://rstravels.pk/countries/europe-others/${loaderData?.slug || ""}` },
+      { rel: "canonical", href: `https://rstravel.pk/countries/europe-others/${loaderData?.slug || ""}` },
     ],
   }),
   component: EuropeOthersCountryPage,
