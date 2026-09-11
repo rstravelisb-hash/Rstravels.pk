@@ -4,7 +4,7 @@ import { Menu, X, Globe2, ChevronRight, ShieldCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NAV_LINKS, MORE_SERVICES } from "@/data/navigation";
 import { COMPANY } from "@/data/company";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.avif";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);

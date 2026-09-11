@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Globe2, Facebook, Instagram, Phone, Mail, MapPin, ShieldCheck, ArrowUpRight, Award } from "lucide-react";
 import { COMPANY } from "@/data/company";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.avif";
 import { cn } from "@/lib/utils";
 
 export function Footer() {

@@ -40,7 +40,7 @@ import { ALL_COUNTRIES } from "@/data/all-countries";
 import { COMPANY } from "@/data/company";
 import { COUNTRY_PATH_MAP } from "@/data/country-paths";
 import { DESTINATIONS } from "@/data/destinations";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.avif";
 
 type TripType = "round-trip" | "one-way" | "multi-city";
 

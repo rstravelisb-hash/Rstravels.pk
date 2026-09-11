@@ -56,7 +56,7 @@ export const Route = createFileRoute("/countries/$slug")({
       { property: "og:title", content: `${loaderData?.seoTitle || "Visa Consultant Islamabad"} | RS Travel and Tours` },
       { property: "og:description", content: loaderData?.seoDescription || "" },
       { property: "og:url", content: `https://rstravel.pk/countries/${loaderData?.slug || ""}` },
-      { property: "og:image", content: loaderData?.image || "https://rstravel.pk/logo.png" },
+      { property: "og:image", content: loaderData?.image || "https://rstravel.pk/logo.avif" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_PK" },
       { property: "og:site_name", content: "RS Travel and Tours — Pakistan's No.1 Travel Agency" },

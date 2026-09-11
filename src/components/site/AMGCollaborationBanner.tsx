@@ -1,5 +1,5 @@
 import { ExternalLink, Handshake, ShieldCheck, Globe, ArrowUpRight, CheckCircle2 } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.avif";
 
 export function AMGCollaborationBanner() {
   return (
