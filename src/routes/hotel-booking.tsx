@@ -21,7 +21,8 @@ export const Route = createFileRoute("/hotel-booking")({
         content:
           "best hotel booking agent islamabad, book hotel online pakistan, hotels in makkah near haram walking distance, haram view room makkah booking pkr, madinah hotel booking for umrah, jabal omar makkah hotel package, hilton suites makkah booking pakistan, clock tower fairmont makkah reservation, cheap hotel reservations for visa application ISB, schengen visa hotel booking islamabad, uk visa hotel reservation pakistan, dubai hotel booking from pakistan, international hotel reservations agent pakistan, luxury hotel booking islamabad, budget hotel booking pakistan, visa compliant hotel reservation letter, makkah clock tower hotel booking pkr, madinah shuttle service hotel umrah, 5 star makkah hotel near haram for umrah, europe hotel booking for schengen visa, turkey istanbul hotel booking islamabad, honeymoon hotel packages from islamabad",
       },
-      { name: "robots", content: "index, follow" },
+      { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
+      { name: "author", content: "RS Travel and Tours" },
       { name: "geo.region", content: "PK-IS" },
       { name: "geo.placename", content: "Islamabad" },
       { property: "og:title", content: "Best Hotel Booking Agent Islamabad — Worldwide Reservations | RS Travel and Tours" },
@@ -31,9 +32,13 @@ export const Route = createFileRoute("/hotel-booking")({
       },
       { property: "og:url", content: "https://rstravel.pk/hotel-booking" },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "en_PK" },
+      { property: "og:site_name", content: "RS Travel and Tours — Pakistan's No.1 Travel Agency" },
+      { property: "og:image", content: "https://rstravel.pk/og-image.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Hotel Booking Agent Islamabad | RS Travel and Tours" },
       { name: "twitter:description", content: "Cheapest hotel reservations for visas & holidays from Islamabad." },
+      { name: "twitter:image", content: "https://rstravel.pk/og-image.jpg" },
     ],
     links: [
       { rel: "canonical", href: "https://rstravel.pk/hotel-booking" },
