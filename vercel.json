@@ -32,6 +32,66 @@
       ],
       "destination": "https://rstravel.pk/:path*",
       "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/visa-services",
+      "permanent": true
+    },
+    {
+      "source": "/services/:path*",
+      "destination": "/visa-services",
+      "permanent": true
+    },
+    {
+      "source": "/visa",
+      "destination": "/visa-services",
+      "permanent": true
+    },
+    {
+      "source": "/flights",
+      "destination": "/air-ticketing",
+      "permanent": true
+    },
+    {
+      "source": "/hotels",
+      "destination": "/hotel-booking",
+      "permanent": true
+    },
+    {
+      "source": "/insurance",
+      "destination": "/travel-insurance",
+      "permanent": true
+    },
+    {
+      "source": "/passport",
+      "destination": "/passport-services",
+      "permanent": true
+    },
+    {
+      "source": "/assessment",
+      "destination": "/profile-assessment",
+      "permanent": true
+    },
+    {
+      "source": "/reviews",
+      "destination": "/testimonials",
+      "permanent": true
+    },
+    {
+      "source": "/faqs",
+      "destination": "/faq",
+      "permanent": true
     }
   ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
@@ -39,6 +99,10 @@
     {
       "source": "/(.*)",
       "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
         {
           "key": "X-Robots-Tag",
           "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"

@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { ServiceCrossLinksHub } from "@/components/site/InternalCrossLinks";
 import { ShieldCheck, HeartPulse, CalendarX2, Globe2, ArrowRight, CheckCircle2, Award, FileText, Briefcase } from "lucide-react";
 
 export const Route = createFileRoute("/travel-insurance")({
@@ -232,6 +233,11 @@ function TravelInsurance() {
                   Simply send us a picture of your passport via WhatsApp, or visit our office in Blue Area, Islamabad. Our agents will generate your official, verifiable travel insurance certificate within <strong>15 minutes</strong>.
                 </p>
               </div>
+            </div>
+
+            {/* Cross-Service Solutions Silo */}
+            <div className="mt-12">
+              <ServiceCrossLinksHub currentService="/travel-insurance" />
             </div>
 
             {/* E-E-A-T Travel Medical Compliance Section */}

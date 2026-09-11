@@ -1,8 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ArrowRight, ShieldCheck, Plane, Award, Sparkles, FileText } from "lucide-react";
-import heroImg from "@/assets/hero-travel.jpg";
-import { SEOBlock } from "./SEOBlock";
+import heroImg from "@/assets/hero-travel.avif";
 import { COUNTRIES } from "@/data/countries-data";
 import React, { Suspense } from "react";
 import { CountryCard } from "./CountryCard";
@@ -130,9 +129,6 @@ export function Hero() {
                 </div>
               ))}
             </div>
-
-            {/* SEO Content Block */}
-            <SEOBlock />
           </motion.div>
 
           <div className="flex flex-col gap-6 lg:gap-8 w-full max-w-full overflow-hidden">

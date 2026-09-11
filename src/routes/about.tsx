@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { ServiceCrossLinksHub } from "@/components/site/InternalCrossLinks";
+import { AMGCollaborationBanner } from "@/components/site/AMGCollaborationBanner";
 import { Award, Target, Eye, Users, Globe2, Sparkles, ArrowRight, ShieldCheck, Clock, Building2, MapPin, CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
@@ -28,12 +30,13 @@ export const Route = createFileRoute("/about")({
         content:
           "15+ years of excellence. 20,000+ happy clients. 98% approval rate. Learn about Pakistan's most trusted visa consultancy.",
       },
-      { property: "og:image", content: "https://rstravel.pk/src/assets/hero-travel.jpg" },
+      { property: "og:image", content: "https://rstravel.pk/og-image.jpg" },
       { property: "og:url", content: "https://rstravel.pk/about" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "About RS Travel and Tours | Pakistan's #1 Since 2009" },
       { name: "twitter:description", content: "15+ years, 20K+ clients, 98% approval rate. The story of Pakistan's top visa agency." },
+      { name: "twitter:image", content: "https://rstravel.pk/og-image.jpg" },
     ],
     links: [
       { rel: "canonical", href: "https://rstravel.pk/about" },
@@ -236,6 +239,9 @@ function About() {
         </div>
       </section>
 
+      {/* AMG Visa Collaboration Banner */}
+      <AMGCollaborationBanner />
+
       {/* Why Choose Us / Global Expertise */}
       <section className="bg-primary/5 py-24 border-t border-primary/10">
         <div className="container-px mx-auto max-w-7xl">
@@ -286,6 +292,11 @@ function About() {
                 ))}
               </div>
             </div>
+          </div>
+
+          {/* Companion Services Internal Link Hub */}
+          <div className="mt-16">
+            <ServiceCrossLinksHub currentService="About RS Travels" />
           </div>
 
           {/* E-E-A-T Experience & Trust Authority Section */}

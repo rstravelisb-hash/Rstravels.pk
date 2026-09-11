@@ -6,6 +6,7 @@ import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import { FAQAccordion } from "@/components/site/FAQAccordion";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { ServiceCrossLinksHub } from "@/components/site/InternalCrossLinks";
 
 const TICKETING_FAQS = [
   { q: "Is RS Travel and Tours an IATA-authorized travel agency?", a: "Yes. RS Travel and Tours holds full IATA accreditation, allowing us to issue tickets directly on 300+ airlines worldwide with guaranteed fare accuracy and instant e-ticket confirmation." },
@@ -370,6 +371,9 @@ function AirTicketing() {
         <div className="rounded-[2.5rem] bg-card/30 backdrop-blur-xl border border-border/50 p-6 md:p-10 shadow-xl">
           <FAQAccordion items={TICKETING_FAQS} />
         </div>
+
+        {/* Cross-Service Travel Solutions Silo */}
+        <ServiceCrossLinksHub currentService="/air-ticketing" />
 
         {/* E-E-A-T IATA & Airline Certification Section */}
         <EEATExpertiseSection

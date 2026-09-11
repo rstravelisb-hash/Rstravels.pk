@@ -5,6 +5,7 @@ import { CheckCircle2, FileText, Banknote, Clock, MapPin } from "lucide-react";
 import { ContactForm } from "@/components/site/ContactForm";
 import { BreadcrumbSchema } from "@/components/site/BreadcrumbSchema";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { DestinationCrossLinks } from "@/components/site/InternalCrossLinks";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import { COMPANY } from "@/data/site";
@@ -152,10 +153,17 @@ function VisaSubPage() {
           </div>
         </div>
 
+        {/* Cross-Service & Related Destinations Hub */}
+        <DestinationCrossLinks
+          countryName={destination.name}
+          countrySlug={destination.slug}
+          isSchengen={destination.slug === "schengen"}
+        />
+
         {/* E-E-A-T Quality & Consular Authority Section */}
         <EEATExpertiseSection
           countryName={destination.name}
-          serviceName={`${destination.name} ${visa.name} Filing & Documentation`}
+          serviceName={`${destination.name} ${visa.name} Filing & Processing`}
           consultantRole="Senior Consular & Visa Review Officer"
         />
       </section>

@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { ServiceCrossLinksHub } from "@/components/site/InternalCrossLinks";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import { Hotel, Crown, Wallet, Globe2, ArrowRight } from "lucide-react";
@@ -132,6 +133,11 @@ function HotelBooking() {
               the best rates. Stop searching endlessly online; let the best travel agent for hotels
               in Blue Area handle your itinerary seamlessly.
             </p>
+          </div>
+
+          {/* Cross-Service Solutions Silo */}
+          <div className="mt-12">
+            <ServiceCrossLinksHub currentService="/hotel-booking" />
           </div>
 
           {/* E-E-A-T Hotel & Consular Voucher Section */}

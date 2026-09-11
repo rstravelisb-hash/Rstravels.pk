@@ -5,6 +5,7 @@ import { CheckCircle2, FileText, Globe2, ArrowRight } from "lucide-react";
 import { ContactForm } from "@/components/site/ContactForm";
 import { BreadcrumbSchema } from "@/components/site/BreadcrumbSchema";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { DestinationCrossLinks } from "@/components/site/InternalCrossLinks";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import { COMPANY } from "@/data/company";
@@ -157,6 +158,13 @@ function SchengenCountryPage() {
             </div>
           </div>
         </div>
+
+        {/* Cross-Service & Related Destinations Hub */}
+        <DestinationCrossLinks
+          countryName={country.name}
+          countrySlug={country.slug}
+          isSchengen={true}
+        />
 
         {/* E-E-A-T Authority Module */}
         <EEATExpertiseSection

@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { FAQAccordion } from "@/components/site/FAQAccordion";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { ServiceCrossLinksHub } from "@/components/site/InternalCrossLinks";
 import { HelpCircle, MessageCircle, ArrowRight, Sparkles } from "lucide-react";
 
 // Highly SEO-optimized FAQs targeting top search intents in Pakistan
@@ -147,6 +148,11 @@ function FAQPage() {
                 </a>
               </div>
             </div>
+          </div>
+
+          {/* Cross-Service Travel Solutions Silo */}
+          <div className="mt-16">
+            <ServiceCrossLinksHub currentService="/faq" />
           </div>
 
           {/* E-E-A-T Editorial Verification Module */}

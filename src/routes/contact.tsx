@@ -31,12 +31,13 @@ export const Route = createFileRoute("/contact")({
         content:
           "Visit us at Blue Area, Islamabad. Expert help for Schengen, UK, USA, Canada & Australia visas. WhatsApp, phone & walk-in available.",
       },
-      { property: "og:image", content: "https://rstravel.pk/src/assets/hero-travel.jpg" },
+      { property: "og:image", content: "https://rstravel.pk/og-image.jpg" },
       { property: "og:url", content: "https://rstravel.pk/contact" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Contact Pakistan's #1 Visa Agency | RS Travel and Tours" },
       { name: "twitter:description", content: "Blue Area, Islamabad. Phone, WhatsApp & walk-in consultations available." },
+      { name: "twitter:image", content: "https://rstravel.pk/og-image.jpg" },
     ],
     links: [
       { rel: "canonical", href: "https://rstravel.pk/contact" },

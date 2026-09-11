@@ -9,6 +9,7 @@ import { ContactForm } from "@/components/site/ContactForm";
 import { Reveal } from "@/components/site/Reveal";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import { SEOBlock } from "@/components/site/SEOBlock";
+import { AMGCollaborationBanner } from "@/components/site/AMGCollaborationBanner";
 import { DESTINATIONS } from "@/data/destinations";
 import { COMPANY } from "@/data/company";
 import { COUNTRIES } from "@/data/countries-data";
@@ -74,7 +75,7 @@ export const Route = createFileRoute("/")({
         content:
           "IATA-accredited travel agency in Islamabad. Expert Schengen, USA, UK, Canada & Australia visa consultancy. Cheap flights, Umrah packages & hotel bookings. 98% approval rate.",
       },
-      { property: "og:image", content: "https://rstravel.pk/src/assets/hero-travel.jpg" },
+      { property: "og:image", content: "https://rstravel.pk/og-image.jpg" },
       { property: "og:url", content: "https://rstravel.pk/" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_PK" },
@@ -91,7 +92,7 @@ export const Route = createFileRoute("/")({
         content:
           "IATA-accredited. 98% visa approval rate. Schengen, UK, USA, Canada & Australia visas from Islamabad. Cheap flights & Umrah packages.",
       },
-      { name: "twitter:image", content: "https://rstravel.pk/src/assets/hero-travel.jpg" },
+      { name: "twitter:image", content: "https://rstravel.pk/og-image.jpg" },
     ],
     links: [
       { rel: "canonical", href: "https://rstravel.pk/" },
@@ -150,7 +151,7 @@ function Home() {
     alternateName: ["RS Travels", "RS Travel and Tours Islamabad", "RS Travels PK"],
     url: "https://rstravel.pk/",
     logo: "https://rstravel.pk/logo.png",
-    image: "https://rstravel.pk/src/assets/hero-travel.jpg",
+    image: "https://rstravel.pk/og-image.jpg",
     description: "Pakistan's top travel agency and visa consultancy in Blue Area, Islamabad. Specialized in UK, USA, Canada, Schengen, and Australia visit visas, verified flight ticketing, and holiday tour packages.",
     priceRange: "$$",
     telephone: COMPANY.phone,
@@ -426,6 +427,9 @@ function Home() {
         </div>
         <FAQAccordion items={FAQS.slice(0, 5)} />
       </section>
+
+      {/* Global Strategic Collaboration Banner with AMG Visa */}
+      <AMGCollaborationBanner />
 
       {/* Organic Traffic Magnet Cluster */}
       <section className="container-px mx-auto max-w-7xl">

@@ -1,16 +1,16 @@
-import schengenImg from "@/assets/dest-schengen.jpg";
-import usaImg from "@/assets/dest-usa.jpg";
-import ukImg from "@/assets/dest-uk.jpg";
-import canadaImg from "@/assets/dest-canada.jpg";
-import australiaImg from "@/assets/dest-australia.jpg";
-import nzImg from "@/assets/dest-nz.jpg";
-import qatarImg from "@/assets/dest-qatar.jpg";
-import bahrainImg from "@/assets/dest-bahrain.jpg";
-import middleEastImg from "@/assets/dest-middleeast.jpg";
-import southAsiaImg from "@/assets/dest-southasia.jpg";
-import centralAsiaImg from "@/assets/dest-centralasia.jpg";
-import northAfricaImg from "@/assets/dest-northafrica.jpg";
-import southAfricaImg from "@/assets/dest-southafrica.jpg";
+import schengenImg from "@/assets/dest-schengen.avif";
+import usaImg from "@/assets/dest-usa.avif";
+import ukImg from "@/assets/dest-uk.avif";
+import canadaImg from "@/assets/dest-canada.avif";
+import australiaImg from "@/assets/dest-australia.avif";
+import nzImg from "@/assets/dest-nz.avif";
+import qatarImg from "@/assets/dest-qatar.avif";
+import bahrainImg from "@/assets/dest-bahrain.avif";
+import middleEastImg from "@/assets/dest-middleeast.avif";
+import southAsiaImg from "@/assets/dest-southasia.avif";
+import centralAsiaImg from "@/assets/dest-centralasia.avif";
+import northAfricaImg from "@/assets/dest-northafrica.avif";
+import southAfricaImg from "@/assets/dest-southafrica.avif";
 
 export type VisaType = {
   slug: string;

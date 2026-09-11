@@ -70,9 +70,53 @@ function NotFoundComponent() {
   );
 }
 
+function RootErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+  return (
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0f1d] px-4 py-20">
+      <div className="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-rose-500/20 blur-[120px] pointer-events-none" />
+      <div className="absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-primary/20 blur-[120px] pointer-events-none" />
+
+      <div className="relative z-10 max-w-xl text-center px-6 py-12 rounded-[2.5rem] bg-slate-900/70 backdrop-blur-2xl border border-slate-700/50 shadow-2xl">
+        <div className="inline-flex items-center gap-2 rounded-full border border-rose-500/30 bg-rose-500/10 px-4 py-1.5 text-xs font-black uppercase tracking-widest text-rose-400 mb-6">
+          <span className="h-2 w-2 rounded-full bg-rose-500 animate-pulse" />
+          Server Encountered An Exception
+        </div>
+
+        <h1 className="text-7xl font-black tracking-tight text-white/90 drop-shadow-2xl">
+          5<span className="text-rose-500">0</span>0
+        </h1>
+
+        <h2 className="mt-4 text-2xl font-black text-white uppercase tracking-tight">
+          Application Temporary Stalled
+        </h2>
+
+        <p className="mt-3 text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
+          We encountered a temporary processing hiccup. You can retry loading this route or return to the main dashboard.
+        </p>
+
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <button
+            onClick={() => reset()}
+            className="w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-primary px-8 py-3.5 text-sm font-bold text-white shadow-glow hover:bg-primary/90 transition-all cursor-pointer"
+          >
+            Retry Action
+          </button>
+          <Link
+            to="/"
+            className="w-full sm:w-auto inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-8 py-3.5 text-sm font-bold text-white hover:bg-white/10 transition-all"
+          >
+            Return to Homepage
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export const Route = createRootRoute({
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
+  errorComponent: RootErrorComponent,
 });
 
 function RootComponent() {
@@ -111,7 +155,7 @@ function RootComponent() {
     paymentAccepted: "Cash, Bank Transfer, JazzCash, EasyPaisa, Credit Card",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Office no 6 Meznine floor Ratta Mansion Fazal-eHaq Road Blue Area",
+      streetAddress: "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
       addressLocality: "Islamabad",
       addressRegion: "Islamabad Capital Territory",
       postalCode: "44000",

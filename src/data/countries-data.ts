@@ -1,16 +1,16 @@
-import schengenImg from "@/assets/dest-schengen.jpg";
-import usaImg from "@/assets/dest-usa.jpg";
-import ukImg from "@/assets/dest-uk.jpg";
-import canadaImg from "@/assets/dest-canada.jpg";
-import auImg from "@/assets/dest-australia.jpg";
-import nzImg from "@/assets/dest-nz.jpg";
-import qatarImg from "@/assets/dest-qatar.jpg";
-import bahrainImg from "@/assets/dest-bahrain.jpg";
-import meImg from "@/assets/dest-middleeast.jpg";
-import saImg from "@/assets/dest-southasia.jpg";
-import caImg from "@/assets/dest-centralasia.jpg";
-import naImg from "@/assets/dest-northafrica.jpg";
-import safImg from "@/assets/dest-southafrica.jpg";
+import schengenImg from "@/assets/dest-schengen.avif";
+import usaImg from "@/assets/dest-usa.avif";
+import ukImg from "@/assets/dest-uk.avif";
+import canadaImg from "@/assets/dest-canada.avif";
+import auImg from "@/assets/dest-australia.avif";
+import nzImg from "@/assets/dest-nz.avif";
+import qatarImg from "@/assets/dest-qatar.avif";
+import bahrainImg from "@/assets/dest-bahrain.avif";
+import meImg from "@/assets/dest-middleeast.avif";
+import saImg from "@/assets/dest-southasia.avif";
+import caImg from "@/assets/dest-centralasia.avif";
+import naImg from "@/assets/dest-northafrica.avif";
+import safImg from "@/assets/dest-southafrica.avif";
 
 export const COUNTRIES = [
   {

@@ -4,6 +4,7 @@ import { SectionHeader } from "@/components/site/SectionHeader";
 import { Reveal } from "@/components/site/Reveal";
 import { ServiceCard } from "@/components/site/ServiceCard";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { ServiceCrossLinksHub } from "@/components/site/InternalCrossLinks";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import {
@@ -47,13 +48,14 @@ export const Route = createFileRoute("/visa-services")({
         content:
           "Expert visa consultancy for UK, USA, Canada, Schengen, Australia & 50+ countries. High approval rates and professional documentation from Blue Area, Islamabad.",
       },
-      { property: "og:image", content: "https://rstravel.pk/src/assets/hero-travel.jpg" },
+      { property: "og:image", content: "https://rstravel.pk/og-image.jpg" },
       { property: "og:url", content: "https://rstravel.pk/visa-services" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_PK" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "#1 Visa Consultant Islamabad | RS Travel and Tours" },
       { name: "twitter:description", content: "98% approval rate. UK, USA, Canada, Schengen & Australia visas from Islamabad." },
+      { name: "twitter:image", content: "https://rstravel.pk/og-image.jpg" },
     ],
     links: [
       { rel: "canonical", href: "https://rstravel.pk/visa-services" },
@@ -409,6 +411,9 @@ function VisaServices() {
               </div>
             </div>
           </Reveal>
+
+          {/* Companion Consular & Travel Solutions Silo */}
+          <ServiceCrossLinksHub currentService="/visa-services" />
 
           {/* E-E-A-T Quality & Consular Authority Section */}
           <EEATExpertiseSection

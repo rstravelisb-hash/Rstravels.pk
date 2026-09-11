@@ -3,6 +3,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { ContactForm } from "@/components/site/ContactForm";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
+import { ServiceCrossLinksHub } from "@/components/site/InternalCrossLinks";
 import { CheckCircle2, FileText, Globe2, ArrowRight } from "lucide-react";
 import { COMPANY } from "@/data/site";
 
@@ -115,6 +116,9 @@ function PakistanVisaPage() {
             </div>
           </div>
         </div>
+
+        {/* Cross-Service Solutions Silo */}
+        <ServiceCrossLinksHub currentService="/pakistan-visa" />
       </section>
 
       <section className="bg-secondary/30 py-20 border-t border-border">

@@ -3,6 +3,8 @@ import { CENTRAL_ASIA_COUNTRIES } from "@/data/regions/central-asia_countries";
 import { PageHero } from "@/components/site/PageHero";
 import { CheckCircle2, FileText, Globe2 } from "lucide-react";
 import { ContactForm } from "@/components/site/ContactForm";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { DestinationCrossLinks } from "@/components/site/InternalCrossLinks";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import { COMPANY } from "@/data/company";
@@ -147,6 +149,18 @@ function CentralAsiaCountryPage() {
             </div>
           </div>
         </div>
+
+        {/* Cross-Service & Related Destinations Hub */}
+        <DestinationCrossLinks
+          countryName={country.name}
+          countrySlug={country.slug}
+        />
+
+        {/* E-E-A-T Authority Module */}
+        <EEATExpertiseSection
+          countryName={country.name}
+          serviceName={`${country.name} Tourist & Business Visa Filing`}
+        />
       </section>
 
       {/* Trust & Contact Section */}

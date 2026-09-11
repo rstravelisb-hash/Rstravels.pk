@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { CountryCard } from "@/components/site/CountryCard";
 import { Reveal } from "@/components/site/Reveal";
+import { ServiceCrossLinksHub } from "@/components/site/InternalCrossLinks";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import { DESTINATIONS } from "@/data/destinations";
@@ -29,11 +31,13 @@ export const Route = createFileRoute("/countries/")({
         content:
           "Expert visa consultancy for North America, Europe, Oceania, Asia, Middle East & Africa. 98% approval rate from Islamabad.",
       },
+      { property: "og:image", content: "https://rstravel.pk/og-image.jpg" },
       { property: "og:url", content: "https://rstravel.pk/countries" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "50+ Visa Destinations | RS Travel and Tours Pakistan" },
       { name: "twitter:description", content: "USA, UK, Canada, Schengen, Australia & 50+ more. Apply from Islamabad." },
+      { name: "twitter:image", content: "https://rstravel.pk/og-image.jpg" },
     ],
     links: [
       { rel: "canonical", href: "https://rstravel.pk/countries" },
@@ -136,6 +140,21 @@ function CountriesPage() {
                 ensuring fast turnarounds for your holiday or business trip.
               </p>
             </div>
+          </div>
+
+          {/* Internal Cross Links */}
+          <div className="pt-10">
+            <ServiceCrossLinksHub currentService="Destinations" />
+          </div>
+
+          {/* E-E-A-T Section */}
+          <div className="pt-6">
+            <EEATExpertiseSection
+              countryName="Worldwide Visa Destinations"
+              serviceName="Global Visa Consultation & International Route Planning"
+              consultantRole="Head of Global Visas & Foreign Embassy Liaison"
+              lastUpdated="September 2026"
+            />
           </div>
         </div>
       </section>

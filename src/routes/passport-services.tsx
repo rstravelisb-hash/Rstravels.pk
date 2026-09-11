@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { ServiceCrossLinksHub } from "@/components/site/InternalCrossLinks";
 import { BookUser, RefreshCcw, Flag, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/passport-services")({
@@ -130,6 +132,21 @@ function PassportServices() {
               top processing agency in Blue Area for secure, confidential, and fast passport
               handling.
             </p>
+          </div>
+
+          {/* Cross-Service Travel Solutions Silo */}
+          <div className="mt-12">
+            <ServiceCrossLinksHub currentService="/passport-services" />
+          </div>
+
+          {/* E-E-A-T Passport & Identity Authority */}
+          <div className="mt-12">
+            <EEATExpertiseSection
+              countryName="Pakistan & USA"
+              serviceName="Official Passport Processing, Renewals & Consular Documentation"
+              consultantRole="Senior Document Verification & Consular Officer"
+              lastUpdated="September 2026"
+            />
           </div>
         </div>
       </section>

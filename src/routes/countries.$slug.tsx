@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { ContactForm } from "@/components/site/ContactForm";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { DestinationCrossLinks } from "@/components/site/InternalCrossLinks";
 import { BreadcrumbSchema } from "@/components/site/BreadcrumbSchema";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
@@ -1034,6 +1035,13 @@ function DestinationHub() {
             </Accordion>
           </div>
         )}
+
+        {/* Cross-Service and Related Destinations Link Silo */}
+        <DestinationCrossLinks
+          countryName={dest.name}
+          countrySlug={dest.slug}
+          isSchengen={dest.slug === "schengen"}
+        />
 
         {/* E-E-A-T Compliance & Authority Module */}
         <EEATExpertiseSection

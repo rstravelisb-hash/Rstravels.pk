@@ -49,13 +49,17 @@ export const Route = createFileRoute("/profile-assessment")({
       // OpenGraph
       { property: "og:title", content: "World's #1 Visa Success Probability AI | Profile Assessment" },
       { property: "og:description", content: "Don't risk a refusal. Run your profile through our Global Visa Audit AI before applying to USA, UK, or Schengen." },
+      { property: "og:image", content: "https://rstravel.pk/og-image.jpg" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://rstravel.pk/profile-assessment" },
       // Twitter
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Visa Success Probability AI | Global Audit" },
       { name: "twitter:description", content: "Assess your global visa chances in 60 seconds." },
-      { name: "robots", content: "index, follow" },
+      { name: "twitter:image", content: "https://rstravel.pk/og-image.jpg" },
+      { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
+      { name: "geo.region", content: "PK-IS" },
+      { name: "geo.placename", content: "Islamabad" },
     ],
     links: [
       { rel: "canonical", href: "https://rstravel.pk/profile-assessment" },

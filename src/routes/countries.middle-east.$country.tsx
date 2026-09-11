@@ -3,6 +3,8 @@ import { MIDDLE_EAST_COUNTRIES } from "@/data/regions/middle-east_countries";
 import { PageHero } from "@/components/site/PageHero";
 import { CheckCircle2, FileText, Globe2, ArrowRight } from "lucide-react";
 import { ContactForm } from "@/components/site/ContactForm";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { DestinationCrossLinks } from "@/components/site/InternalCrossLinks";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import { COMPANY } from "@/data/company";
@@ -127,6 +129,18 @@ function MiddleEastCountryPage() {
             </div>
           </div>
         </div>
+
+        {/* Cross-Service & Related Destinations Hub */}
+        <DestinationCrossLinks
+          countryName={country.name}
+          countrySlug={country.slug}
+        />
+
+        {/* E-E-A-T Authority Module */}
+        <EEATExpertiseSection
+          countryName={country.name}
+          serviceName={`${country.name} Middle East Tourist & Business Visa Filing`}
+        />
       </section>
 
       <section className="bg-secondary/30 py-20 border-t border-border">

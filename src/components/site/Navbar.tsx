@@ -2,7 +2,7 @@ import { Link, useLocation } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X, Globe2, ChevronRight, ShieldCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { NAV_LINKS } from "@/data/navigation";
+import { NAV_LINKS, MORE_SERVICES } from "@/data/navigation";
 import { COMPANY } from "@/data/company";
 import logo from "@/assets/logo.png";
 
@@ -181,21 +181,46 @@ export function Navbar() {
 
                 <nav className="flex-1 overflow-y-auto p-4 custom-scrollbar">
                   <div className="space-y-1">
+                    <p className="px-4 py-1 text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Main Navigation</p>
                     {NAV_LINKS.map((l, i) => (
                       <motion.div
                         key={l.to}
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: i * 0.03 + 0.1 }}
+                        transition={{ delay: i * 0.02 + 0.05 }}
                       >
                         <Link
                           to={l.to}
                           activeOptions={{ exact: l.to === "/" }}
                           activeProps={{ className: "bg-primary/5 text-primary" }}
-                          className="flex items-center justify-between rounded-xl px-5 py-4 text-sm font-semibold text-foreground/80 transition-colors hover:bg-muted"
+                          className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-foreground/80 transition-colors hover:bg-muted"
                         >
                           {l.label}
-                          <ChevronRight size={18} className="opacity-40" />
+                          <ChevronRight size={16} className="opacity-40" />
+                        </Link>
+                      </motion.div>
+                    ))}
+
+                    <div className="pt-3 pb-1 border-t border-border mt-3">
+                      <p className="px-4 py-1 text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Consular & Travel Services</p>
+                    </div>
+                    {MORE_SERVICES.map((s, i) => (
+                      <motion.div
+                        key={s.to}
+                        initial={{ opacity: 0, x: 20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: (NAV_LINKS.length + i) * 0.02 + 0.05 }}
+                      >
+                        <Link
+                          to={s.to}
+                          activeProps={{ className: "bg-primary/5 text-primary" }}
+                          className="flex items-center justify-between rounded-xl px-4 py-2.5 text-xs font-semibold text-foreground/70 transition-colors hover:bg-muted"
+                        >
+                          <div className="flex flex-col">
+                            <span>{s.label}</span>
+                            <span className="text-[10px] font-normal text-muted-foreground">{s.desc}</span>
+                          </div>
+                          <ChevronRight size={14} className="opacity-40 shrink-0 ml-2" />
                         </Link>
                       </motion.div>
                     ))}

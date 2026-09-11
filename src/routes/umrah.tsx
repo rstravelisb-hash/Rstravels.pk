@@ -3,6 +3,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { SectionHeader } from "@/components/site/SectionHeader";
 import { Reveal } from "@/components/site/Reveal";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
+import { ServiceCrossLinksHub } from "@/components/site/InternalCrossLinks";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import {
@@ -21,7 +22,7 @@ import {
   Award,
   BadgeCheck
 } from "lucide-react";
-import umrahHero from "@/assets/umrah-hero.png";
+import umrahHero from "@/assets/umrah-hero.avif";
 
 export const Route = createFileRoute("/umrah")({
   head: () => ({
@@ -46,13 +47,14 @@ export const Route = createFileRoute("/umrah")({
         content:
           "Trusted by 5000+ families. Economy to luxury Umrah packages from Islamabad with visa, flights & premium hotels near Haram.",
       },
-      { property: "og:image", content: "/src/assets/umrah-hero.png" },
+      { property: "og:image", content: "https://rstravel.pk/og-image.jpg" },
       { property: "og:url", content: "https://rstravel.pk/umrah" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_PK" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "#1 Umrah Packages Pakistan 2026 | RS Travel and Tours" },
       { name: "twitter:description", content: "Economy to 5-Star luxury. Visa, flights & Haram-facing hotels from Islamabad." },
+      { name: "twitter:image", content: "https://rstravel.pk/og-image.jpg" },
     ],
     links: [
       { rel: "canonical", href: "https://rstravel.pk/umrah" },
@@ -441,6 +443,9 @@ function UmrahPage() {
               ))}
             </div>
           </div>
+
+          {/* Cross-Service Travel Solutions */}
+          <ServiceCrossLinksHub currentService="/umrah" />
 
           {/* E-E-A-T Religious Pilgrimage & Consular Authority */}
           <EEATExpertiseSection
