@@ -9,6 +9,8 @@ import { Award, Target, Eye, Users, Globe2, Sparkles, ArrowRight, ShieldCheck, C
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
+      { charSet: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1.0" },
       { title: "About RS Travel and Tours — Pakistan's #1 Visa & Travel Agency Since 2009 | Islamabad" },
       {
         name: "description",
@@ -45,30 +47,75 @@ export const Route = createFileRoute("/about")({
   component: About,
 });
 
+const ABOUT_FAQS = [
+  {
+    q: "Why is RS Travel and Tours regarded as Islamabad's top visa consultancy?",
+    a: "With over 15 years of dedicated operations in Blue Area Islamabad, RS Travel and Tours maintains an industry-leading 98% visa approval rate across Schengen, UK, USA, Canada, and Australian visitor streams through rigorous file auditing, genuine itinerary planning, and personalized interview preparation."
+  },
+  {
+    q: "Is RS Travel and Tours fully accredited by IATA?",
+    a: "Yes. We are an IATA-accredited agency equipped with direct Global Distribution Systems (GDS), enabling instant, verified flight bookings, flexible ticketing, and official reservation proof for international embassies."
+  },
+  {
+    q: "Where is the RS Travel head office located and what are the working hours?",
+    a: "Our central consultancy headquarters is located at Office #6, Mezzanine Floor, Ratta Mansion, Fazal-e-Haq Road, Blue Area, Islamabad (44000). We welcome clients Monday to Saturday from 10:00 AM to 7:00 PM."
+  },
+  {
+    q: "Do you offer tailored assistance for previous visa refusals?",
+    a: "Yes. Our senior case strategists specialize in reviewing refusal notices under UK Immigration Rules, Section 214(b) for US visas, or Regulation 810/2009 for Schengen visas, reconstructing your documentation to address prior concerns effectively."
+  }
+];
+
 function About() {
   const aboutSchema = {
     "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "@id": "https://rstravel.pk/about#webpage",
-    "url": "https://rstravel.pk/about",
-    "name": "About RS Travel and Tours Islamabad",
-    "mainEntity": {
-      "@type": "TravelAgency",
-      "@id": "https://rstravel.pk/#organization",
-      "name": "RS Travel and Tours",
-      "foundingDate": "2009",
-      "description": "Pakistan's premier visit visa consultancy and IATA travel agency based in Blue Area, Islamabad with over 15 years of consular experience and 20,000+ satisfied clients.",
-      "telephone": "+92 51 2000147",
-      "email": "info@rstravel.pk",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
-        "addressLocality": "Islamabad",
-        "addressRegion": "ICT",
-        "postalCode": "44000",
-        "addressCountry": "PK"
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "@id": "https://rstravel.pk/about#webpage",
+        "url": "https://rstravel.pk/about",
+        "name": "About RS Travel and Tours Islamabad",
+        "description": "Learn about Pakistan's premier visa consultancy and IATA travel agency established in 2009.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://rstravel.pk/#website"
+        },
+        "mainEntity": {
+          "@type": "TravelAgency",
+          "@id": "https://rstravel.pk/#organization"
+        }
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://rstravel.pk/#organization",
+        "name": "RS Travel and Tours",
+        "foundingDate": "2009",
+        "description": "Pakistan's premier visit visa consultancy and IATA travel agency based in Blue Area, Islamabad with over 15 years of consular experience and 20,000+ satisfied clients.",
+        "telephone": "+92 51 2000147",
+        "email": "info@rstravel.pk",
+        "url": "https://rstravel.pk",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+          "addressLocality": "Islamabad",
+          "addressRegion": "Islamabad Capital Territory",
+          "postalCode": "44000",
+          "addressCountry": "PK"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://rstravel.pk/about#faq",
+        "mainEntity": ABOUT_FAQS.map(faq => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
+          }
+        }))
       }
-    }
+    ]
   };
 
   return (
@@ -297,6 +344,26 @@ function About() {
           {/* Companion Services Internal Link Hub */}
           <div className="mt-16">
             <ServiceCrossLinksHub currentService="About RS Travels" />
+          </div>
+
+          {/* About Page Dedicated FAQs */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h3 className="text-2xl font-bold md:text-3xl text-foreground">Frequently Asked Questions About Our Consultancy</h3>
+              <p className="mt-2 text-sm text-muted-foreground">Everything you need to know about working with RS Travel and Tours in Islamabad.</p>
+            </div>
+            <div className="space-y-4">
+              {ABOUT_FAQS.map((faq, i) => (
+                <div key={i} className="rounded-2xl border border-border/60 bg-card/60 p-6 backdrop-blur-sm shadow-soft">
+                  <h4 className="text-base font-bold text-foreground mb-2 flex items-start gap-2">
+                    <span className="text-primary font-black">Q:</span> {faq.q}
+                  </h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed pl-6">
+                    {faq.a}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* E-E-A-T Experience & Trust Authority Section */}

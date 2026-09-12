@@ -22,6 +22,8 @@ const TICKETING_FAQS = [
 export const Route = createFileRoute("/air-ticketing")({
   head: () => ({
     meta: [
+      { charSet: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1.0" },
       { title: "Best Air Ticketing Agency in Islamabad 2026 — Cheap Flights, IATA Deals | RS Travel and Tours" },
       { name: "description", content: "RS Travel and Tours is Islamabad's #1 IATA-authorized air ticketing agency in Blue Area. Book cheap flights to UK, USA, Canada, Dubai, Turkey & Australia. Instant e-tickets, group bookings, student discounts & 24/7 WhatsApp support. Call +92 51 2000147." },
       { name: "keywords", content: "best air ticketing agency Islamabad, book cheap flights from Islamabad, domestic flights pakistan online booking, international flight booking Pakistan, cheapest fare finder flight pakistan, cheap tickets to UK from Islamabad, USA flight booking ISB, airline reservation Islamabad Blue Area, last minute flights Pakistan, group flight booking Islamabad, student discount flights Islamabad, business class deals ISB, Umrah flight booking Islamabad, cheap flights to Dubai from ISB, Toronto flight from Islamabad price, PIA ticket agent Islamabad, Emirates ticket booking Islamabad, Qatar Airways booking Pakistan, Turkish Airlines Islamabad, air ticket price Islamabad to London, Islamabad to Jeddah flight booking, Islamabad to Karachi cheapest flight, one way flight ticket pakistan, return ticket islamabad to dubai price, Islamabad to Bangkok flight deals, flight booking near me blue area, 24/7 flight booking whatsapp islamabad" },
@@ -66,6 +68,8 @@ function AirTicketing() {
             "@type": "PostalAddress",
             "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
             "addressLocality": "Islamabad",
+            "addressRegion": "Islamabad Capital Territory",
+            "postalCode": "44000",
             "addressCountry": "PK"
           }
         },
@@ -74,7 +78,7 @@ function AirTicketing() {
       {
         "@type": "FAQPage",
         "@id": "https://rstravel.pk/air-ticketing#faq",
-        "mainEntity": TICKETING_FAQS.slice(0, 5).map(f => ({
+        "mainEntity": TICKETING_FAQS.map(f => ({
           "@type": "Question",
           "name": f.q,
           "acceptedAnswer": {
@@ -82,6 +86,14 @@ function AirTicketing() {
             "text": f.a
           }
         }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://rstravel.pk/air-ticketing#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rstravel.pk" },
+          { "@type": "ListItem", "position": 2, "name": "Air Ticketing", "item": "https://rstravel.pk/air-ticketing" }
+        ]
       }
     ]
   };
@@ -383,54 +395,6 @@ function AirTicketing() {
           lastUpdated="September 2026"
         />
       </section>
-
-      {/* JSON-LD Structured Data */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "TravelAgency",
-              "name": "RS Travel and Tours",
-              "alternateName": "RS Travel and Tours Air Ticketing",
-              "url": "https://rstravel.pk/air-ticketing",
-              "logo": "https://rstravel.pk/logo.png",
-              "image": "https://rstravel.pk/air_ticketing_hero_1777294022698.png",
-              "description": "Islamabad's #1 IATA-authorized air ticketing agency. Cheap international flights, group bookings, student discounts, Umrah packages, and 24/7 WhatsApp support from Blue Area.",
-              "telephone": "+92-51-2021700",
-              "email": "info@rstravel.pk",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Office 6, Mezzanine Floor, Ratta Mansion Plaza, Fazal ul Haq Road, Blue Area",
-                "addressLocality": "Islamabad",
-                "addressRegion": "Islamabad Capital Territory",
-                "postalCode": "44000",
-                "addressCountry": "PK"
-              },
-              "geo": { "@type": "GeoCoordinates", "latitude": "33.7215", "longitude": "73.0433" },
-              "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "10:00", "closes": "19:00" },
-              "priceRange": "$$",
-              "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "847", "bestRating": "5" },
-              "sameAs": ["https://www.facebook.com/profile.php?id=61572120569006", "https://www.instagram.com/rstravel.pk/", "https://www.linkedin.com/company/os-consultants/"]
-            },
-            {
-              "@type": "FAQPage",
-              "mainEntity": TICKETING_FAQS.map(f => ({
-                "@type": "Question",
-                "name": f.q,
-                "acceptedAnswer": { "@type": "Answer", "text": f.a }
-              }))
-            },
-            {
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rstravel.pk" },
-                { "@type": "ListItem", "position": 2, "name": "Air Ticketing", "item": "https://rstravel.pk/air-ticketing" }
-              ]
-            }
-          ]
-        })
-      }} />
     </>
   );
 }

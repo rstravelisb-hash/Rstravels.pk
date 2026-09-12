@@ -11,6 +11,8 @@ import { DESTINATIONS } from "@/data/destinations";
 export const Route = createFileRoute("/countries/")({
   head: () => ({
     meta: [
+      { charSet: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1.0" },
       { title: "50+ Visa Destinations Worldwide — Apply from Islamabad | Pakistan's #1 Visa Agency" },
       {
         name: "description",
@@ -46,9 +48,67 @@ export const Route = createFileRoute("/countries/")({
   component: CountriesPage,
 });
 
+const DESTINATION_FAQS = [
+  {
+    q: "Which international visa categories does RS Travel and Tours assist with?",
+    a: "We provide complete consular file preparation, biometric appointments, and interview coaching for Tourist/Visitor Visas (Subclass 600, B1/B2, Standard Visitor, Schengen Type C), Family Reunion/Spousal Visas, Business Delegations, and Conference Travel."
+  },
+  {
+    q: "What is the average processing turnaround for European Schengen visas from Islamabad?",
+    a: "Standard Schengen visa decisions typically take 15 to 30 calendar days following your biometric appointment at VFS Global / Gerry's Islamabad, depending on embassy workload and applicant documentation completeness."
+  },
+  {
+    q: "Do you supply verified flight itineraries and hotel bookings for visa applications?",
+    a: "Yes. As an IATA-accredited agency, we generate live verifiable flight reservations and hotel booking confirmations that adhere directly to embassy validation standards."
+  }
+];
+
 function CountriesPage() {
+  const collectionSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://rstravel.pk/countries#webpage",
+        "url": "https://rstravel.pk/countries",
+        "name": "Global Visa Destinations & Country Guides | RS Travel and Tours",
+        "description": "Directory of 50+ countries with visa file requirements, embassy procedures, and travel guidance from Islamabad.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://rstravel.pk/#website"
+        },
+        "about": {
+          "@type": "TravelAgency",
+          "@id": "https://rstravel.pk/#organization"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": DESTINATIONS.map((d, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "name": d.name,
+            "url": `https://rstravel.pk/countries/${d.slug}`
+          }))
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://rstravel.pk/countries#faq",
+        "mainEntity": DESTINATION_FAQS.map(faq => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
+          }
+        }))
+      }
+    ]
+  };
+
   return (
     <>
+      <script type="application/ld+json">{JSON.stringify(collectionSchema)}</script>
       <PageHero
         eyebrow="Destinations"
         title="Visa support across every continent"
@@ -84,7 +144,7 @@ function CountriesPage() {
 
       {/* SEO Long Form Content Section */}
       <section className="bg-secondary/20 py-20 border-t border-border mt-10">
-        <div className="container-px mx-auto max-w-4xl space-y-16">
+        <div className="container-px mx-auto max-w-5xl space-y-16">
           <div className="space-y-6 text-center">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
               Your Trusted Partner for Global Destinations in Islamabad
@@ -97,7 +157,7 @@ function CountriesPage() {
             </p>
           </div>
 
-          <div className="grid gap-10 md:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-2">
             <div className="rounded-2xl border border-border bg-card p-8 shadow-soft">
               <h3 className="text-xl font-bold text-primary mb-3">Schengen & European Visas</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
@@ -142,8 +202,50 @@ function CountriesPage() {
             </div>
           </div>
 
+          {/* Regional Visa Processing Breakdown */}
+          <div className="rounded-2xl border border-border bg-card p-8 shadow-soft">
+            <h3 className="text-xl font-bold text-primary mb-4">Complete Embassy & Consular Documentation Protocol</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+              Every country enforces unique admissibility criteria for Pakistani passport holders. Our case officers ensure compliance with bank statement maintenance (minimum 6 months active balance), Nadra Family Registration Certificates (FRC), tax returns (NTN/FBR), cover letters explaining travel intent, and verifiable lodging vouchers.
+            </p>
+            <div className="grid sm:grid-cols-3 gap-6 text-xs text-muted-foreground">
+              <div className="p-4 rounded-xl bg-background/60 border border-border/40">
+                <strong className="text-foreground text-sm block mb-1.5 font-bold">Tier-1 Consular Files</strong>
+                <p>Strict evaluation of socio-economic ties, property records, and employment verification for UK, US, and Canada.</p>
+              </div>
+              <div className="p-4 rounded-xl bg-background/60 border border-border/40">
+                <strong className="text-foreground text-sm block mb-1.5 font-bold">Schengen VFS Submission</strong>
+                <p>Compliant travel medical insurance (€30,000 cover), confirmed flight bookings, and country-specific biometric slots.</p>
+              </div>
+              <div className="p-4 rounded-xl bg-background/60 border border-border/40">
+                <strong className="text-foreground text-sm block mb-1.5 font-bold">E-Visa Fast Processing</strong>
+                <p>Instant digital issuance for Turkey, Dubai 30/60 days, Azerbaijan ASAN, Egypt, Tajikistan, and Southeast Asia.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Destination Hub FAQs */}
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-foreground">Frequently Asked Questions — International Destinations</h3>
+              <p className="mt-2 text-sm text-muted-foreground">Key answers regarding visa processing times, requirements, and documentation.</p>
+            </div>
+            <div className="space-y-4">
+              {DESTINATION_FAQS.map((faq, i) => (
+                <div key={i} className="rounded-2xl border border-border/60 bg-card/60 p-6 backdrop-blur-sm shadow-soft">
+                  <h4 className="text-base font-bold text-foreground mb-2 flex items-start gap-2">
+                    <span className="text-primary font-black">Q:</span> {faq.q}
+                  </h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed pl-6">
+                    {faq.a}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Internal Cross Links */}
-          <div className="pt-10">
+          <div className="pt-6">
             <ServiceCrossLinksHub currentService="Destinations" />
           </div>
 

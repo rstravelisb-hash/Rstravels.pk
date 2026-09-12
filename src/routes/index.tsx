@@ -44,6 +44,8 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
+      { charSet: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1.0" },
       { title: "RS Travel and Tours — Pakistan's No.1 Travel Agency & Best Visa Consultant 2026 | Islamabad" },
       {
         name: "description",
