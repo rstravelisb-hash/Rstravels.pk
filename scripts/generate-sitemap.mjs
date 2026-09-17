@@ -121,7 +121,7 @@ routeList.forEach(route => {
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
     <image:image>
-      <image:loc>${SITE_URL}/logo.png</image:loc>
+      <image:loc>${SITE_URL}/logo.avif</image:loc>
       <image:title>RS Travel and Tours Islamabad</image:title>
       <image:caption>Pakistan's #1 Visa Consultant and Travel Agency in Blue Area Islamabad</image:caption>
     </image:image>

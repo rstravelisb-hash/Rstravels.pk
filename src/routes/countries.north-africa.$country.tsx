@@ -3,6 +3,7 @@ import { NORTH_AFRICA_COUNTRIES } from "@/data/regions/north-africa_countries";
 import { PageHero } from "@/components/site/PageHero";
 import { CheckCircle2, FileText, Globe2 } from "lucide-react";
 import { ContactForm } from "@/components/site/ContactForm";
+import { BreadcrumbSchema } from "@/components/site/BreadcrumbSchema";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import { DestinationCrossLinks } from "@/components/site/InternalCrossLinks";
 import React, { Suspense } from "react";
@@ -57,6 +58,14 @@ function NorthAfricaCountryPage() {
   return (
     <>
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Countries", url: "/countries" },
+          { name: "North Africa", url: "/countries" },
+          { name: `${country.name} Visa`, url: `/countries/north-africa/${country.slug}` },
+        ]}
+      />
       <PageHero
         eyebrow="North Africa"
         title={country.name}

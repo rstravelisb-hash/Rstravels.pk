@@ -5,7 +5,7 @@ export const COMPANY = {
   mobile: "0302 5204291",
   whatsapp: "0344 5979486",
   email: "info@rstravel.pk",
-  address: "Office no 6 Meznine floor Ratta Mansion Fazal-eHaq Road Blue Area Islamabad",
+  address: "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area Islamabad",
   hours: "Mon – Sat · 10:00 AM – 7:00 PM",
   websites: [],
   socials: {
