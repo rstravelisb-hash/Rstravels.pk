@@ -19,7 +19,7 @@ export const Route = createFileRoute("/contact")({
         content:
           "contact rs travel and tours, visa office islamabad blue area, best visa agency address islamabad, immigration office near me islamabad, RS Travel and Tours phone number, WhatsApp visa agent pakistan, travel agency contact islamabad, visa consultant near me pakistan, rs travel and tours email, rs travel and tours whatsapp number",
       },
-      { name: "robots", content: "index, follow" },
+      { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
       { name: "geo.region", content: "PK-IS" },
       { name: "geo.placename", content: "Islamabad, Blue Area" },
       {

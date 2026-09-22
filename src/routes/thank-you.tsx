@@ -7,7 +7,7 @@ export const Route = createFileRoute("/thank-you")({
     meta: [
       { title: "Thank You — RS Travel and Tours | Islamabad" },
       { name: "description", content: "Thank you for reaching out to RS Travel and Tours. Our senior visa consultant will contact you shortly." },
-      { name: "robots", content: "noindex, follow" },
+      { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
     ],
     links: [
       { rel: "canonical", href: "https://rstravel.pk/thank-you" },

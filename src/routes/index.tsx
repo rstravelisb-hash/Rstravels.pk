@@ -9,7 +9,6 @@ import { ContactForm } from "@/components/site/ContactForm";
 import { Reveal } from "@/components/site/Reveal";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import { SEOBlock } from "@/components/site/SEOBlock";
-import { AMGCollaborationBanner } from "@/components/site/AMGCollaborationBanner";
 import { DESTINATIONS } from "@/data/destinations";
 import { COMPANY } from "@/data/company";
 import { COUNTRIES } from "@/data/countries-data";
@@ -429,9 +428,6 @@ function Home() {
         </div>
         <FAQAccordion items={FAQS.slice(0, 5)} />
       </section>
-
-      {/* Global Strategic Collaboration Banner with AMG Visa */}
-      <AMGCollaborationBanner />
 
       {/* Organic Traffic Magnet Cluster */}
       <section className="container-px mx-auto max-w-7xl">

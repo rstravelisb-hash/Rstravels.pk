@@ -8,7 +8,7 @@
     "optimize:images": "node scripts/optimize-images.cjs",
     "prebuild": "node scripts/optimize-images.cjs && node scripts/generate-sitemap.mjs",
     "ping:crawlers": "node scripts/ping-crawlers.mjs",
-    "build": "vite build && node scripts/ping-crawlers.mjs",
+    "build": "vite build && node scripts/prerender.mjs && node scripts/ping-crawlers.mjs",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",

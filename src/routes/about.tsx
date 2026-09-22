@@ -3,7 +3,6 @@ import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import { ServiceCrossLinksHub } from "@/components/site/InternalCrossLinks";
-import { AMGCollaborationBanner } from "@/components/site/AMGCollaborationBanner";
 import { Award, Target, Eye, Users, Globe2, Sparkles, ArrowRight, ShieldCheck, Clock, Building2, MapPin, CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/about")({
@@ -285,9 +284,6 @@ function About() {
           </div>
         </div>
       </section>
-
-      {/* AMG Visa Collaboration Banner */}
-      <AMGCollaborationBanner />
 
       {/* Why Choose Us / Global Expertise */}
       <section className="bg-primary/5 py-24 border-t border-primary/10">

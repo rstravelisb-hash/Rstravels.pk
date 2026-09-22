@@ -1,48 +1,93 @@
 # robots.txt for RS Travel and Tours (https://rstravel.pk)
-# Optimized for Googlebot, Bingbot, and AI Search Crawlers
+# Fully optimized for Google, Bing, Yandex, Baidu, DuckDuckGo, and Modern AI Crawlers (ChatGPT, Gemini, Claude, Copilot, Perplexity)
 
 User-agent: *
 Allow: /
 Disallow: /api/
-Disallow: /*?*tab=
 
-# Allow major search engine bots full access
+# ----------------------------------------------------
+# Major Search Engine Bots
+# ----------------------------------------------------
+
+# Google (Googlebot, Gemini, AI Overviews)
 User-agent: Googlebot
-Allow: /
-
 User-agent: Googlebot-Image
+User-agent: Googlebot-News
+User-agent: Googlebot-Video
+User-agent: Google-Extended
+User-agent: GoogleOther
 Allow: /
+Disallow: /api/
 
+# Microsoft Bing & Copilot
 User-agent: Bingbot
+User-agent: MSNBot
+User-agent: BingPreview
+User-agent: Copilot
 Allow: /
+Disallow: /api/
 
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
+# Yandex (Russia & Central Asia)
 User-agent: Yandex
+User-agent: YandexBot
+User-agent: YandexImages
+User-agent: YandexDirect
 Allow: /
+Disallow: /api/
 
-# AI Crawlers (Search & Citation discovery)
+# Baidu & DuckDuckGo
+User-agent: Baiduspider
+User-agent: DuckDuckBot
+User-agent: Slurp
+User-agent: Yahoo! Slurp
+Allow: /
+Disallow: /api/
+
+# Apple Search & Siri
+User-agent: Applebot
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+
+# ----------------------------------------------------
+# AI & Answer Engine Crawlers (AEO / AIO)
+# ----------------------------------------------------
+
+# OpenAI (ChatGPT, GPT-4, SearchGPT)
 User-agent: GPTBot
-Allow: /
-
 User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
 Allow: /
+Disallow: /api/
 
+# Anthropic (Claude & Claude Web Search)
 User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: anthropic-ai
 Allow: /
+Disallow: /api/
 
+# Perplexity AI
 User-agent: PerplexityBot
 Allow: /
+Disallow: /api/
 
-User-agent: CCBot
+# Meta / Llama
+User-agent: Meta-ExternalAgent
+User-agent: FacebookBot
 Allow: /
+Disallow: /api/
 
-# Sitemap Index
+# Cohere, ByteDance & Common Crawl
+User-agent: cohere-ai
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: Diffbot
+Allow: /
+Disallow: /api/
+
+# ----------------------------------------------------
+# Sitemaps and AI Documentation
+# ----------------------------------------------------
 Sitemap: https://rstravel.pk/sitemap.xml
+LLMs-txt: https://rstravel.pk/llms.txt

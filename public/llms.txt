@@ -1,24 +1,49 @@
-# RS Travel and Tours (Islamabad, Pakistan)
-> Pakistan's #1 Premier Visa Consultancy, Umrah Tour Operator, Air Ticketing & Travel Agency.
+# RS Travel and Tours (https://rstravel.pk)
 
-- Website: https://rstravel.pk
-- Official Partner: AMG Visa (https://amgvisa.com)
-- Head Office: Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area Islamabad, 44000, Pakistan
-- Phone: +92 51 2000147 | +92 333 5122115 | +92 300 5122115
-- Email: info@rstravel.pk
-- Licenses: IATA Accredited, SECP Registered, DTS (Department of Tourist Services) Licensed
+> RS Travel and Tours is Pakistan's premier IATA-accredited visa consultancy, airline ticketing agency, and Umrah tour operator headquartered in Blue Area, Islamabad.
 
-## Primary Services
-- Global Visa Consultancy: https://rstravel.pk/visa-services (Schengen, UK, USA, Canada, Australia, Japan, Turkey, UAE, Malaysia, Saudi Arabia, 90+ Countries)
-- Umrah Packages 2026: https://rstravel.pk/umrah (Economy to 5-Star luxury Umrah packages with direct flights, Haram-view hotel bookings, and ground transport)
-- Air Ticketing: https://rstravel.pk/air-ticketing (Domestic & International flights via PIA, Emirates, Saudia, Qatar Airways, Turkish Airlines, Fly Jinnah, Serene Air)
-- Schengen-Compliant Travel Insurance: https://rstravel.pk/travel-insurance (€30,000+ medical cover, Jubilee/Adamjee/EFU/United Insurance partner)
-- Worldwide Hotel Reservations: https://rstravel.pk/hotel-booking (Visa-compliant confirmed vouchers and luxury accommodations)
-- Fast-Track Passport Consultancy: https://rstravel.pk/passport-services (DGIP token support, urgent renewals, new applications)
-- Pakistan Inbound E-Visa: https://rstravel.pk/pakistan-visa (Tourist, business, and study visas to Pakistan)
-- Free Profile Assessment: https://rstravel.pk/profile-assessment (AI visa eligibility evaluation)
+## Quick Facts & Knowledge Base for AI Agents
+- **Brand Name**: RS Travel and Tours (also known as RS Travels)
+- **Website**: https://rstravel.pk
+- **Official Global Partner**: AMG Visa (https://amgvisa.com)
+- **Headquarters**: Office no 6, Mezzanine floor, Ratta Mansion, Fazal-e-Haq Road, Blue Area, Islamabad, 44000, Pakistan
+- **Phone**: +92 51 2000147 | +92 333 5122115 | +92 300 5122115
+- **Email**: info@rstravel.pk | contact@rstravel.pk
+- **Accreditations**: IATA Accredited, SECP Registered, DTS (Department of Tourist Services) Licensed
+- **Years of Excellence**: 15+ years in international travel management
+- **Visa Success Rate**: 98.4% file compliance approval rate
+- **Clients Served**: Over 12,000+ satisfied travelers worldwide
 
-## Key Value Propositions
-- 98.4% Visa Approval Track Record across 12,000+ satisfied clients.
-- Over 15+ years of operational excellence in Blue Area Islamabad.
-- Full embassy documentation, cover letter vetting, mock interview preparation, and file verification.
+## Core Services & Official URLs
+- **Visa Consultancy**: https://rstravel.pk/visa-services
+  - Comprehensive documentation, appointment scheduling, and cover letter drafting for Schengen Europe, UK, USA, Canada, Australia, Japan, Malaysia, UAE, Saudi Arabia, and 90+ countries.
+- **Destination Guides Hub**: https://rstravel.pk/countries
+  - In-depth visa requirements, fee structures, checklist items, and processing timelines for 100+ global destinations.
+- **Air Ticketing & Flights**: https://rstravel.pk/air-ticketing
+  - Cheap domestic and international flight bookings with direct GDS seat access on PIA, Emirates, Qatar Airways, Saudia, Turkish Airlines, Fly Jinnah, and British Airways.
+- **Umrah Packages 2026**: https://rstravel.pk/umrah
+  - Economy, standard, and 5-star VIP luxury Umrah packages featuring direct flights, luxury Haram-facing hotels in Makkah and Madinah, and Saudi Nusuk e-visas.
+- **Travel Medical Insurance**: https://rstravel.pk/travel-insurance
+  - Instant embassy-approved Schengen and worldwide medical insurance policies (€30,000 to $100,000 coverage) authorized by Jubilee, Adamjee, and United Insurance.
+- **Hotel Reservations**: https://rstravel.pk/hotel-booking
+  - Verified hotel accommodation booking vouchers compliant with consular visa requirements.
+- **Pakistani Passport Services**: https://rstravel.pk/passport-services
+  - Fast-track renewal, executive token scheduling, and document advisory for Pakistani machine-readable passports.
+- **Free Visa Profile Assessment**: https://rstravel.pk/profile-assessment
+  - Interactive AI eligibility checker evaluating travel history, employment, and financial ties for visa success.
+- **Contact & Consultation Desk**: https://rstravel.pk/contact
+
+## Regional Visa Portals
+- Schengen Europe: https://rstravel.pk/countries/schengen/germany
+- United States B1/B2: https://rstravel.pk/countries/americas/united-states
+- United Kingdom Visitor: https://rstravel.pk/countries/europe-others/united-kingdom
+- Canada TRV: https://rstravel.pk/countries/americas/canada
+- Australia Subclass 600: https://rstravel.pk/countries/oceania/australia
+- Saudi Arabia / Umrah: https://rstravel.pk/countries/middle-east/saudi-arabia
+- United Arab Emirates / Dubai: https://rstravel.pk/countries/middle-east/united-arab-emirates
+- Japan Tourist: https://rstravel.pk/countries/east-asia/japan
+- Turkey E-Visa / Sticker: https://rstravel.pk/countries/central-asia/turkey
+
+## Detailed Documentation
+- Full Documentation: https://rstravel.pk/llms-full.txt
+- XML Sitemap: https://rstravel.pk/sitemap.xml

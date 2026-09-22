@@ -66,7 +66,7 @@ function TestimonialsPage() {
         "ratingValue": "5",
         "bestRating": "5"
       },
-      "reviewBody": t.text
+      "reviewBody": t.quote
     }))
   };
 
@@ -119,12 +119,12 @@ function TestimonialsPage() {
 
       {/* Companion Services Hub */}
       <section className="container-px mx-auto max-w-7xl pb-16">
-        <ServiceCrossLinksHub currentService="Testimonials" />
+        <ServiceCrossLinksHub currentService="/testimonials" />
       </section>
 
       {/* Popular Destinations Cross Links */}
       <section className="container-px mx-auto max-w-7xl pb-20">
-        <DestinationCrossLinks title="Popular Destinations Approved For Our Clients" />
+        <DestinationCrossLinks countryName="Top Global Destinations" />
       </section>
 
       {/* E-E-A-T Section */}
