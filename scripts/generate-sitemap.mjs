@@ -8,6 +8,8 @@ const REGIONS_DIR = path.resolve('src/data/regions');
 // Static core service & informational routes
 const staticRoutes = [
   '/',
+  '/travel-agency-islamabad',
+  '/visa-consultant-islamabad',
   '/about',
   '/visa-services',
   '/countries',
@@ -21,10 +23,7 @@ const staticRoutes = [
   '/pakistan-visa',
   '/faq',
   '/testimonials',
-  '/contact',
-  '/privacy-policy',
-  '/terms',
-  '/thank-you'
+  '/contact'
 ];
 
 const routes = new Set(staticRoutes);

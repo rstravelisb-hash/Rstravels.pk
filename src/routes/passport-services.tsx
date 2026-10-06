@@ -8,11 +8,11 @@ import { BookUser, RefreshCcw, Flag, ArrowRight } from "lucide-react";
 export const Route = createFileRoute("/passport-services")({
   head: () => ({
     meta: [
-      { title: "Passport Services Islamabad 2026 — Fast Renewals & New Applications | RS Travel and Tours" },
+      { title: "Passport Services in Islamabad (2026) — Urgent Renewal & Token Help" },
       {
         name: "description",
         content:
-          "Expert passport services in Islamabad by Pakistan's #1 travel agency. Fast passport applications, reliable renewals, urgent processing & USA passport services. RS Travel and Tours Blue Area.",
+          "Fast Pakistani passport renewal, urgent token booking & new passport file processing in Blue Area, Islamabad. Expert DGIP & US passport assistance. Call 051-2000147.",
       },
       {
         name: "keywords",
@@ -23,10 +23,10 @@ export const Route = createFileRoute("/passport-services")({
       { name: "author", content: "RS Travel and Tours" },
       { name: "geo.region", content: "PK-IS" },
       { name: "geo.placename", content: "Islamabad" },
-      { property: "og:title", content: "Passport Services Islamabad — Fast Processing | RS Travel and Tours" },
+      { property: "og:title", content: "Passport Services in Islamabad (2026) — Urgent Renewal & Application" },
       {
         property: "og:description",
-        content: "New applications, renewals & USA passport processing from Blue Area, Islamabad.",
+        content: "Urgent passport renewal, token assistance & USA passport processing in Blue Area, Islamabad.",
       },
       { property: "og:url", content: "https://rstravel.pk/passport-services" },
       { property: "og:type", content: "website" },
@@ -34,8 +34,8 @@ export const Route = createFileRoute("/passport-services")({
       { property: "og:site_name", content: "RS Travel and Tours — Pakistan's No.1 Travel Agency" },
       { property: "og:image", content: "https://rstravel.pk/og-image.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Passport Services Islamabad | RS Travel and Tours" },
-      { name: "twitter:description", content: "Urgent passport renewal and new application consultancy in Islamabad." },
+      { name: "twitter:title", content: "Passport Services Islamabad | Fast Processing & Renewals" },
+      { name: "twitter:description", content: "Urgent passport renewal and new application consultancy in Islamabad Blue Area." },
       { name: "twitter:image", content: "https://rstravel.pk/og-image.jpg" },
     ],
     links: [

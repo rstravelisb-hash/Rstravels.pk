@@ -8,28 +8,28 @@ import { COMPANY } from "@/data/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact RS Travel and Tours — Pakistan's #1 Visa Office in Blue Area, Islamabad" },
+      { title: "Contact RS Travel and Tours Islamabad — Phone, WhatsApp & Office Location" },
       {
         name: "description",
         content:
-          "Contact Pakistan's best visa consultancy. Visit RS Travel and Tours in Blue Area, Islamabad or reach us via phone +92 51 2000147, WhatsApp, or email. Open Mon-Sat 10AM-7PM. Expert visa & travel guidance.",
+          "Official contact details for RS Travel and Tours in Blue Area, Islamabad. Call 051-2000147, WhatsApp +92 344 5979486 or visit Office #6 Mezzanine Floor, Ratta Mansion.",
       },
       {
         name: "keywords",
         content:
-          "contact rs travel and tours, visa office islamabad blue area, best visa agency address islamabad, immigration office near me islamabad, RS Travel and Tours phone number, WhatsApp visa agent pakistan, travel agency contact islamabad, visa consultant near me pakistan, rs travel and tours email, rs travel and tours whatsapp number",
+          "RS Travel contact number, RS Travel Islamabad phone, RS Travel Blue Area office address, RS Travel WhatsApp number, visa consultant Islamabad contact number, RS Travel directions Blue Area",
       },
       { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
       { name: "geo.region", content: "PK-IS" },
       { name: "geo.placename", content: "Islamabad, Blue Area" },
       {
         property: "og:title",
-        content: "Contact RS Travel and Tours — Pakistan's #1 Visa & Travel Office",
+        content: "RS Travel Contact Number & Travel Agency Islamabad | Blue Area Office",
       },
       {
         property: "og:description",
         content:
-          "Visit us at Blue Area, Islamabad. Expert help for Schengen, UK, USA, Canada & Australia visas. WhatsApp, phone & walk-in available.",
+          "Visit RS Travel in Blue Area, Islamabad or call/WhatsApp for instant visa consultancy, flight bookings, and travel advisory.",
       },
       { property: "og:image", content: "https://rstravel.pk/og-image.jpg" },
       { property: "og:url", content: "https://rstravel.pk/contact" },
@@ -46,44 +46,81 @@ export const Route = createFileRoute("/contact")({
   component: Contact,
 });
 
+
+const CONTACT_FAQS = [
+  {
+    q: "What is the RS Travel Islamabad contact number and WhatsApp?",
+    a: "You can reach RS Travel directly at 051 2000147 (landline), 0302 5204291 (mobile), or WhatsApp at 0344 5979486 for instant visa and travel inquiry support.",
+  },
+  {
+    q: "Where is RS Travel located in Blue Area, Islamabad?",
+    a: "Our Islamabad office is located at Office No. 6, Mezzanine Floor, Ratta Mansion, Fazal-e-Haq Road, Blue Area, Islamabad, Pakistan with convenient parking and Metro access.",
+  },
+  {
+    q: "Can I get an in-person visa assessment at the Islamabad office?",
+    a: "Yes! Walk-in consultations are available Monday to Saturday from 10:00 AM to 7:00 PM. Our senior visa officers provide comprehensive document verification.",
+  },
+  {
+    q: "Which visa and travel services are offered at RS Travel Islamabad?",
+    a: "We provide full visa consultancy for Schengen, UK, USA, Canada, and Australia, plus worldwide ticketing, Umrah packages, and travel insurance.",
+  },
+];
+
 function Contact() {
-  const contactJsonLd = {
+    const contactJsonLd = {
     "@context": "https://schema.org",
-    "@type": ["TravelAgency", "LocalBusiness"],
-    "@id": "https://rstravel.pk/contact#localbusiness",
-    "name": "RS Travel and Tours",
-    "url": "https://rstravel.pk/contact",
-    "telephone": COMPANY.phone,
-    "email": COMPANY.email,
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
-      "addressLocality": "Islamabad",
-      "addressRegion": "Islamabad Capital Territory",
-      "postalCode": "44000",
-      "addressCountry": "PK"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 33.7135,
-      "longitude": 73.0673
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "10:00",
-      "closes": "19:00"
-    }
+    "@graph": [
+      {
+        "@type": ["TravelAgency", "LocalBusiness"],
+        "@id": "https://rstravel.pk/contact#localbusiness",
+        "name": "RS Travel and Tours",
+        "alternateName": "RS Travel Islamabad",
+        "url": "https://rstravel.pk/contact",
+        "telephone": COMPANY.phone,
+        "email": COMPANY.email,
+        "priceRange": "$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+          "addressLocality": "Islamabad",
+          "addressRegion": "Islamabad Capital Territory",
+          "postalCode": "44000",
+          "addressCountry": "PK"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 33.7135,
+          "longitude": 73.0673
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://rstravel.pk/contact#faq",
+        "mainEntity": CONTACT_FAQS.map((faq) => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
+          }
+        }))
+      }
+    ]
   };
 
   return (
     <>
       <script type="application/ld+json">{JSON.stringify(contactJsonLd)}</script>
       <PageHero
-        eyebrow="Contact"
-        title="We'd love to hear from you"
-        subtitle="Walk in, call, email or message us on WhatsApp. We typically reply within 1 business hour."
+        eyebrow="RS Travel Islamabad Contact & Office"
+        title="RS Travel Contact Number & Travel Agency Islamabad"
+        subtitle="Visit our Blue Area office, call direct, or chat with our visa consultants on WhatsApp. Fast response within 1 business hour."
       />
 
       <section className="relative py-24 overflow-hidden">
@@ -98,14 +135,14 @@ function Contact() {
               {[
                 {
                   icon: MapPin,
-                  t: "Office",
+                  t: "RS Travel Address (Blue Area)",
                   d: COMPANY.address,
                   href: "https://www.google.com/maps/search/?api=1&query=Ratta+Mansion+Fazal+e+Haq+Road+Blue+Area+Islamabad"
                 },
                 {
                   icon: Phone,
-                  t: "Phone",
-                  d: COMPANY.phone,
+                  t: "RS Travel Islamabad Contact Number",
+                  d: `${COMPANY.phone} (Landline)`,
                   href: `tel:${COMPANY.phone.replace(/\s/g, "")}`,
                 },
                 {
@@ -118,8 +155,8 @@ function Contact() {
                 { icon: Clock, t: "Hours", d: COMPANY.hours, href: null },
                 {
                   icon: MessageCircle,
-                  t: "WhatsApp",
-                  d: COMPANY.whatsapp,
+                  t: "RS Travel WhatsApp Desk",
+                  d: `${COMPANY.whatsapp} (Instant Consultation)`,
                   href: `https://wa.me/${COMPANY.whatsapp.replace(/\D/g, "")}`,
                 },
                 {
@@ -192,6 +229,31 @@ function Contact() {
               </div>
             </div>
 
+          </div>
+
+          
+          {/* Contact FAQ Section */}
+          <div className="mt-20">
+            <div className="text-center max-w-2xl mx-auto mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-sm text-muted-foreground mt-2">
+                Quick answers about RS Travel Islamabad contact number, Blue Area location, and visa services.
+              </p>
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-2 max-w-5xl mx-auto">
+              {CONTACT_FAQS.map((faq, idx) => (
+                <div
+                  key={idx}
+                  className="rounded-2xl border border-border/40 bg-card/30 p-6 backdrop-blur-md shadow-sm"
+                >
+                  <h3 className="text-base font-semibold text-foreground mb-2">{faq.q}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{faq.a}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* E-E-A-T Physical Office & Local Authority Verification */}

@@ -19,7 +19,7 @@ export function CountryCard({
       <article className="relative h-96 overflow-hidden rounded-[2.5rem] border border-border/50 shadow-soft transition-all duration-700 hover:shadow-elevated hover:border-primary/20">
         <img
           src={image}
-          alt={name}
+          alt={`${name} tourist destination and visa consultation guide`}
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1500ms] ease-out group-hover:scale-110"
         />

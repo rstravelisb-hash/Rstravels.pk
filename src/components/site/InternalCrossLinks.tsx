@@ -114,38 +114,44 @@ export function DestinationCrossLinks({ countryName, countrySlug, isSchengen }: 
       {/* Cross-Link Other Popular Visa Hubs */}
       <div className="relative z-10 mt-8 pt-6 border-t border-slate-800">
         <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
-          Explore Other Popular Visa Destinations:
+          Explore Other Popular Visa Destinations &amp; Islamabad Consultation Desks:
         </p>
         <div className="flex flex-wrap gap-2 text-xs">
-          <Link to="/countries/$slug" params={{ slug: "united-kingdom" }} className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
-            🇬🇧 UK Visit Visa
+          <Link to="/visa-consultant-islamabad" className="px-3 py-1.5 rounded-lg bg-primary/20 border border-primary/40 text-primary-foreground font-bold hover:bg-primary/30 transition-colors">
+            📍 Visa Consultant Islamabad
           </Link>
-          <Link to="/countries/$slug" params={{ slug: "united-states" }} className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
-            🇺🇸 USA B1/B2 Visa
+          <Link to="/travel-agency-islamabad" className="px-3 py-1.5 rounded-lg bg-primary/20 border border-primary/40 text-primary-foreground font-bold hover:bg-primary/30 transition-colors">
+            ✈️ Travel Agency in Islamabad
+          </Link>
+          <Link to="/countries/$slug" params={{ slug: "uk" }} className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
+            🇬🇧 UK Visit Visa Pakistan
+          </Link>
+          <Link to="/countries/$slug" params={{ slug: "usa" }} className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
+            🇺🇸 USA Visit Visa Pakistan
           </Link>
           <Link to="/countries/$slug" params={{ slug: "schengen" }} className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
-            🇪🇺 Schengen Europe Hub
+            🇪🇺 Schengen Visa Pakistan
           </Link>
           <Link to="/countries/$slug" params={{ slug: "canada" }} className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
-            🇨🇦 Canada Visitor Visa
+            🇨🇦 Canada Visit Visa Pakistan
           </Link>
           <Link to="/countries/$slug" params={{ slug: "australia" }} className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
-            🇦🇺 Australia Subclass 600
+            🇦🇺 Australia Visitor Visa Pakistan
           </Link>
           <Link to="/umrah" className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
-            🇸🇦 Saudi Umrah Packages
+            🇸🇦 Umrah Packages Islamabad
           </Link>
-          <Link to="/countries/middle-east/$country" params={{ country: "united-arab-emirates" }} className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
-            🇦🇪 Dubai E-Visa
+          <Link to="/air-ticketing" className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
+            ✈️ Air Ticketing Islamabad
           </Link>
-          <Link to="/countries/europe-others/$country" params={{ country: "turkey" }} className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
-            🇹🇷 Turkey Sticker Visa
+          <Link to="/hotel-booking" className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
+            🏨 Hotel Booking Islamabad
           </Link>
-          <Link to="/countries/south-asia/$country" params={{ country: "thailand" }} className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
-            🇹🇭 Thailand E-Visa
+          <Link to="/travel-insurance" className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
+            🛡️ Travel Insurance Islamabad
           </Link>
-          <Link to="/countries/south-asia/$country" params={{ country: "malaysia" }} className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
-            🇲🇾 Malaysia E-Visa
+          <Link to="/contact" className="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors">
+            📞 Contact RS Travel Blue Area
           </Link>
         </div>
       </div>

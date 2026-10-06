@@ -10,8 +10,10 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VisaServicesRouteImport } from './routes/visa-services'
+import { Route as VisaConsultantIslamabadRouteImport } from './routes/visa-consultant-islamabad'
 import { Route as UmrahRouteImport } from './routes/umrah'
 import { Route as TravelInsuranceRouteImport } from './routes/travel-insurance'
+import { Route as TravelAgencyIslamabadRouteImport } from './routes/travel-agency-islamabad'
 import { Route as ThankYouRouteImport } from './routes/thank-you'
 import { Route as TestimonialsRouteImport } from './routes/testimonials'
 import { Route as TermsRouteImport } from './routes/terms'
@@ -46,6 +48,11 @@ const VisaServicesRoute = VisaServicesRouteImport.update({
   path: '/visa-services',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VisaConsultantIslamabadRoute = VisaConsultantIslamabadRouteImport.update({
+  id: '/visa-consultant-islamabad',
+  path: '/visa-consultant-islamabad',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const UmrahRoute = UmrahRouteImport.update({
   id: '/umrah',
   path: '/umrah',
@@ -54,6 +61,11 @@ const UmrahRoute = UmrahRouteImport.update({
 const TravelInsuranceRoute = TravelInsuranceRouteImport.update({
   id: '/travel-insurance',
   path: '/travel-insurance',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TravelAgencyIslamabadRoute = TravelAgencyIslamabadRouteImport.update({
+  id: '/travel-agency-islamabad',
+  path: '/travel-agency-islamabad',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ThankYouRoute = ThankYouRouteImport.update({
@@ -223,8 +235,10 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/testimonials': typeof TestimonialsRoute
   '/thank-you': typeof ThankYouRoute
+  '/travel-agency-islamabad': typeof TravelAgencyIslamabadRoute
   '/travel-insurance': typeof TravelInsuranceRoute
   '/umrah': typeof UmrahRoute
+  '/visa-consultant-islamabad': typeof VisaConsultantIslamabadRoute
   '/visa-services': typeof VisaServicesRoute
   '/countries/$slug': typeof CountriesSlugRoute
   '/countries/': typeof CountriesIndexRoute
@@ -256,8 +270,10 @@ export interface FileRoutesByTo {
   '/terms': typeof TermsRoute
   '/testimonials': typeof TestimonialsRoute
   '/thank-you': typeof ThankYouRoute
+  '/travel-agency-islamabad': typeof TravelAgencyIslamabadRoute
   '/travel-insurance': typeof TravelInsuranceRoute
   '/umrah': typeof UmrahRoute
+  '/visa-consultant-islamabad': typeof VisaConsultantIslamabadRoute
   '/visa-services': typeof VisaServicesRoute
   '/countries/$slug': typeof CountriesSlugRoute
   '/countries': typeof CountriesIndexRoute
@@ -290,8 +306,10 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/testimonials': typeof TestimonialsRoute
   '/thank-you': typeof ThankYouRoute
+  '/travel-agency-islamabad': typeof TravelAgencyIslamabadRoute
   '/travel-insurance': typeof TravelInsuranceRoute
   '/umrah': typeof UmrahRoute
+  '/visa-consultant-islamabad': typeof VisaConsultantIslamabadRoute
   '/visa-services': typeof VisaServicesRoute
   '/countries/$slug': typeof CountriesSlugRoute
   '/countries/': typeof CountriesIndexRoute
@@ -325,8 +343,10 @@ export interface FileRouteTypes {
     | '/terms'
     | '/testimonials'
     | '/thank-you'
+    | '/travel-agency-islamabad'
     | '/travel-insurance'
     | '/umrah'
+    | '/visa-consultant-islamabad'
     | '/visa-services'
     | '/countries/$slug'
     | '/countries/'
@@ -358,8 +378,10 @@ export interface FileRouteTypes {
     | '/terms'
     | '/testimonials'
     | '/thank-you'
+    | '/travel-agency-islamabad'
     | '/travel-insurance'
     | '/umrah'
+    | '/visa-consultant-islamabad'
     | '/visa-services'
     | '/countries/$slug'
     | '/countries'
@@ -391,8 +413,10 @@ export interface FileRouteTypes {
     | '/terms'
     | '/testimonials'
     | '/thank-you'
+    | '/travel-agency-islamabad'
     | '/travel-insurance'
     | '/umrah'
+    | '/visa-consultant-islamabad'
     | '/visa-services'
     | '/countries/$slug'
     | '/countries/'
@@ -425,8 +449,10 @@ export interface RootRouteChildren {
   TermsRoute: typeof TermsRoute
   TestimonialsRoute: typeof TestimonialsRoute
   ThankYouRoute: typeof ThankYouRoute
+  TravelAgencyIslamabadRoute: typeof TravelAgencyIslamabadRoute
   TravelInsuranceRoute: typeof TravelInsuranceRoute
   UmrahRoute: typeof UmrahRoute
+  VisaConsultantIslamabadRoute: typeof VisaConsultantIslamabadRoute
   VisaServicesRoute: typeof VisaServicesRoute
   CountriesSlugRoute: typeof CountriesSlugRoute
   CountriesIndexRoute: typeof CountriesIndexRoute
@@ -453,6 +479,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof VisaServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/visa-consultant-islamabad': {
+      id: '/visa-consultant-islamabad'
+      path: '/visa-consultant-islamabad'
+      fullPath: '/visa-consultant-islamabad'
+      preLoaderRoute: typeof VisaConsultantIslamabadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/umrah': {
       id: '/umrah'
       path: '/umrah'
@@ -465,6 +498,13 @@ declare module '@tanstack/react-router' {
       path: '/travel-insurance'
       fullPath: '/travel-insurance'
       preLoaderRoute: typeof TravelInsuranceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/travel-agency-islamabad': {
+      id: '/travel-agency-islamabad'
+      path: '/travel-agency-islamabad'
+      fullPath: '/travel-agency-islamabad'
+      preLoaderRoute: typeof TravelAgencyIslamabadRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/thank-you': {
@@ -681,8 +721,10 @@ const rootRouteChildren: RootRouteChildren = {
   TermsRoute: TermsRoute,
   TestimonialsRoute: TestimonialsRoute,
   ThankYouRoute: ThankYouRoute,
+  TravelAgencyIslamabadRoute: TravelAgencyIslamabadRoute,
   TravelInsuranceRoute: TravelInsuranceRoute,
   UmrahRoute: UmrahRoute,
+  VisaConsultantIslamabadRoute: VisaConsultantIslamabadRoute,
   VisaServicesRoute: VisaServicesRoute,
   CountriesSlugRoute: CountriesSlugRoute,
   CountriesIndexRoute: CountriesIndexRoute,

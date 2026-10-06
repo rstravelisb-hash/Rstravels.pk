@@ -24,9 +24,17 @@ export const Route = createFileRoute("/air-ticketing")({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-      { title: "Best Air Ticketing Agency in Islamabad 2026 — Cheap Flights, IATA Deals | RS Travel and Tours" },
-      { name: "description", content: "RS Travel and Tours is Islamabad's #1 IATA-authorized air ticketing agency in Blue Area. Book cheap flights to UK, USA, Canada, Dubai, Turkey & Australia. Instant e-tickets, group bookings, student discounts & 24/7 WhatsApp support. Call +92 51 2000147." },
-      { name: "keywords", content: "best air ticketing agency Islamabad, book cheap flights from Islamabad, domestic flights pakistan online booking, international flight booking Pakistan, cheapest fare finder flight pakistan, cheap tickets to UK from Islamabad, USA flight booking ISB, airline reservation Islamabad Blue Area, last minute flights Pakistan, group flight booking Islamabad, student discount flights Islamabad, business class deals ISB, Umrah flight booking Islamabad, cheap flights to Dubai from ISB, Toronto flight from Islamabad price, PIA ticket agent Islamabad, Emirates ticket booking Islamabad, Qatar Airways booking Pakistan, Turkish Airlines Islamabad, air ticket price Islamabad to London, Islamabad to Jeddah flight booking, Islamabad to Karachi cheapest flight, one way flight ticket pakistan, return ticket islamabad to dubai price, Islamabad to Bangkok flight deals, flight booking near me blue area, 24/7 flight booking whatsapp islamabad" },
+      { title: "Air Ticketing Islamabad | IATA Flight Booking & Reservations — RS Travel" },
+      {
+        name: "description",
+        content:
+          "IATA-accredited air ticketing agency in Blue Area, Islamabad. Official flight reservations on Emirates, Qatar Airways, PIA, Turkish Airlines & Saudia. Student, group & business class bookings. Call 051-2000147.",
+      },
+      {
+        name: "keywords",
+        content:
+          "air ticketing islamabad, iata flight booking islamabad, flight booking islamabad, international flight booking islamabad, iata ticketing islamabad, airline ticket booking pakistan, business class ticket booking islamabad, confirmed flight itinerary for visa pakistan, umrah flights islamabad, student discount flights islamabad",
+      },
       { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
       { name: "author", content: "RS Travel and Tours" },
       { name: "geo.region", content: "PK-IS" },
@@ -34,12 +42,16 @@ export const Route = createFileRoute("/air-ticketing")({
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_PK" },
       { property: "og:site_name", content: "RS Travel and Tours" },
-      { property: "og:title", content: "Best Air Ticketing Agency in Islamabad — Cheap International Flights | RS Travel and Tours" },
-      { property: "og:description", content: "Book the cheapest international flights from Islamabad with IATA-certified RS Travel and Tours. Instant e-tickets on 300+ airlines. 24/7 WhatsApp support." },
+      { property: "og:title", content: "Air Ticketing Islamabad | IATA Flight Booking & Reservations" },
+      {
+        property: "og:description",
+        content:
+          "Book international & domestic flights with IATA-authorized RS Travel and Tours in Blue Area, Islamabad. Direct GDS live fares, business class & student deals.",
+      },
       { property: "og:url", content: "https://rstravel.pk/air-ticketing" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "#1 Air Ticketing Agency Islamabad — RS Travel and Tours" },
-      { name: "twitter:description", content: "IATA-authorized. Cheapest flights from ISB to London, Dubai, Toronto, New York & more. Instant booking." },
+      { name: "twitter:title", content: "Air Ticketing Islamabad | IATA Flight Booking — RS Travel" },
+      { name: "twitter:description", content: "IATA-authorized air ticketing desk in Blue Area, Islamabad. Instant e-tickets & flight reservations." },
     ],
     links: [
       { rel: "canonical", href: "https://rstravel.pk/air-ticketing" },

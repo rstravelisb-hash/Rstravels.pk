@@ -24,20 +24,20 @@ export function EEATExpertiseSection({
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-xs font-black uppercase tracking-wider text-primary">Medically & Legally Verified Content</span>
+              <span className="text-xs font-black uppercase tracking-wider text-primary">Official Consular & Embassy Source Verified</span>
               <span className="inline-flex items-center rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-bold text-emerald-600 dark:text-emerald-400">
-                <CheckCircle2 size={10} className="mr-1" /> Verified 2026
+                <CheckCircle2 size={10} className="mr-1" /> Verified October 2026
               </span>
             </div>
             <h4 className="text-sm md:text-base font-bold text-foreground">
-              Reviewed by {COMPANY.name} Editorial & Visa Compliance Desk
+              Requirements checked against official embassy & foreign ministry guidelines
             </h4>
           </div>
         </div>
 
         <div className="flex items-center gap-4 text-xs font-semibold text-muted-foreground">
           <span className="flex items-center gap-1.5">
-            <Clock size={13} className="text-primary" /> Updated: {lastUpdated}
+            <Clock size={13} className="text-primary" /> Updated: October 2026
           </span>
           <span className="flex items-center gap-1.5">
             <Building2 size={13} className="text-primary" /> Blue Area, Islamabad
