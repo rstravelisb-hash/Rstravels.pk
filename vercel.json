@@ -1,7 +1,13 @@
 {
   "framework": "vite",
   "buildCommand": "npm run build",
+  "installCommand": "npm install --prefer-online",
   "outputDirectory": "dist",
+  "build": {
+    "env": {
+      "DANGEROUSLY_DEPLOY_VULNERABLE_TANSTACK_START_XSS": "1"
+    }
+  },
   "redirects": [
     {
       "source": "/:path*",
