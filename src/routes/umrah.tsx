@@ -27,11 +27,11 @@ import umrahHero from "@/assets/umrah-hero.avif";
 export const Route = createFileRoute("/umrah")({
   head: () => ({
     meta: [
-      { title: "Best Umrah Packages from Pakistan 2026 — Economy to 5-Star Luxury | Hajj Booking | RS Travel and Tours" },
+      { title: "Umrah Packages 2026 Islamabad | RS Travel & Tours" },
       {
         name: "description",
         content:
-          "Pakistan's #1 Umrah & Hajj travel agency. Book cheap Umrah packages from Islamabad 2026. Economy, 3-Star, 4-Star & 5-Star packages with visa, flights & hotels in Makkah & Madinah. Ziyarat included. Hajj 2027 advance booking open. Trusted by 5000+ families. RS Travel and Tours Blue Area.",
+          "Book verified Umrah packages 2026 from Islamabad. Economy & 5-star packages with direct flights, visas & hotels near Haram in Makkah & Madinah. Call 051-2000147.",
       },
       {
         name: "keywords",

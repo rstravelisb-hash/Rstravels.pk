@@ -29,11 +29,11 @@ export const Route = createFileRoute("/visa-services")({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-      { title: "#1 Visa Consultant in Islamabad 2026 | Best Visa Services in Pakistan | RS Travel and Tours" },
+      { title: "Visa Services in Islamabad | RS Travel and Tours" },
       {
         name: "description",
         content:
-          "RS Travel and Tours: Pakistan's #1 visa consultant in Islamabad. 98% approval rate for UK, USA, Canada, Schengen, Australia, Dubai & Turkey visas. IATA-accredited, Blue Area office. Expert documentation, interview prep & fast processing.",
+          "Pakistan's top visa consultancy in Blue Area, Islamabad. UK, USA, Schengen, Canada & Australia tourist, visit & business visa filing. Call 051-2000147.",
       },
       {
         name: "keywords",

@@ -8,11 +8,11 @@ import { COMPANY } from "@/data/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact RS Travel and Tours Islamabad — Phone, WhatsApp & Office Location" },
+      { title: "Contact RS Travel & Tours | Blue Area Islamabad" },
       {
         name: "description",
         content:
-          "Official contact details for RS Travel and Tours in Blue Area, Islamabad. Call 051-2000147, WhatsApp +92 344 5979486 or visit Office #6 Mezzanine Floor, Ratta Mansion.",
+          "Contact RS Travel and Tours in Blue Area, Islamabad. Call 051-2000147, WhatsApp 0344 5979486 or visit Office #6 Mezzanine Floor, Ratta Mansion for visa advice.",
       },
       {
         name: "keywords",

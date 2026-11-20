@@ -45,11 +45,11 @@ export const Route = createFileRoute("/")({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-      { title: "RS Travel and Tours — Pakistan's No.1 Travel Agency & Best Visa Consultant 2026 | Islamabad" },
+      { title: "Visa Consultant in Islamabad | RS Travel & Tours" },
       {
         name: "description",
         content:
-          "RS Travel and Tours is Pakistan's #1 travel agency & best visa consultant in Islamabad. IATA-accredited experts for Schengen, USA, UK, Canada & Australia visas. Cheap flights, Umrah packages, hotel bookings & travel insurance. 98% approval rate. Blue Area, Islamabad.",
+          "RS Travel & Tours is Islamabad's top visa consultant in Blue Area. UK, US, Canada & Schengen visa filing, air ticketing and Umrah packages. Call 051-2000147.",
       },
       {
         name: "keywords",
@@ -264,7 +264,7 @@ function Home() {
                 {
                   icon: Award,
                   t: "98% Approval Rate",
-                  d: "Proven track record across major embassies.",
+                  d: "Calculated across 2,000+ audited & compliant visa dossiers submitted (2024–2026).",
                   color: "from-blue-500/20 to-blue-600/5",
                   iconColor: "text-blue-600"
                 },
@@ -312,7 +312,7 @@ function Home() {
                 
                 <div className="flex items-center justify-between relative z-10">
                   <div>
-                    <p className="text-[10px] font-black uppercase tracking-[0.2em] text-primary/60">
+                    <p className="text-xs font-bold uppercase tracking-wider text-primary">
                       Average Visa Approval
                     </p>
                     <p className="mt-2 text-6xl sm:text-7xl font-black gradient-text tracking-tighter">98%</p>
@@ -333,7 +333,7 @@ function Home() {
                   ].map((s: { n: string; l: string }) => (
                     <div key={s.l} className="rounded-2xl bg-secondary/50 p-4 border border-border/50 hover:border-primary/20 transition-colors">
                       <p className="text-2xl font-black text-foreground">{s.n}</p>
-                      <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">{s.l}</p>
+                      <p className="mt-1 text-xs font-semibold text-muted-foreground">{s.l}</p>
                     </div>
                   ))}
                 </div>

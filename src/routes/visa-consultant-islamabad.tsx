@@ -27,11 +27,11 @@ export const Route = createFileRoute("/visa-consultant-islamabad")({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-      { title: "Best Visa Consultant in Islamabad (2026) — 98% Approval | RS Travel & Tours" },
+      { title: "Visa Consultant Islamabad 2026 | RS Travel & Tours" },
       {
         name: "description",
         content:
-          "Looking for the best visa consultant in Islamabad? RS Travel and Tours provides expert file preparation for UK, USA, Schengen, Canada & Australia visas in Blue Area. Call 051-2000147.",
+          "Best visa consultant in Islamabad. RS Travel Blue Area provides expert file preparation for UK, US, Schengen, Canada & Australia visas. Call 051-2000147.",
       },
       {
         name: "keywords",
@@ -190,13 +190,13 @@ function VisaConsultantIslamabadPage() {
                 country: "United Kingdom (UK)",
                 title: "UK Standard Visitor Visa",
                 desc: "Expert guidance for UKVI rules, source of income validation, sponsor undertakings, and document uploads.",
-                link: "/countries/uk",
+                link: "/countries/united-kingdom",
               },
               {
                 country: "United States (USA)",
                 title: "USA B1/B2 Tourist & Business",
                 desc: "Error-free DS-160 filing, expedited consular appointment tracking, and realistic mock interview coaching.",
-                link: "/countries/usa",
+                link: "/countries/united-states",
               },
               {
                 country: "European Union",

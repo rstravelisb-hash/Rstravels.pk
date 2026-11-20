@@ -1,8 +1,9 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { SOUTHERN_AFRICA_COUNTRIES } from "@/data/regions/southern-africa_countries";
 import { PageHero } from "@/components/site/PageHero";
-import { CheckCircle2, FileText, Globe2 } from "lucide-react";
+import { CheckCircle2, FileText, Globe2, ArrowRight } from "lucide-react";
 import { ContactForm } from "@/components/site/ContactForm";
+import { BreadcrumbSchema } from "@/components/site/BreadcrumbSchema";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import { DestinationCrossLinks } from "@/components/site/InternalCrossLinks";
 import React, { Suspense } from "react";
@@ -17,14 +18,16 @@ export const Route = createFileRoute("/countries/southern-africa/$country")({
   },
   head: ({ loaderData }) => ({
     meta: [
-      { title: `${loaderData?.title || "Southern Africa Visa Consultant Islamabad"} | Pakistan's #1 Visa Agency 2026` },
-      { name: "description", content: loaderData?.description ? `${loaderData.description} RS Travel and Tours Islamabad — Pakistan's #1 visa agency. 98% approval rate, IATA-accredited, Blue Area office.` : "" },
-      { name: "keywords", content: `${loaderData?.keywords || ""}, ${loaderData?.name || ""} visit visa pakistan, ${loaderData?.name || ""} visa requirements islamabad, apply ${loaderData?.name || ""} visa online pakistan, best visa consultant islamabad, top travel agency pakistan, blue area visa consultant` },
+      { title: `${loaderData?.title || `${loaderData?.name} Visa Consultant Islamabad`} | RS Travel & Tours` },
+      { name: "description", content: loaderData?.description ? `${loaderData.description} RS Travel & Tours Blue Area Islamabad provides expert document audits and VFS/eTA filing.` : "" },
+      { name: "keywords", content: `${loaderData?.keywords || ""}, ${loaderData?.name || ""} visit visa pakistan, ${loaderData?.name || ""} visa requirements islamabad, apply ${loaderData?.name || ""} visa online pakistan, africa visa consultant islamabad, blue area visa consultant` },
       { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
       { name: "author", content: "RS Travel and Tours" },
       { name: "geo.region", content: "PK-IS" },
-      { name: "geo.placename", content: "Islamabad" },
-      { property: "og:title", content: `${loaderData?.name || "Southern Africa"} Visa Consultant Islamabad — Pakistan's #1 | RS Travel and Tours` },
+      { name: "geo.placename", content: "Islamabad, Blue Area" },
+      { name: "geo.position", content: "33.7135;73.0673" },
+      { name: "ICBM", content: "33.7135, 73.0673" },
+      { property: "og:title", content: `${loaderData?.name || "Southern Africa"} Visa Consultant Islamabad | RS Travel and Tours` },
       { property: "og:description", content: loaderData?.description || "" },
       { property: "og:url", content: `https://rstravel.pk/countries/southern-africa/${loaderData?.slug || ""}` },
       { property: "og:type", content: "website" },
@@ -46,21 +49,110 @@ export const Route = createFileRoute("/countries/southern-africa/$country")({
 function SouthernAfricaCountryPage() {
   const country = Route.useLoaderData();
 
+  const countryFaqs = [
+    {
+      q: `What is the official visa fee and processing time for ${country.name} from Pakistan?`,
+      a: country.slug === "south-africa"
+        ? "Under bilateral reciprocal agreements, the consular visa fee for Pakistani citizens applying for a South Africa Visitor Visa (Section 11(1)) is Gratis ($0 consular fee). Applicants pay only the nominal VFS Global logistics service fee. Processing at the High Commission in Islamabad takes 15 to 25 working days."
+        : country.slug === "kenya"
+        ? "Kenya requires an Electronic Travel Authorisation (eTA) via the official government portal at $34 USD. Processing takes 3 to 5 business days."
+        : country.slug === "mauritius"
+        ? "Pakistani passport holders receive a 60-day tourist visa-on-arrival free ($0 consular fee) at Sir Seewoosagur Ramgoolam International Airport, provided confirmed hotel bookings and return flights are presented."
+        : country.slug === "tanzania"
+        ? "Tanzania tourist eVisas cost $50 USD for single entry and are issued online within 7 to 10 working days."
+        : `Official processing for ${country.name} generally takes 10 to 20 working days with fees between $30 and $60 USD.`,
+    },
+    {
+      q: country.slug === "south-africa"
+        ? "What bank statement and financial documents are required for South Africa?"
+        : country.slug === "kenya"
+        ? "Do I need a Yellow Fever vaccination certificate to visit Kenya?"
+        : country.slug === "mauritius"
+        ? "What are the entry conditions for Mauritius visa-on-arrival?"
+        : `What health certificates are mandatory for visiting ${country.name}?`,
+      a: country.slug === "south-africa"
+        ? "The South African High Commission requires an original 6-month bank statement stamped by your bank with an Account Maintenance Certificate, showing an unencumbered closing balance of at least PKR 1,500,000 to PKR 2,500,000, along with FBR tax returns and an employment letter."
+        : country.slug === "kenya"
+        ? "Yes. A valid Yellow Fever Vaccination Certificate and Polio Yellow Card are strictly mandatory when traveling between Pakistan and Kenya, checked prior to boarding and at border control."
+        : country.slug === "mauritius"
+        ? "Immigration authorities require a valid passport (minimum 6 months validity), confirmed round-trip air ticket, verified hotel voucher, and proof of funds of at least $100 USD per day of stay."
+        : `A valid Polio Vaccination Certificate (Yellow Card) and international travel insurance are mandatory when departing Pakistan for African destinations.`,
+    },
+    {
+      q: `How does RS Travel and Tours assist with ${country.name} travel from Islamabad?`,
+      a: `From our Blue Area office, our consultants verify your document compliance, complete online portal eTA/eVisa filings, assemble VFS physical dossiers, and issue verified GDS flight reservations and safari resort vouchers.`,
+    },
+  ];
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    name: country.title || `${country.name} Visa Consultant Islamabad`,
-    description: country.description,
-    url: `https://rstravel.pk/countries/southern-africa/${country.slug}`,
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://rstravel.pk/#organization",
+        name: "RS Travel and Tours",
+        url: "https://rstravel.pk",
+        telephone: COMPANY.phone,
+        email: COMPANY.email,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+          addressLocality: "Islamabad",
+          addressRegion: "Islamabad Capital Territory",
+          postalCode: "44000",
+          addressCountry: "PK",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 33.7135,
+          longitude: 73.0673,
+        },
+      },
+      {
+        "@type": "Service",
+        "@id": `https://rstravel.pk/countries/southern-africa/${country.slug}#service`,
+        name: `${country.name} Visa File Preparation & Advisory`,
+        provider: { "@id": "https://rstravel.pk/#organization" },
+        serviceType: `${country.name} Southern & East Africa Visa Consultancy`,
+        areaServed: { "@type": "AdministrativeArea", name: "Pakistan" },
+        description: country.description,
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `https://rstravel.pk/countries/southern-africa/${country.slug}#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://rstravel.pk" },
+          { "@type": "ListItem", position: 2, name: "Countries", item: "https://rstravel.pk/countries" },
+          { "@type": "ListItem", position: 3, name: `${country.name} Visa`, item: `https://rstravel.pk/countries/southern-africa/${country.slug}` },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `https://rstravel.pk/countries/southern-africa/${country.slug}#faq`,
+        mainEntity: countryFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.q,
+          acceptedAnswer: { "@type": "Answer", text: faq.a },
+        })),
+      },
+    ],
   };
 
   return (
     <>
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Countries", url: "/countries" },
+          { name: "Southern & East Africa", url: "/countries" },
+          { name: `${country.name} Visa`, url: `/countries/southern-africa/${country.slug}` },
+        ]}
+      />
       <PageHero
         eyebrow="Southern & East Africa"
-        title={country.name}
-        subtitle={`Expert visa consultancy for ${country.name} in Islamabad.`}
+        title={`${country.name} Visit Visa Consultant Islamabad`}
+        subtitle={`Expert visa file preparation, official eTA/eVisa filings, and VFS submission assistance for ${country.name} in Blue Area, Islamabad.`}
         backgroundImage={country.image}
       />
 
@@ -69,7 +161,6 @@ function SouthernAfricaCountryPage() {
       </div>
 
       <section className="container-px mx-auto max-w-5xl py-20">
-        {/* Intro */}
         <div className="space-y-6 text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-3xl font-bold md:text-4xl">
             {country.name} Visa Services in Islamabad
@@ -78,7 +169,6 @@ function SouthernAfricaCountryPage() {
         </div>
 
         <div className="grid gap-12 lg:grid-cols-3 mb-20">
-          {/* Main Requirements */}
           <div className="lg:col-span-2 rounded-[2rem] border border-border bg-card p-8 shadow-soft">
             <div className="flex items-center gap-3 mb-8 border-b border-border pb-4">
               <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/20 text-primary">
@@ -100,7 +190,6 @@ function SouthernAfricaCountryPage() {
             </ul>
           </div>
 
-          {/* Quick Info Sidebar */}
           <div className="space-y-6">
             <div className="rounded-2xl border border-border bg-secondary/30 p-6 shadow-soft">
               <div className="flex items-center gap-3 mb-4">
@@ -108,8 +197,7 @@ function SouthernAfricaCountryPage() {
                 <h3 className="font-bold text-lg">Travel Tip</h3>
               </div>
               <p className="text-sm text-muted-foreground">
-                For {country.name}, we handle the mandatory Travel Authorization (eTA) and help you
-                organize the specific documentation required for safaris or luxury resort entries.
+                For African destinations, ensure health compliance including Yellow Fever cards and Polio certificates. We handle all logistics including VFS submissions and resort vouchers.
               </p>
             </div>
 
@@ -117,10 +205,10 @@ function SouthernAfricaCountryPage() {
               <h3 className="font-bold text-lg mb-4 text-primary-glow">Consultancy Benefits</h3>
               <ul className="space-y-3">
                 {[
-                  "Safari dossier preparation",
-                  "eTA/e-Visa rapid processing",
-                  "Official travel declaration",
-                  "Yellow Fever guidance",
+                  "Official eTA / eVisa portal filing",
+                  "VFS Global Islamabad file assembly & tracking",
+                  "Verifiable GDS flights & safari resort vouchers",
+                  "Yellow Fever & Polio Yellow Card advisory",
                 ].map((tip, idx) => (
                   <li key={idx} className="text-sm text-muted-foreground flex gap-2 font-medium">
                     <span className="text-primary">•</span> {tip}
@@ -128,6 +216,60 @@ function SouthernAfricaCountryPage() {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+
+        {/* Consular Submission Protocol */}
+        <div className="mb-20 rounded-[2.5rem] border border-border bg-card p-8 md:p-12 shadow-soft">
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <h2 className="text-2xl font-bold md:text-3xl">
+              {country.name} Visa Application Protocol (Islamabad / Rawalpindi)
+            </h2>
+            <p className="mt-3 text-muted-foreground text-sm leading-relaxed">
+              Applying for {country.name} from Pakistan requires meticulous document verification and consular scheduling. Our Blue Area case officers oversee every stage.
+            </p>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="p-6 rounded-2xl bg-secondary/30 border border-border/50">
+              <span className="text-xs font-bold text-primary uppercase tracking-wider block mb-1.5">1. Pre-Submission &amp; Audit</span>
+              <h3 className="font-bold text-base text-foreground mb-2">Financial &amp; Civil Vetting</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                6-month stamped bank statements, FBR tax returns, and NADRA FRCs audited to satisfy strict consular benchmarks.
+              </p>
+            </div>
+            <div className="p-6 rounded-2xl bg-secondary/30 border border-border/50">
+              <span className="text-xs font-bold text-primary uppercase tracking-wider block mb-1.5">2. Mandatory Logistics</span>
+              <h3 className="font-bold text-base text-foreground mb-2">Live GDS Flights &amp; Hotel Vouchers</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Confirmed GDS round-trip air tickets and verified safari or hotel reservation vouchers covering your entire itinerary.
+              </p>
+            </div>
+            <div className="p-6 rounded-2xl bg-secondary/30 border border-border/50">
+              <span className="text-xs font-bold text-primary uppercase tracking-wider block mb-1.5">3. Submission &amp; Tracking</span>
+              <h3 className="font-bold text-base text-foreground mb-2">Portal Filing or VFS Islamabad</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Online portal submission or physical representation at VFS Global in Islamabad, tracking your application until passport return.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Dynamic Country-Specific FAQs */}
+        <div className="mb-20 max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold md:text-3xl">Frequently Asked Questions — {country.name} Visa</h2>
+            <p className="mt-2 text-sm text-muted-foreground">Expert answers for Pakistani passport holders applying for {country.name}.</p>
+          </div>
+          <div className="space-y-4">
+            {countryFaqs.map((faq, idx) => (
+              <div key={idx} className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+                <h3 className="text-base font-bold text-foreground mb-2 flex items-start gap-2">
+                  <span className="text-primary font-bold">Q:</span> {faq.q}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed pl-6">{faq.a}</p>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -153,10 +295,8 @@ function SouthernAfricaCountryPage() {
                 Start Your {country.name} Journey Today
               </h2>
               <p className="text-muted-foreground leading-relaxed text-lg">
-                Our experts at Pakistan's no.1 travel agency and consultancy are ready to handle your {country.name} visa application
-                with speed and precision, ensuring a stress-free start to your African adventure.
+                Our experts at Pakistan's premier travel agency and consultancy are ready to handle your {country.name} visa application with speed and precision, ensuring a stress-free start to your journey.
               </p>
-
               <div className="pt-6 flex flex-wrap gap-4">
                 <a
                   href={`https://wa.me/${COMPANY.whatsapp.replace(/\D/g, "")}`}
@@ -174,7 +314,6 @@ function SouthernAfricaCountryPage() {
                 </a>
               </div>
             </div>
-
             <div className="bg-card rounded-[2rem] border border-border p-8 shadow-elevated relative overflow-hidden">
               <div className="absolute -top-32 -right-32 h-64 w-64 rounded-full bg-primary-glow/10 blur-3xl pointer-events-none" />
               <h3 className="text-2xl font-bold mb-2">Book a Free Assessment</h3>

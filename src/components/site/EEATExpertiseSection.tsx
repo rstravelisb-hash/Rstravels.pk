@@ -24,14 +24,14 @@ export function EEATExpertiseSection({
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-xs font-black uppercase tracking-wider text-primary">Official Consular & Embassy Source Verified</span>
-              <span className="inline-flex items-center rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-bold text-emerald-600 dark:text-emerald-400">
-                <CheckCircle2 size={10} className="mr-1" /> Verified October 2026
+              <span className="text-xs font-black uppercase tracking-wider text-primary">Official Consular &amp; Embassy Source Verified</span>
+              <span className="inline-flex items-center rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
+                <CheckCircle2 size={12} className="mr-1" /> Verified October 2026
               </span>
             </div>
-            <h4 className="text-sm md:text-base font-bold text-foreground">
-              Requirements checked against official embassy & foreign ministry guidelines
-            </h4>
+            <h3 className="text-sm md:text-base font-bold text-foreground">
+              Requirements checked against official embassy &amp; foreign ministry guidelines
+            </h3>
           </div>
         </div>
 

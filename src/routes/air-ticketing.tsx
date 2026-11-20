@@ -24,11 +24,11 @@ export const Route = createFileRoute("/air-ticketing")({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-      { title: "Air Ticketing Islamabad | IATA Flight Booking & Reservations — RS Travel" },
+      { title: "Air Ticketing Islamabad | IATA Flight Booking — RS Travel" },
       {
         name: "description",
         content:
-          "IATA-accredited air ticketing agency in Blue Area, Islamabad. Official flight reservations on Emirates, Qatar Airways, PIA, Turkish Airlines & Saudia. Student, group & business class bookings. Call 051-2000147.",
+          "IATA air ticketing agency in Blue Area, Islamabad. Cheap international flights, confirmed visa itineraries & airline reservations on 300+ airlines. Call 051-2000147.",
       },
       {
         name: "keywords",

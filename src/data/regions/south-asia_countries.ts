@@ -82,7 +82,7 @@ export const SOUTH_ASIA_COUNTRIES = [
       "Digital Photo (White background)",
       "Return Ticket Reservation",
       "Confirmed Hotel Booking",
-      "Visa Fee: $50 USD (Electronic ETA)",
+      "Visa Fee: $20 USD (SAARC concessionary ETA)",
     ],
     popularPlaces: ["Colombo", "Kandy", "Bentota", "Sigiriya"],
     image:
@@ -125,7 +125,7 @@ export const SOUTH_ASIA_COUNTRIES = [
       "CNIC Copy",
       "NADRA Family Registration Certificate (FRC)",
       "Bank Statement (Last 6 months, showing sufficient funds)",
-      "Visa Fee: $30 USD (Standard processing)",
+      "Visa Fee: Gratis ($0 USD) for SAARC citizens (first 30 days per calendar year)",
     ],
     popularPlaces: ["Kathmandu", "Pokhara", "Everest Base Camp", "Lumbini"],
     image:

@@ -710,7 +710,7 @@ export const DESTINATIONS: Destination[] = [
     faqs: [
       { q: "How long is an Australian visitor visa valid for?", a: "Typically up to 3 years with multiple entries, allowing stays up to 3 or 6 months per visit." },
       { q: "Is a medical checkup required?", a: "Usually not for short-term visitor visas unless you are over 75 or plan to stay longer than 6 months." },
-      { q: "What is the subclass 600 visa fee?", a: "The base application charge is currently 190 AUD, payable online." },
+      { q: "What is the subclass 600 visa fee?", a: "The base application charge is currently AUD $250 (Tourist stream, offshore), payable online via ImmiAccount." },
     ],
     visas: [
       {
@@ -731,7 +731,7 @@ export const DESTINATIONS: Destination[] = [
           "Property Documents (optional but recommended to show ties)",
           "Planned Itinerary and Cover Letter",
         ],
-        fees: "190 AUD Embassy Fee + Service Charges",
+        fees: "AUD $250 Home Affairs Application Charge + Service Charges",
         processingTime: "Typically 2 to 4 weeks (can vary by season).",
         tips: [
           "Ensure all documents are clear color scans.",

@@ -10,11 +10,11 @@ export const Route = createFileRoute("/about")({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-      { title: "About RS Travel and Tours — Pakistan's #1 Visa & Travel Agency Since 2009 | Islamabad" },
+      { title: "About RS Travel & Tours | Top Visa Agency Islamabad" },
       {
         name: "description",
         content:
-          "RS Travel and Tours is Pakistan's most trusted visa & travel agency since 2009. 15+ years experience, 20,000+ happy clients, 98% approval rate. IATA-accredited office in Blue Area, Islamabad. Expert team for Schengen, USA, UK, Canada & Australia visas.",
+          "Pakistan's trusted travel agency & visa consultant since 2009. IATA-accredited, Blue Area Islamabad office. 98% approval rate for UK, US & Schengen visas.",
       },
       {
         name: "keywords",

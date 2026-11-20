@@ -66,7 +66,7 @@ export const SOUTHERN_AFRICA_COUNTRIES = [
       "Digital Photo",
       "Hotel Booking",
       "Flight Itinerary",
-      "Visa Fee: $50 USD (approx)",
+      "Visa Fee: $34 USD (Electronic Travel Authorisation via etakenya.go.ke)",
     ],
     popularPlaces: ["Maasai Mara", "Nairobi", "Mombasa", "Amboseli National Park"],
     image:

@@ -61,14 +61,14 @@ export function PageHero({
         <div className="absolute inset-0 z-0">
           <img
             src={backgroundImage}
-            alt={title}
+            alt={`${title} — RS Travel and Tours Islamabad`}
             className="h-full w-full object-cover opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent" />
         </div>
       )}
 
-      <div className="container-px relative z-10 mx-auto max-w-7xl py-20 md:py-28">
+      <div className="container-px relative z-10 mx-auto max-w-7xl pt-28 md:pt-36 pb-20 md:pb-24">
         <Reveal>
           <nav aria-label="Breadcrumb" className="mb-4 flex flex-wrap items-center gap-1.5 text-xs text-white/70">
             {crumbs.map((c, idx) => {

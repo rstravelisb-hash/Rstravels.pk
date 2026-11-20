@@ -1,76 +1,116 @@
-import { Outlet, Link, createRootRoute, HeadContent } from "@tanstack/react-router";
+import { Outlet, Link, createRootRoute, HeadContent, ErrorComponentProps } from "@tanstack/react-router";
 
 import { Navbar } from "@/components/site/Navbar";
 import { TopBar } from "@/components/site/TopBar";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { StickyMobileCTA } from "@/components/site/StickyMobileCTA";
+import { CookieConsent } from "@/components/site/CookieConsent";
 import { COMPANY } from "@/data/company";
 
 function NotFoundComponent() {
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0f1d] px-4 py-20">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0f1d] px-4 py-16 sm:py-24">
       {/* Dynamic Background Glows */}
-      <div className="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-primary/20 blur-[120px] pointer-events-none" />
-      <div className="absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-accent/20 blur-[120px] pointer-events-none" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
+      <div className="absolute -top-40 -left-40 h-80 w-80 sm:h-96 sm:w-96 rounded-full bg-primary/20 blur-[100px] sm:blur-[120px] pointer-events-none" />
+      <div className="absolute -bottom-40 -right-40 h-80 w-80 sm:h-96 sm:w-96 rounded-full bg-accent/20 blur-[100px] sm:blur-[120px] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none" />
 
-      <div className="relative z-10 max-w-2xl text-center px-6 py-12 rounded-[2.5rem] bg-slate-900/60 backdrop-blur-2xl border border-slate-700/50 shadow-2xl">
-        <div className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-xs font-black uppercase tracking-widest text-accent mb-6 shadow-glow">
-          <span className="h-2 w-2 rounded-full bg-accent animate-ping" />
-          Page Lost in Transit
+      <div className="relative z-10 w-full max-w-xl text-center px-5 py-8 sm:p-12 rounded-[2rem] sm:rounded-[2.5rem] bg-slate-900/80 backdrop-blur-2xl border border-slate-700/60 shadow-2xl">
+        <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-3.5 py-1.5 text-[11px] sm:text-xs font-black uppercase tracking-widest text-amber-400 mb-4 shadow-glow">
+          <span className="h-2 w-2 rounded-full bg-amber-400 animate-ping" />
+          Flight Path Undefined
         </div>
 
-        <h1 className="text-8xl md:text-9xl font-black tracking-tight text-white/90 drop-shadow-2xl">
-          4<span className="text-accent">0</span>4
+        <h1 className="text-7xl sm:text-8xl md:text-9xl font-black tracking-tight text-white/90 drop-shadow-2xl">
+          4<span className="text-amber-500">0</span>4
         </h1>
 
-        <h2 className="mt-4 text-2xl md:text-3xl font-black text-white uppercase tracking-tight">
-          Destination Not Found
+        <h2 className="mt-2 text-xl sm:text-2xl md:text-3xl font-black text-white uppercase tracking-tight">
+          Destination Lost in Transit
         </h2>
 
-        <p className="mt-3 text-sm md:text-base text-slate-300 max-w-md mx-auto leading-relaxed">
-          The page or visa package you are looking for has either departed to a new route or does not exist.
+        <p className="mt-3 text-xs sm:text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
+          The page or visa package you requested has either departed to a new route or does not exist. Let us help you navigate back on track.
         </p>
 
+        {/* Quick Search Redirect */}
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            const form = e.currentTarget;
+            const q = (new FormData(form).get("search") as string)?.trim();
+            if (q) {
+              window.location.href = `/countries?q=${encodeURIComponent(q)}`;
+            } else {
+              window.location.href = "/countries";
+            }
+          }}
+          className="mt-6 flex items-center rounded-2xl border border-slate-700 bg-slate-800/80 p-1.5 shadow-inner focus-within:border-amber-500 transition-colors"
+        >
+          <input
+            name="search"
+            type="text"
+            placeholder="Search country (e.g. UK, USA, Schengen)..."
+            className="flex-1 bg-transparent px-3 py-2 text-xs sm:text-sm text-white placeholder-slate-400 outline-none"
+            aria-label="Search destination countries"
+          />
+          <button
+            type="submit"
+            className="rounded-xl bg-amber-500 px-4 py-2 text-xs font-bold text-slate-950 hover:bg-amber-400 transition-all cursor-pointer"
+          >
+            Search
+          </button>
+        </form>
+
         {/* Quick Route Shortcuts */}
-        <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-2.5 max-w-lg mx-auto">
+        <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-2 text-left">
           {[
-            { label: "Visa Services", to: "/visa-services" },
-            { label: "Air Ticketing", to: "/air-ticketing" },
-            { label: "Umrah Packages", to: "/umrah" },
-            { label: "Assessment", to: "/profile-assessment" },
+            { label: "Visa Services", to: "/visa-services", desc: "Schengen, UK, USA" },
+            { label: "Air Ticketing", to: "/air-ticketing", desc: "Cheap global fares" },
+            { label: "Umrah Packages", to: "/umrah", desc: "Direct from ISB" },
+            { label: "Assessment", to: "/profile-assessment", desc: "Check visa chances" },
+            { label: "Explore Countries", to: "/countries", desc: "100+ destinations" },
+            { label: "Contact Office", to: "/contact", desc: "Blue Area Islamabad" },
           ].map((item) => (
             <Link
               key={item.to}
               to={item.to as any}
-              className="px-3 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-accent/40 text-xs font-bold text-slate-200 transition-all text-center"
+              className="p-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-amber-500/40 transition-all block group"
             >
-              {item.label}
+              <div className="text-xs font-bold text-white group-hover:text-amber-400 transition-colors">
+                {item.label}
+              </div>
+              <div className="text-[10px] text-slate-400 truncate mt-0.5">
+                {item.desc}
+              </div>
             </Link>
           ))}
         </div>
 
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+        {/* Primary CTA Buttons */}
+        <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-2.5">
           <Link
             to="/"
-            className="w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-accent px-8 py-3.5 text-sm font-bold text-accent-foreground shadow-glow hover:shadow-elevated transition-all hover:-translate-y-0.5"
+            className="w-full sm:w-auto min-h-[44px] inline-flex items-center justify-center rounded-full bg-gradient-to-r from-amber-500 to-amber-600 px-7 py-3 text-xs sm:text-sm font-bold text-slate-950 shadow-glow hover:brightness-110 transition-all hover:-translate-y-0.5"
           >
             Return to Homepage
           </Link>
-          <Link
-            to="/contact"
-            className="w-full sm:w-auto inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-8 py-3.5 text-sm font-bold text-white hover:bg-white/10 transition-all"
+          <a
+            href={`https://wa.me/${COMPANY.whatsapp.replace(/\D/g, "")}?text=${encodeURIComponent("Hello RS Travel, I need help finding a page on your website.")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto min-h-[44px] inline-flex items-center justify-center rounded-full border border-emerald-500/40 bg-emerald-500/10 px-6 py-3 text-xs sm:text-sm font-bold text-emerald-400 hover:bg-emerald-500/20 transition-all"
           >
-            Contact Support
-          </Link>
+            WhatsApp Support Desk
+          </a>
         </div>
       </div>
     </div>
   );
 }
 
-function RootErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function RootErrorComponent({ error, reset }: ErrorComponentProps) {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0f1d] px-4 py-20">
       <div className="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-rose-500/20 blur-[120px] pointer-events-none" />
@@ -166,6 +206,7 @@ function RootComponent() {
       latitude: 33.7135,
       longitude: 73.0673,
     },
+    hasMap: "https://maps.google.com/?q=RS+Travel+and+Tours+Fazal-e-Haq+Road+Blue+Area+Islamabad",
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+92 51 2000147",
@@ -312,6 +353,7 @@ function RootComponent() {
       <Footer />
       <WhatsAppButton />
       <StickyMobileCTA />
+      <CookieConsent />
     </div>
   );
 }

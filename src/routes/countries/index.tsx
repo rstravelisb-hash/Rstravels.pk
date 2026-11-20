@@ -13,11 +13,11 @@ export const Route = createFileRoute("/countries/")({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-      { title: "50+ Visa Destinations Worldwide — Apply from Islamabad | Pakistan's #1 Visa Agency" },
+      { title: "Global Visa Destinations Guide | RS Travel Islamabad" },
       {
         name: "description",
         content:
-          "RS Travel and Tours covers 50+ countries worldwide. Expert visa assistance for USA, UK, Canada, Australia, Schengen, Dubai, Turkey, Malaysia & more from Islamabad. Pakistan's #1 visa consultancy with 98% approval rate.",
+          "Explore visa requirements, processing times & fees for 50+ countries worldwide. Expert filing for Schengen, USA, UK, Canada & Gulf. Call 051-2000147.",
       },
       {
         name: "keywords",

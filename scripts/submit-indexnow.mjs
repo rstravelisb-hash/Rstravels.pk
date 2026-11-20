@@ -2,8 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import https from 'https';
 
-const HOST = 'rstravel.pk';
-const KEY = 'a37ca1a6c2664bd5a502861389a5816c';
+const HOST = process.env.INDEXNOW_HOST || 'rstravel.pk';
+const KEY = process.env.INDEXNOW_KEY || 'a37ca1a6c2664bd5a502861389a5816c';
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 const SITEMAP_PATH = path.resolve('public/sitemap.xml');
 

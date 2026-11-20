@@ -10,11 +10,11 @@ import { Hotel, Crown, Wallet, Globe2, ArrowRight } from "lucide-react";
 export const Route = createFileRoute("/hotel-booking")({
   head: () => ({
     meta: [
-      { title: "Best Hotel Booking Agent in Islamabad 2026 — Cheap International Reservations | RS Travel and Tours" },
+      { title: "Hotel Booking for Visa in Islamabad | RS Travel" },
       {
         name: "description",
         content:
-          "Pakistan's trusted hotel booking agent in Islamabad. Cheap hotel reservations worldwide for visa applications, luxury stays & budget travel. Schengen, UK, USA visa hotel bookings. Best rates guaranteed from Blue Area.",
+          "Verified hotel bookings worldwide for visa applications and vacations. 100% embassy-approved hotel vouchers in Dubai, UK, Schengen & Makkah. Call 051-2000147.",
       },
       {
         name: "keywords",
@@ -47,22 +47,65 @@ export const Route = createFileRoute("/hotel-booking")({
   component: HotelBooking,
 });
 
+const HOTEL_FAQS = [
+  {
+    q: "Are your hotel bookings accepted by Schengen, UK, and US embassies?",
+    a: "Yes. We issue 100% live, verifiable hotel vouchers generated directly through global B2B inventory with official confirmation numbers (PNR/Voucher ID) and hotel contact details that consular officers can inspect.",
+  },
+  {
+    q: "Can I get refundable or pay-at-hotel reservations for visa applications?",
+    a: "Yes, we specialize in flexible booking policies that allow date amendments or cancellations in case of visa processing delays or unexpected travel schedule adjustments.",
+  },
+  {
+    q: "Do you provide hotel booking vouchers for Umrah in Makkah and Madinah?",
+    a: "Yes, we hold direct contracting with top hotels in Makkah (Clock Tower, Jabal Omar, Ibrahim Khalil Road) and Madinah (Central Northern/Southern zones near the Prophet's Mosque) with confirmed proximity guarantees.",
+  },
+  {
+    q: "How fast can I receive my hotel voucher in Islamabad?",
+    a: "Instant issuance. We generate and deliver official hotel booking vouchers via WhatsApp and email within 15 to 30 minutes.",
+  },
+];
+
 function HotelBooking() {
   const hotelSchema = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://rstravel.pk/hotel-booking#service",
-    "name": "Worldwide Hotel Booking & Embassy Vouchers Islamabad",
-    "serviceType": "Hotel Reservation & Travel Lodging",
-    "description": "Embassy-verifiable hotel reservations and confirmed vouchers for Schengen, UK, US, and Canadian visa applications, as well as luxury stays in Makkah, Madinah, Dubai, and Europe.",
-    "provider": {
-      "@type": "TravelAgency",
-      "@id": "https://rstravel.pk/#organization",
-      "name": "RS Travel and Tours",
-      "telephone": "+92 51 2000147",
-      "url": "https://rstravel.pk/"
-    },
-    "areaServed": "Pakistan"
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://rstravel.pk/hotel-booking#service",
+        name: "Worldwide Hotel Booking & Embassy Vouchers Islamabad",
+        serviceType: "Hotel Reservation & Travel Lodging",
+        description: "Embassy-verifiable hotel reservations and confirmed vouchers for Schengen, UK, US, and Canadian visa applications, as well as luxury stays in Makkah, Madinah, Dubai, and Europe.",
+        provider: {
+          "@type": "TravelAgency",
+          "@id": "https://rstravel.pk/#organization",
+          name: "RS Travel and Tours",
+          telephone: "+92 51 2000147",
+          url: "https://rstravel.pk/",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+            addressLocality: "Islamabad",
+            addressRegion: "Islamabad Capital Territory",
+            postalCode: "44000",
+            addressCountry: "PK",
+          },
+        },
+        areaServed: "Pakistan",
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://rstravel.pk/hotel-booking#faq",
+        mainEntity: HOTEL_FAQS.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: f.a,
+          },
+        })),
+      },
+    ],
   };
 
   return (
@@ -70,8 +113,8 @@ function HotelBooking() {
       <script type="application/ld+json">{JSON.stringify(hotelSchema)}</script>
       <PageHero
         eyebrow="Hotels"
-        title="Stay where you love, save where it matters"
-        subtitle="From 5-star icons to boutique gems and value stays — we book it all."
+        title="Worldwide Hotel Bookings & Visa Vouchers in Islamabad"
+        subtitle="Embassy-verifiable hotel reservations, 5-star luxury stays, and budget-friendly accommodations across 100+ countries."
       />
 
       {/* Integrated Booking Widget */}
@@ -83,9 +126,9 @@ function HotelBooking() {
 
       <section className="container-px mx-auto max-w-7xl py-20 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {[
-          { icon: Crown, t: "Luxury Stays", d: "5-star resorts, suites and exclusive properties." },
-          { icon: Hotel, t: "Mid-range Comfort", d: "Trusted brands and great locations." },
-          { icon: Wallet, t: "Budget Friendly", d: "Verified value stays for smart travelers." },
+          { icon: Crown, t: "Luxury & 5-Star Resorts", d: "Premium suites at Marriott, Hilton, Accor, and boutique luxury properties in London, Dubai, Paris, and Istanbul." },
+          { icon: Hotel, t: "Embassy Verifiable Vouchers", d: "100% compliant hotel reservations required for Schengen, UK, US, and Canadian visa file submissions." },
+          { icon: Wallet, t: "Smart Budget Accommodations", d: "Handpicked, verified city-center hotels with free Wi-Fi, breakfast, and flexible cancellation options." },
         ].map((b, i) => (
           <Reveal key={b.t} delay={i * 0.05}>
             <div className="card-3d h-full rounded-2xl border border-border bg-card p-6 shadow-soft">
@@ -99,61 +142,73 @@ function HotelBooking() {
         ))}
       </section>
 
-      <section className="bg-secondary/40 py-16">
-        <div className="container-px mx-auto max-w-3xl text-center">
-          <Globe2 size={36} className="mx-auto text-accent" />
-          <h2 className="mt-4 text-3xl font-bold md:text-4xl">Global hotel partners</h2>
-          <p className="mt-3 text-muted-foreground">
-            Direct contracts with leading chains across Europe, the Americas, Middle East, and Asia.
-          </p>
-          <Link
-            to="/contact"
-            className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-primary-glow px-5 py-3 text-sm font-semibold text-primary-foreground shadow-soft hover:-translate-y-0.5 transition-transform"
-          >
-            Book a Hotel <ArrowRight size={14} />
-          </Link>
+      {/* Hotel Reservation Standards Breakdown */}
+      <section className="bg-secondary/20 py-20 border-t border-b border-border">
+        <div className="container-px mx-auto max-w-6xl">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Strict Embassy Compliance for Lodging Reservations
+            </h2>
+            <p className="mt-4 text-muted-foreground text-lg">
+              Avoid fake booking traps or canceled vouchers during consular checks. RS Travel ensures your hotel reservation withstands embassy inspection.
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-3">
+            <div className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+              <h3 className="text-lg font-bold text-foreground mb-3">Live Global Distribution System (GDS)</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Reservations are transmitted directly to the hotel management system with active booking confirmation numbers and authentic invoice vouchers.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+              <h3 className="text-lg font-bold text-foreground mb-3">Matched City & Itinerary Planning</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Hotel dates match your flight tickets, day-by-day travel plan, and cover letter exactly, preventing red flags from visa officers.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+              <h3 className="text-lg font-bold text-foreground mb-3">Flexible Modification Window</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Should your visa appointment or travel date move, our team adjusts your lodging booking without financial penalty.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* SEO Content Section */}
+      {/* FAQs */}
       <section className="container-px mx-auto max-w-4xl py-20">
-        <div className="space-y-8 border-t border-border pt-16">
-          <div className="text-center">
-            <h2 className="text-2xl font-bold md:text-3xl">
-              Expert Hotel Booking Agent in Islamabad
-            </h2>
-          </div>
-          <div className="grid gap-8 text-muted-foreground leading-relaxed md:grid-cols-2">
-            <p>
-              Securing the right accommodation is critical, especially when applying for visas. As
-              the premier <strong>hotel booking agent in Islamabad</strong>, RS Travel and Tours offers
-              verifiable and <strong>cheap hotel reservations for visa</strong> applications.
-              Embassies, particularly for Schengen and the US, require confirmed hotel bookings; we
-              ensure your documentation is flawless to prevent visa rejections.
-            </p>
-            <p>
-              Beyond visa compliance, we offer exceptional deals for holidaymakers and corporate
-              travelers. Whether you need a luxury 5-star resort in Dubai, a boutique hotel in
-              Paris, or a budget-friendly stay in London, our international partnerships guarantee
-              the best rates. Stop searching endlessly online; let the best travel agent for hotels
-              in Blue Area handle your itinerary seamlessly.
-            </p>
-          </div>
+        <div className="text-center mb-12">
+          <h2 className="text-2xl font-bold md:text-3xl">Frequently Asked Questions — Hotel Bookings</h2>
+          <p className="mt-2 text-muted-foreground">Key information on hotel reservations for visas and international travel.</p>
+        </div>
+        <div className="space-y-4">
+          {HOTEL_FAQS.map((faq, i) => (
+            <div key={i} className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+              <h3 className="text-base font-bold text-foreground mb-2 flex items-start gap-2">
+                <span className="text-primary font-bold">Q:</span> {faq.q}
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed pl-6">{faq.a}</p>
+            </div>
+          ))}
+        </div>
 
-          {/* Cross-Service Solutions Silo */}
-          <div className="mt-12">
-            <ServiceCrossLinksHub currentService="/hotel-booking" />
-          </div>
+        {/* Cross-Service Solutions Silo */}
+        <div className="mt-16">
+          <ServiceCrossLinksHub currentService="/hotel-booking" />
+        </div>
 
-          {/* E-E-A-T Hotel & Consular Voucher Section */}
-          <div className="mt-12">
-            <EEATExpertiseSection
-              countryName="Global Hospitality"
-              serviceName="Embassy Verifiable Hotel Reservations & B2B Vouchers"
-              consultantRole="Senior Corporate Hospitality Coordinator"
-              lastUpdated="September 2026"
-            />
-          </div>
+        {/* E-E-A-T Hotel & Consular Voucher Section */}
+        <div className="mt-12">
+          <EEATExpertiseSection
+            countryName="Global Hospitality"
+            serviceName="Embassy Verifiable Hotel Reservations & B2B Vouchers"
+            consultantRole="Senior Corporate Hospitality Coordinator"
+            lastUpdated="October 2026"
+          />
         </div>
       </section>
     </>

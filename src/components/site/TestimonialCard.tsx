@@ -54,7 +54,7 @@ export function TestimonialCard({
             <p className="text-base font-bold tracking-tight text-foreground transition-colors duration-300 group-hover:text-primary">
               {name}
             </p>
-            <p className="mt-0.5 text-[11px] font-bold text-muted-foreground uppercase tracking-widest">
+            <p className="mt-0.5 text-xs font-semibold text-muted-foreground">
               {role}
             </p>
           </div>

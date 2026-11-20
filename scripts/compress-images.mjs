@@ -49,7 +49,7 @@ async function compressImages() {
     const favPng = path.join(publicDir, 'favicon.png');
     if (fs.existsSync(favPng)) {
       const buffer = fs.readFileSync(favPng);
-      const smallBuffer = await sharp(buffer).resize(64, 64).png().toBuffer();
+      const smallBuffer = await sharp(buffer).resize(32, 32).png().toBuffer();
       fs.writeFileSync(favPng, smallBuffer);
       console.log(`Resized favicon.png: ${buffer.length} -> ${smallBuffer.length} bytes`);
     }

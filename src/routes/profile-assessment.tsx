@@ -37,10 +37,10 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/profile-assessment")({
   head: () => ({
     meta: [
-      { title: "Visa Success Probability AI | Global Passport Strength Audit | RS Travel and Tours" },
+      { title: "Visa Profile Assessment Tool | RS Travel Islamabad" },
       {
         name: "description",
-        content: "Calculate your visa approval chances instantly with the World's #1 Visa Success Probability AI. Comprehensive profile assessment for USA, UK, Canada, Australia, and Schengen. Global Passport Strength Audit by RS Travel and Tours Islamabad.",
+        content: "Evaluate your visa approval probability for USA, UK, Canada, Australia, and Schengen. Free profile assessment by RS Travel in Blue Area. Call 051-2000147.",
       },
       {
         name: "keywords",

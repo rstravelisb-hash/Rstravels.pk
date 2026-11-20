@@ -25,51 +25,47 @@ export function Navbar() {
   return (
     <>
       <header
-        className={`fixed inset-x-0 z-[100] mx-auto w-[96%] max-w-7xl transition-all duration-500 text-white ${
+        className={`fixed inset-x-0 z-[100] mx-auto w-[96%] max-w-6xl transition-all duration-300 text-white ${
           scrolled
-            ? "top-2 h-16 rounded-[2rem] bg-slate-900/85 backdrop-blur-xl border border-slate-700/50 shadow-2xl shadow-slate-950/40"
-            : "top-4 md:top-14 h-16 md:h-20 rounded-2xl md:rounded-[2rem] bg-slate-900/55 backdrop-blur-lg border border-slate-600/30 shadow-xl shadow-black/25"
+            ? "top-2 h-13 rounded-full glass-moon-gray-scrolled shadow-2xl"
+            : "top-3 md:top-14 h-13 md:h-14 rounded-full glass-moon-gray shadow-xl"
         }`}
       >
-        <div className="px-4 md:px-6 mx-auto flex h-full items-center justify-between gap-2 xl:gap-4 w-full">
-          <Link to="/" className="group flex flex-shrink-0 items-center gap-1.5 md:gap-2">
+        <div className="px-4 md:px-5 mx-auto flex h-full items-center justify-between gap-2 xl:gap-3 w-full">
+          <Link to="/" className="group flex flex-shrink-0 items-center gap-2">
             <img
               src={logo}
               alt=""
-              width={160}
-              height={44}
+              width={130}
+              height={36}
               className={`${
-                scrolled ? "h-9" : "h-11"
-              } w-auto object-contain transition-all duration-500 group-hover:scale-105`}
+                scrolled ? "h-7" : "h-8"
+              } w-auto object-contain transition-all duration-300 group-hover:scale-105`}
             />
-            <div className="hidden sm:block border-l border-white/30 h-8 mx-1" />
             <span className="leading-tight flex flex-col justify-center">
               <span
-                className="block text-sm md:text-base xl:text-lg font-bold italic tracking-tight whitespace-nowrap uppercase text-white"
+                className="block text-xs md:text-sm font-bold tracking-tight whitespace-nowrap text-white"
                 style={{ fontFamily: "'Poppins', sans-serif" }}
               >
-                RS <span className="text-accent">Travel and Tours</span>
-              </span>
-              <span className="hidden xl:block text-[10px] font-medium uppercase tracking-[0.2em] text-white/80 whitespace-nowrap">
-                Visa & Travel · Islamabad
+                RS <span className="text-accent">Travel &amp; Tours</span>
               </span>
             </span>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-px xl:gap-0.5">
+          <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1">
             {NAV_LINKS.map((l) => (
               <Link
                 key={l.to}
                 to={l.to}
                 activeOptions={{ exact: l.to === "/" }}
-                className={`group relative px-1.5 xl:px-2.5 py-2 text-[11px] xl:text-[13px] font-semibold text-white/80 hover:text-white transition-all duration-300 data-[status=active]:text-white whitespace-nowrap ${
+                className={`group relative px-2.5 py-1.5 text-xs font-semibold text-white/80 hover:text-white transition-all duration-200 data-[status=active]:text-white whitespace-nowrap ${
                   l.label === "Insurance"
                     ? "hidden 2xl:block"
                     : l.label === "Air Ticketing"
                     ? "hidden xl:block"
                     : ""
                 }`}
-                activeProps={{ className: "text-white" }}
+                activeProps={{ className: "text-white font-bold" }}
               >
                 <span className="relative z-10">
                   {l.label === "Visa Services" ? (
@@ -81,54 +77,25 @@ export function Navbar() {
                     l.label
                   )}
                 </span>
-                {/* Hover Pill Background */}
-                <span className="absolute inset-0 z-0 scale-95 rounded-full bg-white/10 opacity-0 transition-all duration-300 group-hover:scale-100 group-hover:opacity-100" />
-                {/* Active/Hover Underline */}
-                <span className="absolute inset-x-2 xl:inset-x-3 -bottom-1 h-0.5 origin-left scale-x-0 rounded-full bg-accent transition-transform duration-300 group-hover:scale-x-100" />
+                {/* Subtle Hover Pill */}
+                <span className="absolute inset-0 z-0 rounded-full bg-white/10 opacity-0 transition-all duration-200 group-hover:opacity-100" />
               </Link>
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-3 xl:gap-4 shrink-0">
-            {/* Desktop SSL Certified Highlight Popup */}
-            <div className="relative group/ssl flex items-center justify-center h-10 w-10 shrink-0 rounded-full border border-emerald-500/20 bg-emerald-500/10 backdrop-blur-md transition-all duration-300 hover:bg-emerald-500/20 hover:border-emerald-400/40 cursor-help">
-              <ShieldCheck
-                size={18}
-                className="text-emerald-400 transition-transform duration-300 group-hover/ssl:scale-110 relative z-10"
-              />
-              <span className="absolute inset-0 rounded-full bg-emerald-400/20 animate-ping opacity-30" />
-
-              {/* Hover Pop-up Tooltip */}
-              <div className="absolute top-full mt-4 right-0 w-64 origin-top-right scale-95 opacity-0 invisible group-hover/ssl:visible group-hover/ssl:scale-100 group-hover/ssl:opacity-100 transition-all duration-300 z-[200]">
-                {/* Invisible hover bridge to prevent un-hovering */}
-                <div className="absolute -top-4 left-0 w-full h-4" />
-                
-                <div className="rounded-2xl bg-[#0f172a]/95 backdrop-blur-xl border border-emerald-500/20 shadow-2xl shadow-emerald-900/20 p-4 relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 blur-3xl rounded-full pointer-events-none" />
-                  <div className="relative z-10 flex items-start gap-3">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 shadow-[0_0_15px_rgba(52,211,153,0.3)]">
-                      <ShieldCheck size={20} />
-                    </div>
-                    <div className="flex flex-col text-left pt-0.5">
-                      <h4 className="text-sm font-bold text-white leading-none">SSL Certified</h4>
-                      <p className="text-[11px] text-white/70 leading-relaxed mt-1.5">
-                        Your connection is protected with industry-standard 256-bit encryption.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className="hidden lg:flex items-center gap-2.5 shrink-0">
+            {/* Lean SSL Indicator */}
+            <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-emerald-500/20 bg-emerald-500/10 text-emerald-400 text-[11px] font-semibold">
+              <ShieldCheck size={13} className="text-emerald-400" />
+              <span className="hidden xl:inline">Secure</span>
             </div>
 
             <Link
               to="/contact"
-              className="relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-accent px-6 py-2.5 text-sm font-bold text-accent-foreground shadow-glow transition-all hover:shadow-elevated hover:-translate-y-0.5 active:translate-y-0 active:scale-95 group/btn"
+              className="relative inline-flex items-center gap-1.5 overflow-hidden rounded-full bg-accent px-4 py-1.5 text-xs font-bold text-accent-foreground shadow-glow transition-all hover:brightness-110 active:scale-95 group/btn"
             >
-              <span className="relative z-10 flex items-center gap-2">
-                Contact Us
-                <ChevronRight size={16} className="transition-transform group-hover/btn:translate-x-0.5" />
-              </span>
-              <div className="absolute inset-0 bg-white/20 translate-y-full transition-transform group-hover/btn:translate-y-0" />
+              <span>Contact Us</span>
+              <ChevronRight size={14} className="transition-transform group-hover/btn:translate-x-0.5" />
             </Link>
           </div>
 

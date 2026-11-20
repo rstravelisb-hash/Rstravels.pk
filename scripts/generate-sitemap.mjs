@@ -23,33 +23,48 @@ const staticRoutes = [
   '/pakistan-visa',
   '/faq',
   '/testimonials',
-  '/contact'
+  '/contact',
+  '/privacy-policy',
+  '/terms'
 ];
 
 const routes = new Set(staticRoutes);
 
-// 1. Primary destination pages & their sub-visas from destinations.ts
+// Custom visa slugs defined in destinations.ts for tier-1 countries
+const CUSTOM_DESTINATION_VISAS = {
+  'united-states': ['b1-b2-visa', 'business-visa'],
+  'united-kingdom': ['standard-visitor-visa', 'business-visa'],
+  'canada': ['visitor-visa', 'business-visa'],
+  'australia': ['visitor-visa', 'business-visa'],
+};
+
+// 1. Primary destination pages & their valid sub-visas from destinations.ts
 try {
   const destinationsPath = path.resolve('src/data/destinations.ts');
   if (fs.existsSync(destinationsPath)) {
     const content = fs.readFileSync(destinationsPath, 'utf-8');
-    const slugRegex = /slug:\s*"([^"]+)"/g;
-    let match;
-    const destSlugs = new Set();
-    
-    // Extract destination items
-    const destArrayMatch = content.match(/export const DESTINATIONS[\s\S]*?=\s*\[([\s\S]*?)\];/);
-    if (destArrayMatch) {
-      while ((match = slugRegex.exec(destArrayMatch[1])) !== null) {
-        destSlugs.add(match[1]);
-      }
-    }
+    const destSlugs = [
+      'schengen',
+      'united-states',
+      'united-kingdom',
+      'canada',
+      'middle-east',
+      'south-asia',
+      'central-asia',
+      'north-africa',
+      'southern-africa',
+      'east-asia',
+      'south-america',
+      'oceania',
+      'australia'
+    ];
 
     destSlugs.forEach(slug => {
       routes.add(`/countries/${slug}`);
-      routes.add(`/countries/${slug}/visa/visit-visa`);
-      routes.add(`/countries/${slug}/visa/tourist-visa`);
-      routes.add(`/countries/${slug}/visa/business-visa`);
+      const validVisas = CUSTOM_DESTINATION_VISAS[slug] || ['visit-visa', 'business-visa'];
+      validVisas.forEach(visaSlug => {
+        routes.add(`/countries/${slug}/visa/${visaSlug}`);
+      });
     });
   }
 } catch (err) {

@@ -18,14 +18,16 @@ export const Route = createFileRoute("/countries/schengen/$country")({
   },
   head: ({ loaderData }) => ({
     meta: [
-      { title: `${loaderData?.title || "Schengen Visa Consultant Islamabad"} | Pakistan's #1 Visa Agency 2026` },
-      { name: "description", content: loaderData?.description ? `${loaderData.description} RS Travel and Tours Islamabad — Pakistan's #1 visa agency. 98% approval rate, IATA-accredited, Blue Area office.` : "" },
-      { name: "keywords", content: `${loaderData?.keywords || ""}, best schengen visa consultant islamabad, top europe visa agent pakistan, schengen visa success rate pakistan, schengen visa from pakistan 2026, rs travel and tours schengen visa, blue area visa consultant` },
+      { title: `${loaderData?.title || `${loaderData?.name} Schengen Visa Consultant Islamabad`} | RS Travel & Tours` },
+      { name: "description", content: loaderData?.description ? `${loaderData.description} RS Travel & Tours Blue Area Islamabad provides expert Schengen dossier audits and VFS appointments.` : "" },
+      { name: "keywords", content: `${loaderData?.keywords || ""}, ${loaderData?.name || ""} schengen visa pakistan, ${loaderData?.name || ""} visa requirements islamabad, vfs appointment ${loaderData?.name || ""}, schengen visa consultant islamabad, blue area visa consultant` },
       { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
       { name: "author", content: "RS Travel and Tours" },
       { name: "geo.region", content: "PK-IS" },
-      { name: "geo.placename", content: "Islamabad" },
-      { property: "og:title", content: `${loaderData?.name || "Schengen"} Visa Consultant Islamabad — Pakistan's #1 | RS Travel and Tours` },
+      { name: "geo.placename", content: "Islamabad, Blue Area" },
+      { name: "geo.position", content: "33.7135;73.0673" },
+      { name: "ICBM", content: "33.7135, 73.0673" },
+      { property: "og:title", content: `${loaderData?.name || "Schengen"} Visa Consultant Islamabad | RS Travel and Tours` },
       { property: "og:description", content: loaderData?.description || "" },
       { property: "og:url", content: `https://rstravel.pk/countries/schengen/${loaderData?.slug || ""}` },
       { property: "og:type", content: "website" },
@@ -47,31 +49,74 @@ export const Route = createFileRoute("/countries/schengen/$country")({
 function SchengenCountryPage() {
   const country = Route.useLoaderData();
 
+  const countryFaqs = [
+    {
+      q: `What is the official consular fee and processing time for a ${country.name} Schengen visa from Islamabad?`,
+      a: `Under revised EU Visa Code regulations, the standard Schengen Type C visa fee is €90 EUR for adults and €45 EUR for children aged 6 to 12 (payable in PKR at VAC exchange rates). Processing takes approximately 15 to 45 calendar days following biometric enrolment at VFS Global, Gerry's, or the Embassy in Islamabad.`,
+    },
+    {
+      q: `What bank balance is recommended for a ${country.name} Schengen tourist visa from Pakistan?`,
+      a: `Consulates typically look for an active 6-month bank statement demonstrating steady regular income and an unencumbered closing balance of PKR 1,800,000 to PKR 2,800,000 for an individual, accompanied by an Account Maintenance Certificate and FBR tax returns.`,
+    },
+    {
+      q: `Can I travel to other European countries with my ${country.name} Schengen visa?`,
+      a: `Yes. A valid Schengen visa issued by ${country.name} grants free movement across all 29 Schengen member states. You must ensure that ${country.name} is your main destination (where you spend the maximum number of nights) or your primary point of entry into the Schengen zone.`,
+    },
+  ];
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": ["WebPage", "Service"],
-    name: `${country.name} Visa Consultancy — RS Travel and Tours Islamabad`,
-    description: country.description,
-    url: `https://rstravel.pk/countries/schengen/${country.slug}`,
-    provider: {
-      "@type": "TravelAgency",
-      name: "RS Travel and Tours",
-      url: "https://rstravel.pk",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Office 6, Mezzanine Floor, Ratta Mansion Plaza, Fazal ul Haq Road, Blue Area",
-        addressLocality: "Islamabad",
-        addressCountry: "PK",
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://rstravel.pk/#organization",
+        name: "RS Travel and Tours",
+        url: "https://rstravel.pk",
+        telephone: COMPANY.phone,
+        email: COMPANY.email,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+          addressLocality: "Islamabad",
+          addressRegion: "Islamabad Capital Territory",
+          postalCode: "44000",
+          addressCountry: "PK",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 33.7135,
+          longitude: 73.0673,
+        },
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        bestRating: "5",
-        ratingCount: "2847",
+      {
+        "@type": "Service",
+        "@id": `https://rstravel.pk/countries/schengen/${country.slug}#service`,
+        name: `${country.name} Schengen Visa File Preparation & Consular Advisory`,
+        provider: { "@id": "https://rstravel.pk/#organization" },
+        serviceType: `${country.name} Schengen Visa Consultancy`,
+        areaServed: { "@type": "AdministrativeArea", name: "Pakistan" },
+        description: country.description,
       },
-    },
-    areaServed: { "@type": "Country", name: "Pakistan" },
-    serviceType: `${country.name} Schengen Visa Consultancy`,
+      {
+        "@type": "BreadcrumbList",
+        "@id": `https://rstravel.pk/countries/schengen/${country.slug}#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://rstravel.pk" },
+          { "@type": "ListItem", position: 2, name: "Countries", item: "https://rstravel.pk/countries" },
+          { "@type": "ListItem", position: 3, name: "Schengen Visa", item: "https://rstravel.pk/countries/schengen" },
+          { "@type": "ListItem", position: 4, name: `${country.name} Visa`, item: `https://rstravel.pk/countries/schengen/${country.slug}` },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `https://rstravel.pk/countries/schengen/${country.slug}#faq`,
+        mainEntity: countryFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.q,
+          acceptedAnswer: { "@type": "Answer", text: faq.a },
+        })),
+      },
+    ],
   };
 
   return (
@@ -136,8 +181,7 @@ function SchengenCountryPage() {
                 <h3 className="font-bold text-lg">Why {country.name}?</h3>
               </div>
               <p className="text-sm text-muted-foreground">
-                Part of the Schengen zone, {country.name} is a gateway to Europe. We ensure your
-                application meets the specific standards of the embassy in Islamabad.
+                Part of the 29-nation Schengen zone, {country.name} is a premier European gateway. We ensure your application satisfies the rigorous scrutiny of consular officers in Islamabad.
               </p>
             </div>
 
@@ -145,10 +189,10 @@ function SchengenCountryPage() {
               <h3 className="font-bold text-lg mb-4 text-primary-glow">Consultancy Benefits</h3>
               <ul className="space-y-3">
                 {[
-                  "Error-free form filling",
-                  "Early appointment slots",
-                  "Meticulous file assembly",
-                  "Interview preparation",
+                  "Official EU Visa Code compliance check",
+                  "Early biometric appointment scheduling",
+                  "€30,000 Schengen embassy-approved insurance",
+                  "Verifiable GDS flights & hotel vouchers",
                 ].map((tip, idx) => (
                   <li key={idx} className="text-sm text-muted-foreground flex gap-2 font-medium">
                     <span className="text-primary">•</span> {tip}
@@ -156,6 +200,60 @@ function SchengenCountryPage() {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+
+        {/* Deep Consular & Embassy Submission Protocol */}
+        <div className="mb-20 rounded-[2.5rem] border border-border bg-card p-8 md:p-12 shadow-soft">
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <h2 className="text-2xl font-bold md:text-3xl">
+              {country.name} Schengen Visa Application Protocol (Islamabad / Rawalpindi)
+            </h2>
+            <p className="mt-3 text-muted-foreground text-sm leading-relaxed">
+              Applying for {country.name} from Pakistan requires strict alignment with the EU Visa Code (Regulation EC No 810/2009). Our Blue Area case officers prepare your dossier to satisfy all consular admissibility standards.
+            </p>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="p-6 rounded-2xl bg-secondary/30 border border-border/50">
+              <span className="text-xs font-bold text-primary uppercase tracking-wider block mb-1.5">1. Financial Ties &amp; Bank Audit</span>
+              <h3 className="font-bold text-base text-foreground mb-2">6-Month Stamped Statement</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Verification of source of income, tax deduction certificates (FBR NTN), salary slips, and maintaining steady funds without sudden unexplainable deposits.
+              </p>
+            </div>
+            <div className="p-6 rounded-2xl bg-secondary/30 border border-border/50">
+              <span className="text-xs font-bold text-primary uppercase tracking-wider block mb-1.5">2. Mandatory Logistics Dossier</span>
+              <h3 className="font-bold text-base text-foreground mb-2">€30,000 Insurance &amp; Bookings</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Schengen-compliant travel medical insurance covering all 29 member states, verifiable flight reservations, and confirmed hotel vouchers matching your daily itinerary.
+              </p>
+            </div>
+            <div className="p-6 rounded-2xl bg-secondary/30 border border-border/50">
+              <span className="text-xs font-bold text-primary uppercase tracking-wider block mb-1.5">3. Consular Submission &amp; Biometrics</span>
+              <h3 className="font-bold text-base text-foreground mb-2">VFS / Gerry's / Embassy Appointment</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Priority appointment booking for {country.name} in Islamabad, biometric file indexing, and cover letter drafting explaining your genuine intent to return to Pakistan.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Dynamic Country-Specific FAQs */}
+        <div className="mb-20 max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold md:text-3xl">Frequently Asked Questions — {country.name} Visa</h2>
+            <p className="mt-2 text-sm text-muted-foreground">Expert answers for Pakistani passport holders applying for {country.name}.</p>
+          </div>
+          <div className="space-y-4">
+            {countryFaqs.map((faq, idx) => (
+              <div key={idx} className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+                <h3 className="text-base font-bold text-foreground mb-2 flex items-start gap-2">
+                  <span className="text-primary font-bold">Q:</span> {faq.q}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed pl-6">{faq.a}</p>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -182,8 +280,7 @@ function SchengenCountryPage() {
                 Start Your {country.name} Journey Today
               </h2>
               <p className="text-muted-foreground leading-relaxed text-lg">
-                The {country.name} embassy has strict requirements. Don't risk a refusal — let our
-                experts at Pakistan's no.1 travel agency and consultancy handle your application from start to finish.
+                The {country.name} consulate has strict documentation standards. Don't risk a refusal — let our experts at Pakistan's premier visa agency handle your application from start to finish.
               </p>
 
               <div className="pt-6 flex flex-wrap gap-4">

@@ -9,11 +9,11 @@ import { COMPANY } from "@/data/site";
 export const Route = createFileRoute("/consultation")({
   head: () => ({
     meta: [
-      { title: "Free Visa Consultation — Pakistan's #1 Visa Expert | RS Travel and Tours Islamabad" },
+      { title: "Visa Consultation in Islamabad | RS Travel & Tours" },
       {
         name: "description",
         content:
-          "Book a free 15-minute visa consultation with Pakistan's best visa consultants. Get expert pathway analysis, document checklist & honest fee estimate. No obligation. RS Travel and Tours Blue Area, Islamabad.",
+          "Book a one-on-one visa consultation with senior consultants in Blue Area, Islamabad. Profile review, refusal appeals & document audits. Call 051-2000147.",
       },
       {
         name: "keywords",

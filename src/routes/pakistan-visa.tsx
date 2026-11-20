@@ -4,13 +4,14 @@ import { ContactForm } from "@/components/site/ContactForm";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import { ServiceCrossLinksHub } from "@/components/site/InternalCrossLinks";
+import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import { CheckCircle2, FileText, Globe2, ArrowRight } from "lucide-react";
 import { COMPANY } from "@/data/site";
 
 export const Route = createFileRoute("/pakistan-visa")({
   head: () => ({
     meta: [
-      { title: "Pakistan Visa Consultant Islamabad | Pakistan Inbound E-Visa 2026" },
+      { title: "Pakistan Inbound E-Visa Consultant | RS Travel" },
       { name: "description", content: "Expert assistance for Pakistan inbound visa (E-Visa, tourist, business, work) at RS Travel and Tours Islamabad. 100% online, hassle-free processing." },
       { name: "keywords", content: "pakistan inbound visa, pakistan e-visa islamabad, pakistan tourist visa online, apply pakistan visa 2026, nadra pakistan visa portal, pakistan business visa invitation, foreign tourist visa pakistan, travel to pakistan visa consultancy, best visa agent pakistan, pakistan visa fees 2026" },
       { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
@@ -127,8 +128,69 @@ function PakistanVisaPage() {
           </div>
         </div>
 
+        {/* Detailed Inbound Visa Categories */}
+        <div className="mt-16 rounded-[2.5rem] border border-border bg-card p-8 md:p-12 shadow-soft">
+          <h2 className="text-2xl font-bold md:text-3xl text-center mb-8">
+            Pakistan Inbound Visa Categories &amp; Eligibility
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="p-6 rounded-2xl bg-secondary/30 border border-border/50">
+              <h3 className="font-bold text-lg text-primary mb-2">Tourist E-Visa (Single / Multiple)</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Available for citizens of 190+ countries. Valid for 30 to 90 days with rapid online issuance for sightseeing, Northern areas exploration, and family visits.
+              </p>
+            </div>
+            <div className="p-6 rounded-2xl bg-secondary/30 border border-border/50">
+              <h3 className="font-bold text-lg text-primary mb-2">Business Entry Visa (BV)</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Requires an official Invitation Letter from a Board of Investment (BOI) recognized company or Chamber of Commerce recommendation for commercial activities.
+              </p>
+            </div>
+            <div className="p-6 rounded-2xl bg-secondary/30 border border-border/50">
+              <h3 className="font-bold text-lg text-primary mb-2">Family &amp; Origin Visa (POC / NICOP)</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                For foreign spouses and individuals of Pakistani heritage. Assistance with NADRA POC cards and multi-entry family visit permits.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* FAQs */}
+        <div className="mt-16 max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold md:text-3xl">Frequently Asked Questions — Pakistan Inbound Visa</h2>
+            <p className="mt-2 text-muted-foreground text-sm">Essential guidance for travelers visiting Pakistan.</p>
+          </div>
+          <div className="space-y-4">
+            {[
+              { q: "How long does a Pakistan tourist e-visa take to process?", a: "Standard online processing via the NADRA Pakistan Visa Portal typically takes 7 to 10 working days, while urgent applications can be issued within 48 to 72 hours." },
+              { q: "Can foreign nationals visit Northern Pakistan (Hunza, Skardu, Gilgit)?", a: "Yes. Most scenic destinations in Gilgit-Baltistan and Khyber Pakhtunkhwa are open to international tourists holding a valid Pakistan Tourist E-Visa with standard registration protocols." },
+              { q: "Do I need an invitation letter to apply for a tourist visa to Pakistan?", a: "Foreign tourists can either provide a confirmed hotel booking voucher from an accredited travel agency like RS Travel and Tours or a sponsor letter from a Pakistani citizen." },
+            ].map((faq, i) => (
+              <div key={i} className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+                <h3 className="text-base font-bold text-foreground mb-2 flex items-start gap-2">
+                  <span className="text-primary font-bold">Q:</span> {faq.q}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed pl-6">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Cross-Service Solutions Silo */}
-        <ServiceCrossLinksHub currentService="/pakistan-visa" />
+        <div className="mt-16">
+          <ServiceCrossLinksHub currentService="/pakistan-visa" />
+        </div>
+
+        {/* E-E-A-T Section */}
+        <div className="mt-12">
+          <EEATExpertiseSection
+            countryName="Pakistan (Inbound)"
+            serviceName="NADRA Online Visa Portal & Consular Inbound Processing"
+            consultantRole="Senior Inbound Consular Protocol Officer"
+            lastUpdated="October 2026"
+          />
+        </div>
       </section>
 
       <section className="bg-secondary/30 py-20 border-t border-border">
@@ -139,7 +201,7 @@ function PakistanVisaPage() {
                 Start Your Pakistan Visa Application
               </h2>
               <p className="text-muted-foreground leading-relaxed text-lg">
-                Our team at RS Travel and Tours handles file compilation and official visa submissions smoothly.
+                Our team at RS Travel and Tours handles file compilation, sponsor documentation, and official visa portal submissions smoothly.
               </p>
               <div className="pt-6 flex flex-wrap gap-4">
                 <a

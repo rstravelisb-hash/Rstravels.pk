@@ -15,7 +15,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src="/hero-bg.webp"
-          alt="Scenic landscape background"
+          alt="RS Travel and Tours - Premier Visa Consultancy & Travel Agency in Blue Area Islamabad"
           className="h-full w-full object-cover"
           fetchPriority="high"
         />
@@ -29,7 +29,7 @@ export function Hero() {
         style={{ animationDelay: "3s" }}
       />
 
-      <div className="container-px relative mx-auto pt-16 md:pt-24 lg:pt-28 pb-12">
+      <div className="container-px relative mx-auto pt-24 md:pt-32 lg:pt-36 pb-12">
         {/* Booking Widget Implementation - Now on Top with higher Z-index */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -38,11 +38,11 @@ export function Hero() {
           className="relative z-50 mb-12 md:mb-16"
         >
           <div className="mb-6 text-center px-4">
-            <h1 className="text-2xl xs:text-3xl font-black tracking-tight text-white md:text-4xl lg:text-5xl uppercase leading-[1.1]">
-              Best Travel Agency in Islamabad & <span className="gradient-text-accent">Top Visa Consultant</span>
+            <h1 className="text-2xl xs:text-3xl font-black tracking-tight text-white md:text-4xl lg:text-5xl leading-[1.15]">
+              Visa Consultancy, Air Tickets &amp; <span className="gradient-text-accent">Umrah Services in Islamabad</span>
             </h1>
-            <p className="mt-2 text-sm font-semibold text-white/80 tracking-[0.15em] uppercase hidden sm:block">
-              Pakistan's #1 Visit Visa Consultancy, Cheap Air Tickets & Umrah Packages · Blue Area
+            <p className="mt-2 text-sm font-medium text-white/90 hidden sm:block">
+              RS Travel and Tours · Pakistan's Trusted Visa Consultants, Airline Ticketing &amp; Umrah Packages · Blue Area
             </p>
 
             {/* Quick CTAs Above the Fold */}

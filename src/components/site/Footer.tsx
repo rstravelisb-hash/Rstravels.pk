@@ -64,7 +64,7 @@ export function Footer() {
 
           {/* Top Visa Destinations Silo */}
           <div className="lg:col-span-3">
-            <h3 className="text-xs font-bold text-white uppercase tracking-[0.2em] mb-6 flex items-center gap-2">
+            <h3 className="text-sm font-bold text-white mb-4 flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" /> Top Visa Destinations
             </h3>
             <ul className="space-y-3">
@@ -98,8 +98,8 @@ export function Footer() {
 
           {/* Core Services Silo */}
           <div className="lg:col-span-3">
-            <h3 className="text-xs font-bold text-white uppercase tracking-[0.2em] mb-6 flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent" /> Travel & Consular Services
+            <h3 className="text-sm font-bold text-white mb-4 flex items-center gap-2">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent" /> Travel &amp; Consular Services
             </h3>
             <ul className="space-y-3">
               {[
@@ -127,7 +127,7 @@ export function Footer() {
 
           {/* Office Contact Info */}
           <div className="lg:col-span-2 space-y-6">
-            <h3 className="text-xs font-bold text-white uppercase tracking-[0.2em] mb-6 flex items-center gap-2">
+            <h3 className="text-sm font-bold text-white mb-4 flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" /> Head Office
             </h3>
             <div className="space-y-3">
@@ -244,6 +244,18 @@ export function Footer() {
             <Link to="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link>
             <div className="h-3 w-px bg-white/10 hidden sm:block" />
             <Link to="/terms" className="hover:text-accent transition-colors">Terms & Conditions</Link>
+            <div className="h-3 w-px bg-white/10 hidden sm:block" />
+            <button
+              type="button"
+              onClick={() => {
+                if (typeof window !== "undefined" && window.__openCookieSettings) {
+                  window.__openCookieSettings();
+                }
+              }}
+              className="hover:text-accent transition-colors cursor-pointer text-xs"
+            >
+              Cookie Settings
+            </button>
           </div>
         </div>
       </div>

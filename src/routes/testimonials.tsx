@@ -10,11 +10,11 @@ import { ArrowRight, Star, Award, ShieldCheck } from "lucide-react";
 export const Route = createFileRoute("/testimonials")({
   head: () => ({
     meta: [
-      { title: "Client Reviews & Success Stories — Pakistan's #1 Visa Agency | RS Travel and Tours" },
+      { title: "Client Reviews & Visa Success | RS Travel Islamabad" },
       {
         name: "description",
         content:
-          "Read 1,500+ real client reviews and visa approval success stories. RS Travel and Tours Islamabad has a 98% approval rate for Schengen, USA, UK, Canada & Australia visas. Trusted by 20,000+ travelers.",
+          "Read real client reviews and visa approval stories from Pakistan. 98% success rate for Schengen, UK, USA, Canada & Australia visas. Call 051-2000147.",
       },
       {
         name: "keywords",

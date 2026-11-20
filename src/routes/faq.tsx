@@ -44,11 +44,11 @@ const EXTENDED_FAQS = [
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
-      { title: "FAQ — Pakistan's #1 Visa & Travel Agency | RS Travel and Tours Islamabad" },
+      { title: "Visa & Travel FAQs Islamabad | RS Travel and Tours" },
       {
         name: "description",
         content:
-          "Frequently asked questions about Schengen visa processing, bank statements, UK visas, Umrah packages, and cheap flights. Get instant answers from Pakistan's top visa consultancy.",
+          "Frequently asked questions about Schengen visas, bank statements, UK visitor visas & Umrah packages. Expert answers from RS Travel Blue Area Islamabad.",
       },
       {
         name: "keywords",

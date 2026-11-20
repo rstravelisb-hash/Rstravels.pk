@@ -29,11 +29,11 @@ export const Route = createFileRoute("/travel-agency-islamabad")({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-      { title: "Best Travel Agency in Islamabad (2026) — RS Travel & Tours Blue Area" },
+      { title: "Best Travel Agency in Islamabad | RS Travel & Tours" },
       {
         name: "description",
         content:
-          "RS Travel and Tours is the top-rated travel agency in Blue Area, Islamabad. IATA-authorized air ticketing, Umrah packages 2026, holiday tours, worldwide hotel bookings & travel insurance. Call 051-2000147.",
+          "Top-rated travel agency in Blue Area, Islamabad. IATA-authorized air ticketing, Umrah packages 2026, worldwide hotel bookings & travel insurance. Call 051-2000147.",
       },
       {
         name: "keywords",

@@ -183,7 +183,7 @@ function DestinationHub() {
                       <div className="absolute inset-0 z-0">
                         <img
                           src={c.image}
-                          alt={c.name}
+                          alt={`${c.name} visa requirements and tourism destination`}
                           loading="lazy"
                           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
@@ -198,7 +198,7 @@ function DestinationHub() {
                           {c.code && (
                             <img
                               src={`https://flagcdn.com/w40/${c.code}.png`}
-                              alt=""
+                              alt={`${c.name} national flag`}
                               className="w-6 h-4 object-cover rounded-sm shadow-sm shrink-0"
                             />
                           )}
@@ -276,7 +276,7 @@ function DestinationHub() {
                       <div className="absolute inset-0 z-0">
                         <img
                           src={c.image}
-                          alt={c.name}
+                          alt={`${c.name} visa requirements and tourism destination`}
                           loading="lazy"
                           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
@@ -291,7 +291,7 @@ function DestinationHub() {
                           {c.code && (
                             <img
                               src={`https://flagcdn.com/w40/${c.code}.png`}
-                              alt=""
+                              alt={`${c.name} national flag`}
                               className="w-6 h-4 object-cover rounded-sm shadow-sm shrink-0"
                             />
                           )}
@@ -364,7 +364,7 @@ function DestinationHub() {
                       <div className="absolute inset-0 z-0">
                         <img
                           src={c.image}
-                          alt={c.name}
+                          alt={`${c.name} visa requirements and tourism destination`}
                           loading="lazy"
                           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
@@ -379,7 +379,7 @@ function DestinationHub() {
                           {c.code && (
                             <img
                               src={`https://flagcdn.com/w40/${c.code}.png`}
-                              alt=""
+                              alt={`${c.name} national flag`}
                               className="w-6 h-4 object-cover rounded-sm shadow-sm shrink-0"
                             />
                           )}
@@ -451,7 +451,7 @@ function DestinationHub() {
                       <div className="absolute inset-0 z-0">
                         <img
                           src={c.image}
-                          alt={c.name}
+                          alt={`${c.name} visa requirements and tourism destination`}
                           loading="lazy"
                           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
@@ -466,7 +466,7 @@ function DestinationHub() {
                           {c.code && (
                             <img
                               src={`https://flagcdn.com/w40/${c.code}.png`}
-                              alt=""
+                              alt={`${c.name} national flag`}
                               className="w-6 h-4 object-cover rounded-sm shadow-sm shrink-0"
                             />
                           )}
@@ -538,7 +538,7 @@ function DestinationHub() {
                       <div className="absolute inset-0 z-0">
                         <img
                           src={c.image}
-                          alt={c.name}
+                          alt={`${c.name} visa requirements and tourism destination`}
                           loading="lazy"
                           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
@@ -553,7 +553,7 @@ function DestinationHub() {
                           {c.code && (
                             <img
                               src={`https://flagcdn.com/w40/${c.code}.png`}
-                              alt=""
+                              alt={`${c.name} national flag`}
                               className="w-6 h-4 object-cover rounded-sm shadow-sm shrink-0"
                             />
                           )}
@@ -625,7 +625,7 @@ function DestinationHub() {
                       <div className="absolute inset-0 z-0">
                         <img
                           src={c.image}
-                          alt={c.name}
+                          alt={`${c.name} visa requirements and tourism destination`}
                           loading="lazy"
                           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
@@ -640,7 +640,7 @@ function DestinationHub() {
                           {c.code && (
                             <img
                               src={`https://flagcdn.com/w40/${c.code}.png`}
-                              alt=""
+                              alt={`${c.name} national flag`}
                               className="w-6 h-4 object-cover rounded-sm shadow-sm shrink-0"
                             />
                           )}
@@ -693,7 +693,7 @@ function DestinationHub() {
                       <div className="absolute inset-0 z-0">
                         <img
                           src={c.image}
-                          alt={c.name}
+                          alt={`${c.name} visa requirements and tourism destination`}
                           loading="lazy"
                           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
@@ -708,7 +708,7 @@ function DestinationHub() {
                           {c.code && (
                             <img
                               src={`https://flagcdn.com/w40/${c.code}.png`}
-                              alt=""
+                              alt={`${c.name} national flag`}
                               className="w-6 h-4 object-cover rounded-sm shadow-sm shrink-0"
                             />
                           )}
@@ -780,7 +780,7 @@ function DestinationHub() {
                       <div className="absolute inset-0 z-0">
                         <img
                           src={c.image}
-                          alt={c.name}
+                          alt={`${c.name} visa requirements and tourism destination`}
                           loading="lazy"
                           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
@@ -795,7 +795,7 @@ function DestinationHub() {
                           {c.code && (
                             <img
                               src={`https://flagcdn.com/w40/${c.code}.png`}
-                              alt=""
+                              alt={`${c.name} national flag`}
                               className="w-6 h-4 object-cover rounded-sm shadow-sm shrink-0"
                             />
                           )}
@@ -867,7 +867,7 @@ function DestinationHub() {
                       <div className="absolute inset-0 z-0">
                         <img
                           src={c.image}
-                          alt={c.name}
+                          alt={`${c.name} visa requirements and tourism destination`}
                           loading="lazy"
                           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                         />
@@ -882,7 +882,7 @@ function DestinationHub() {
                           {c.code && (
                             <img
                               src={`https://flagcdn.com/w40/${c.code}.png`}
-                              alt=""
+                              alt={`${c.name} national flag`}
                               className="w-6 h-4 object-cover rounded-sm shadow-sm shrink-0"
                             />
                           )}

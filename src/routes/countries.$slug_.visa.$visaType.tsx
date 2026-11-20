@@ -1,7 +1,13 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { DESTINATIONS } from "@/data/destinations";
 import { PageHero } from "@/components/site/PageHero";
-import { CheckCircle2, FileText, Banknote, Clock, MapPin } from "lucide-react";
+import { CheckCircle2, FileText, Banknote, Clock, MapPin, HelpCircle } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { ContactForm } from "@/components/site/ContactForm";
 import { BreadcrumbSchema } from "@/components/site/BreadcrumbSchema";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
@@ -49,29 +55,74 @@ export const Route = createFileRoute("/countries/$slug_/visa/$visaType")({
 function VisaSubPage() {
   const { destination, visa } = Route.useLoaderData();
 
+  const subVisaFaqs = [
+    {
+      q: `What is the processing time and fee for a ${destination.name} ${visa.name}?`,
+      a: `Processing typically takes ${visa.processingTime || "2 to 4 weeks"} following biometric or consular submission. Official fees: ${visa.fees || "varies based on category"}. RS Travel and Tours in Blue Area, Islamabad provides complete file auditing and fast-track processing.`,
+    },
+    {
+      q: `What bank balance is required for a ${destination.name} ${visa.name} application from Pakistan?`,
+      a: `Embassies require an active 6-month bank statement showing steady regular income and an unencumbered closing balance sufficient to cover flights, accommodation, and daily expenses, supported by an Account Maintenance Certificate.`,
+    },
+    {
+      q: `How does RS Travel and Tours assist with ${destination.name} ${visa.name} applications in Islamabad?`,
+      a: `From our Blue Area office, our consultants verify your document compliance, complete online portal forms, issue live GDS flight reservations and hotel bookings, and draft persuasive embassy cover letters.`,
+    },
+  ];
+
   const subVisaSchema = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": `https://rstravel.pk/countries/${destination.slug}/visa/${visa.slug}#service`,
-    "name": `${destination.name} ${visa.name} Consultancy Islamabad`,
-    "serviceType": `${destination.name} ${visa.name} Filing & Documentation`,
-    "description": visa.seoDescription || visa.heroText,
-    "provider": {
-      "@type": "TravelAgency",
-      "@id": "https://rstravel.pk/#organization",
-      "name": "RS Travel and Tours",
-      "url": "https://rstravel.pk/",
-      "telephone": COMPANY.phone,
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
-        "addressLocality": "Islamabad",
-        "addressRegion": "ICT",
-        "postalCode": "44000",
-        "addressCountry": "PK"
-      }
-    },
-    "areaServed": "Pakistan"
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://rstravel.pk/#organization",
+        name: "RS Travel and Tours",
+        url: "https://rstravel.pk",
+        telephone: COMPANY.phone,
+        email: COMPANY.email,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+          addressLocality: "Islamabad",
+          addressRegion: "Islamabad Capital Territory",
+          postalCode: "44000",
+          addressCountry: "PK",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 33.7135,
+          longitude: 73.0673,
+        },
+      },
+      {
+        "@type": "Service",
+        "@id": `https://rstravel.pk/countries/${destination.slug}/visa/${visa.slug}#service`,
+        name: `${destination.name} ${visa.name} Consultancy Islamabad`,
+        serviceType: `${destination.name} ${visa.name} Filing & Documentation`,
+        description: visa.seoDescription || visa.heroText,
+        provider: { "@id": "https://rstravel.pk/#organization" },
+        areaServed: { "@type": "AdministrativeArea", name: "Pakistan" },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `https://rstravel.pk/countries/${destination.slug}/visa/${visa.slug}#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://rstravel.pk" },
+          { "@type": "ListItem", position: 2, name: "Countries", item: "https://rstravel.pk/countries" },
+          { "@type": "ListItem", position: 3, name: `${destination.name} Visa`, item: `https://rstravel.pk/countries/${destination.slug}` },
+          { "@type": "ListItem", position: 4, name: `${visa.name}`, item: `https://rstravel.pk/countries/${destination.slug}/visa/${visa.slug}` },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `https://rstravel.pk/countries/${destination.slug}/visa/${visa.slug}#faq`,
+        mainEntity: subVisaFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.q,
+          acceptedAnswer: { "@type": "Answer", text: faq.a },
+        })),
+      },
+    ],
   };
 
   return (
@@ -173,6 +224,33 @@ function VisaSubPage() {
           serviceName={`${destination.name} ${visa.name} Filing & Processing`}
           consultantRole="Senior Consular & Visa Review Officer"
         />
+
+        {/* Visa Specific FAQs (Matches JSON-LD Schema) */}
+        {subVisaFaqs && subVisaFaqs.length > 0 && (
+          <div className="mt-16 max-w-3xl mx-auto">
+            <div className="text-center mb-8">
+              <HelpCircle size={36} className="mx-auto text-primary mb-3" />
+              <h2 className="text-2xl md:text-3xl font-bold">
+                {destination.name} {visa.name} FAQs
+              </h2>
+              <p className="text-sm text-muted-foreground mt-2">
+                Frequently asked questions for Pakistani citizens applying for a {destination.name} {visa.name}.
+              </p>
+            </div>
+            <Accordion type="single" collapsible className="w-full">
+              {subVisaFaqs.map((faq, i) => (
+                <AccordionItem key={i} value={`visa-faq-${i}`} className="border-border">
+                  <AccordionTrigger className="text-left font-semibold hover:text-primary hover:no-underline">
+                    {faq.q}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                    {faq.a}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        )}
       </section>
 
       {/* Trust & Contact Section */}

@@ -1,7 +1,7 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { NORTH_AFRICA_COUNTRIES } from "@/data/regions/north-africa_countries";
 import { PageHero } from "@/components/site/PageHero";
-import { CheckCircle2, FileText, Globe2 } from "lucide-react";
+import { CheckCircle2, FileText, Globe2, ArrowRight } from "lucide-react";
 import { ContactForm } from "@/components/site/ContactForm";
 import { BreadcrumbSchema } from "@/components/site/BreadcrumbSchema";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
@@ -18,14 +18,16 @@ export const Route = createFileRoute("/countries/north-africa/$country")({
   },
   head: ({ loaderData }) => ({
     meta: [
-      { title: `${loaderData?.title || "North Africa Visa Consultant Islamabad"} | Pakistan's #1 Visa Agency 2026` },
-      { name: "description", content: loaderData?.description ? `${loaderData.description} RS Travel and Tours Islamabad — Pakistan's #1 visa agency. 98% approval rate, IATA-accredited, Blue Area office.` : "" },
-      { name: "keywords", content: `${loaderData?.keywords || ""}, ${loaderData?.name || ""} visit visa pakistan, ${loaderData?.name || ""} visa requirements islamabad, apply ${loaderData?.name || ""} visa online pakistan, best visa consultant islamabad, top travel agency pakistan, blue area visa consultant` },
+      { title: `${loaderData?.title || `${loaderData?.name} Visa Consultant Islamabad`} | RS Travel & Tours` },
+      { name: "description", content: loaderData?.description ? `${loaderData.description} RS Travel & Tours Blue Area Islamabad offers expert document audits and embassy filing.` : "" },
+      { name: "keywords", content: `${loaderData?.keywords || ""}, ${loaderData?.name || ""} visit visa pakistan, ${loaderData?.name || ""} visa requirements islamabad, apply ${loaderData?.name || ""} visa online pakistan, north africa visa consultant islamabad, blue area visa consultant` },
       { name: "robots", content: "index, follow, max-snippet:-1, max-image-preview:large" },
       { name: "author", content: "RS Travel and Tours" },
       { name: "geo.region", content: "PK-IS" },
-      { name: "geo.placename", content: "Islamabad" },
-      { property: "og:title", content: `${loaderData?.name || "North Africa"} Visa Consultant Islamabad — Pakistan's #1 | RS Travel and Tours` },
+      { name: "geo.placename", content: "Islamabad, Blue Area" },
+      { name: "geo.position", content: "33.7135;73.0673" },
+      { name: "ICBM", content: "33.7135, 73.0673" },
+      { property: "og:title", content: `${loaderData?.name || "North Africa"} Visa Consultant Islamabad | RS Travel and Tours` },
       { property: "og:description", content: loaderData?.description || "" },
       { property: "og:url", content: `https://rstravel.pk/countries/north-africa/${loaderData?.slug || ""}` },
       { property: "og:type", content: "website" },
@@ -47,12 +49,85 @@ export const Route = createFileRoute("/countries/north-africa/$country")({
 function NorthAfricaCountryPage() {
   const country = Route.useLoaderData();
 
+  const countryFaqs = [
+    {
+      q: `What is the processing time and procedure for a ${country.name} visa from Islamabad?`,
+      a: country.slug === "egypt"
+        ? "Standard Egypt tourist visas for Pakistani citizens undergo prior security clearance from Cairo (Ministry of Interior), taking approximately 4 to 6 weeks. Files must be submitted with attested documents directly to the Embassy of Egypt in Diplomatic Enclave, Islamabad."
+        : country.slug === "morocco"
+        ? "Morocco visa applications take approximately 15 to 20 working days through the Embassy of the Kingdom of Morocco in Islamabad. Applicants holding valid US, UK, or Schengen visas may qualify for the online Accès Maroc eVisa platform."
+        : `Consular processing for ${country.name} typically takes 3 to 4 weeks through the diplomatic mission in Islamabad. Early file submission is strongly advised.`,
+    },
+    {
+      q: country.slug === "egypt"
+        ? "Can Pakistani passport holders get an Egypt Visa on Arrival?"
+        : country.slug === "morocco"
+        ? "Can Pakistani citizens apply for Morocco eVisa online?"
+        : `What are the mandatory health certificates for visiting ${country.name}?`,
+      a: country.slug === "egypt"
+        ? "Under current regulations, visa-on-arrival at Cairo is not available for individual Pakistani passport holders traveling independently. It is conditionally granted only to organized tourist groups through authorized Egyptian operators or travelers with valid Gulf residency / Western visas under strict criteria."
+        : country.slug === "morocco"
+        ? "Only Pakistani passport holders who hold a valid, multiple-entry visa or permanent residence permit from the USA, UK, Canada, Australia, Japan, or Schengen area can apply for the Moroccan eVisa (Accès Maroc). All other applicants must submit a physical dossier to the embassy in Islamabad."
+        : `A valid Polio Vaccination Certificate (WHO Yellow Card) and comprehensive international travel health insurance are mandatory when traveling from Pakistan to North Africa.`,
+    },
+    {
+      q: `What documents are required by RS Travel and Tours for a ${country.name} visa dossier?`,
+      a: `We require your original passport (valid 6+ months), 6-month stamped bank statement with Account Maintenance Certificate, FBR tax returns, NADRA FRC, verified return flight itinerary, hotel booking vouchers, and employment or business chamber credentials.`,
+    },
+  ];
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    name: country.title || `${country.name} Visa Consultant Islamabad`,
-    description: country.description,
-    url: `https://rstravel.pk/countries/north-africa/${country.slug}`,
+    "@graph": [
+      {
+        "@type": "TravelAgency",
+        "@id": "https://rstravel.pk/#organization",
+        name: "RS Travel and Tours",
+        url: "https://rstravel.pk",
+        telephone: COMPANY.phone,
+        email: COMPANY.email,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+          addressLocality: "Islamabad",
+          addressRegion: "Islamabad Capital Territory",
+          postalCode: "44000",
+          addressCountry: "PK",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 33.7135,
+          longitude: 73.0673,
+        },
+      },
+      {
+        "@type": "Service",
+        "@id": `https://rstravel.pk/countries/north-africa/${country.slug}#service`,
+        name: `${country.name} Visa File Preparation & Consular Advisory`,
+        provider: { "@id": "https://rstravel.pk/#organization" },
+        serviceType: `${country.name} North Africa Visa Consultancy`,
+        areaServed: { "@type": "AdministrativeArea", name: "Pakistan" },
+        description: country.description,
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `https://rstravel.pk/countries/north-africa/${country.slug}#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://rstravel.pk" },
+          { "@type": "ListItem", position: 2, name: "Countries", item: "https://rstravel.pk/countries" },
+          { "@type": "ListItem", position: 3, name: `${country.name} Visa`, item: `https://rstravel.pk/countries/north-africa/${country.slug}` },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `https://rstravel.pk/countries/north-africa/${country.slug}#faq`,
+        mainEntity: countryFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.q,
+          acceptedAnswer: { "@type": "Answer", text: faq.a },
+        })),
+      },
+    ],
   };
 
   return (
@@ -68,8 +143,8 @@ function NorthAfricaCountryPage() {
       />
       <PageHero
         eyebrow="North Africa"
-        title={country.name}
-        subtitle={`Expert visa consultancy for ${country.name} in Islamabad.`}
+        title={`${country.name} Visit Visa Consultant Islamabad`}
+        subtitle={`Expert visa file preparation, security clearance guidance, and embassy appointment scheduling for ${country.name} in Blue Area, Islamabad.`}
         backgroundImage={country.image}
       />
 
@@ -117,8 +192,11 @@ function NorthAfricaCountryPage() {
                 <h3 className="font-bold text-lg">Travel Tip</h3>
               </div>
               <p className="text-sm text-muted-foreground">
-                North African embassies often require physical passport submission and verified
-                hotel bookings. We handle all logistics including embassy visits in Islamabad.
+                {country.slug === "egypt"
+                  ? "Security clearance for Egypt takes 4 to 6 weeks from Cairo. Plan well in advance and ensure all hotel bookings and flight itineraries are fully confirmed."
+                  : country.slug === "morocco"
+                  ? "Morocco sticker applications require original passports and verifiable bank statements. If you hold a valid US, UK, or Schengen visa, ask us about the Accès Maroc eVisa."
+                  : "North African embassies require physical passport submission and verified hotel bookings. We handle all logistics including embassy visits in Islamabad."}
               </p>
             </div>
 
@@ -126,10 +204,10 @@ function NorthAfricaCountryPage() {
               <h3 className="font-bold text-lg mb-4 text-primary-glow">Consultancy Benefits</h3>
               <ul className="space-y-3">
                 {[
-                  "Sticker visa dossier prep",
-                  "Official embassy coordination",
-                  "Verified hotel vouchers",
-                  "Medical insurance support",
+                  "Embassy-compliant sticker dossier prep",
+                  "Official embassy coordination in Islamabad",
+                  "Verifiable GDS flights & CRS hotel vouchers",
+                  "Medical insurance & Yellow Card guidance",
                 ].map((tip, idx) => (
                   <li key={idx} className="text-sm text-muted-foreground flex gap-2 font-medium">
                     <span className="text-primary">•</span> {tip}
@@ -137,6 +215,60 @@ function NorthAfricaCountryPage() {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+
+        {/* Consular Submission Protocol */}
+        <div className="mb-20 rounded-[2.5rem] border border-border bg-card p-8 md:p-12 shadow-soft">
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <h2 className="text-2xl font-bold md:text-3xl">
+              {country.name} Visa Application Protocol (Islamabad / Rawalpindi)
+            </h2>
+            <p className="mt-3 text-muted-foreground text-sm leading-relaxed">
+              Applying for {country.name} from Pakistan requires meticulous document verification and consular scheduling. Our Blue Area case officers oversee every stage.
+            </p>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="p-6 rounded-2xl bg-secondary/30 border border-border/50">
+              <span className="text-xs font-bold text-primary uppercase tracking-wider block mb-1.5">1. Pre-Submission &amp; Audit</span>
+              <h3 className="font-bold text-base text-foreground mb-2">Financial &amp; Civil Vetting</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                6-month stamped bank statements, FBR tax returns, and NADRA FRCs audited to satisfy strict North African consular benchmarks.
+              </p>
+            </div>
+            <div className="p-6 rounded-2xl bg-secondary/30 border border-border/50">
+              <span className="text-xs font-bold text-primary uppercase tracking-wider block mb-1.5">2. Mandatory Logistics</span>
+              <h3 className="font-bold text-base text-foreground mb-2">Live GDS Flights &amp; Hotel Vouchers</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Confirmed GDS round-trip air tickets and verified hotel reservation vouchers covering your entire itinerary across Cairo, Marrakesh, or Tunis.
+              </p>
+            </div>
+            <div className="p-6 rounded-2xl bg-secondary/30 border border-border/50">
+              <span className="text-xs font-bold text-primary uppercase tracking-wider block mb-1.5">3. Consular Submission</span>
+              <h3 className="font-bold text-base text-foreground mb-2">Embassy Stamping in Islamabad</h3>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                Direct submission or representation at the respective Embassy in Islamabad's Diplomatic Enclave, tracking your application until visa issuance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Dynamic Country-Specific FAQs */}
+        <div className="mb-20 max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold md:text-3xl">Frequently Asked Questions — {country.name} Visa</h2>
+            <p className="mt-2 text-sm text-muted-foreground">Authoritative consular guidance for Pakistani passport holders applying for {country.name}.</p>
+          </div>
+          <div className="space-y-4">
+            {countryFaqs.map((faq, idx) => (
+              <div key={idx} className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+                <h3 className="text-base font-bold text-foreground mb-2 flex items-start gap-2">
+                  <span className="text-primary font-bold">Q:</span> {faq.q}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed pl-6">{faq.a}</p>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -162,8 +294,7 @@ function NorthAfricaCountryPage() {
                 Start Your {country.name} Journey Today
               </h2>
               <p className="text-muted-foreground leading-relaxed text-lg">
-                Our team at Pakistan's no.1 travel agency and consultancy has extensive experience with North African visa protocols. We
-                ensure your application is professionally prepared to maximize approval chances.
+                Our team at Pakistan's premier travel agency and consultancy has extensive experience with North African visa protocols. We ensure your application is professionally prepared for the highest chance of approval.
               </p>
 
               <div className="pt-6 flex flex-wrap gap-4">

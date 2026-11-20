@@ -8,11 +8,11 @@ import { ShieldCheck, HeartPulse, CalendarX2, Globe2, ArrowRight, CheckCircle2, 
 export const Route = createFileRoute("/travel-insurance")({
   head: () => ({
     meta: [
-      { title: "Best Travel Insurance in Pakistan 2026 — Schengen Compliant | RS Travel and Tours Islamabad" },
+      { title: "Schengen Travel Insurance Islamabad | RS Travel" },
       {
         name: "description",
         content:
-          "Get the cheapest Schengen-compliant travel insurance in Pakistan. Official partners of Jubilee, Adamjee & United Insurance. €30,000+ medical cover, instant policy from RS Travel and Tours Islamabad.",
+          "Instant Schengen-compliant travel health insurance in Islamabad. €30,000+ embassy-approved coverage via Jubilee & Adamjee from PKR 3,000. Call 051-2000147.",
       },
       {
         name: "keywords",

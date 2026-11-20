@@ -27,10 +27,10 @@ function escapeHtml(str) {
 // 1. Static Core Pages Meta & Content
 const staticPages = {
   '/': {
-    title: "RS Travel and Tours | #1 Visa Consultant & Travel Agency in Islamabad",
-    description: "RS Travel and Tours is Pakistan's top visa consultant in Islamabad. Expert Schengen, UK, USA & Canada visas, cheap flights, Umrah packages & hotel booking.",
-    h1: "Pakistan's #1 Visa Consultant & Travel Agency in Islamabad",
-    summary: "Welcome to RS Travel and Tours — your premier travel partner in Blue Area, Islamabad. We specialize in global visa processing, air ticketing, Umrah packages, travel insurance, and hotel reservations with high success rates.",
+    title: "Visa Consultant in Islamabad | RS Travel & Tours",
+    description: "RS Travel & Tours offers visa application assistance, international air tickets, Umrah packages, hotel bookings and travel insurance in Islamabad. Contact our team for guidance.",
+    h1: "Visa Consultancy, Air Tickets & Umrah Services in Islamabad",
+    summary: "Welcome to RS Travel and Tours — your premier travel partner in Blue Area, Islamabad. We specialize in global visa processing, air ticketing, Umrah packages, travel insurance, and hotel reservations with verified documentation.",
     breadcrumbs: [{ name: "Home", url: "/" }]
   },
   '/about': {
@@ -145,12 +145,28 @@ const staticPages = {
     summary: "Please review our service terms and policies regarding visa consultancy, payment processing, appointment bookings, and ticketing cancellations.",
     breadcrumbs: [{ name: "Home", url: "/" }, { name: "Terms & Conditions", url: "/terms" }]
   },
+  '/terms-and-conditions': {
+    title: "Terms and Conditions | RS Travel and Tours Islamabad",
+    description: "Terms and Conditions governing visa processing, flight bookings, Umrah packages, and consultancy services provided by RS Travel and Tours.",
+    h1: "Terms of Service & Consultancy Agreement",
+    summary: "Please review our service terms and policies regarding visa consultancy, payment processing, appointment bookings, and ticketing cancellations.",
+    breadcrumbs: [{ name: "Home", url: "/" }, { name: "Terms & Conditions", url: "/terms" }],
+    canonicalUrl: "https://rstravel.pk/terms",
+    robots: "noindex, follow"
+  },
   '/thank-you': {
     title: "Thank You — RS Travel and Tours Islamabad",
     description: "Thank you for reaching out to RS Travel and Tours. Our senior visa consultant will contact you shortly to assist with your inquiry.",
     h1: "Thank You for Contacting RS Travel and Tours",
     summary: "Your message has been received by our senior visa desk in Islamabad. An expert travel consultant will review your details and contact you promptly.",
     breadcrumbs: [{ name: "Home", url: "/" }, { name: "Thank You", url: "/thank-you" }]
+  },
+  '/404': {
+    title: "404 Destination Lost in Transit | RS Travel and Tours Islamabad",
+    description: "The page or travel package you are looking for does not exist or has departed. Explore worldwide visa services, cheap flights, and Umrah packages.",
+    h1: "404 — Page Lost in Transit",
+    summary: "The visa package or route you requested has departed or does not exist. Return home or contact our Blue Area consultation desk.",
+    breadcrumbs: [{ name: "Home", url: "/" }, { name: "404 Not Found", url: "/404" }]
   }
 };
 
@@ -225,10 +241,28 @@ try {
           ]
         });
 
-        // Add sub-visa types
-        const visaTypes = [
+        // Add sub-visa types aligned with destinations.ts
+        const customVisas = {
+          'united-states': [
+            { typeSlug: 'b1-b2-visa', typeName: 'B1/B2 Visitor Visa' },
+            { typeSlug: 'business-visa', typeName: 'Business Visa' }
+          ],
+          'united-kingdom': [
+            { typeSlug: 'standard-visitor-visa', typeName: 'Standard Visitor Visa' },
+            { typeSlug: 'business-visa', typeName: 'Business Visa' }
+          ],
+          'canada': [
+            { typeSlug: 'visitor-visa', typeName: 'Visitor Visa (TRV)' },
+            { typeSlug: 'business-visa', typeName: 'Business Visa' }
+          ],
+          'australia': [
+            { typeSlug: 'visitor-visa', typeName: 'Visitor Visa (Subclass 600)' },
+            { typeSlug: 'business-visa', typeName: 'Business Visa' }
+          ]
+        };
+
+        const visaTypes = customVisas[slug] || [
           { typeSlug: 'visit-visa', typeName: 'Visit Visa' },
-          { typeSlug: 'tourist-visa', typeName: 'Tourist Visa' },
           { typeSlug: 'business-visa', typeName: 'Business Visa' }
         ];
 
@@ -356,7 +390,7 @@ console.log(`\n🚀 Starting Static HTML Prerendering for ${allPreRenderPages.si
 let generatedCount = 0;
 
 allPreRenderPages.forEach((pageData, route) => {
-  const canonicalUrl = `${SITE_URL}${route === '/' ? '' : route}`;
+  const canonicalUrl = pageData.canonicalUrl || `${SITE_URL}${route === '/' ? '' : route}`;
   
   // 1. Build JSON-LD Breadcrumb Schema
   const breadcrumbList = {
@@ -459,7 +493,7 @@ allPreRenderPages.forEach((pageData, route) => {
         </p>
         
         <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-          <a href="https://wa.me/923000000000?text=${encodeURIComponent(`Hello RS Travel, I want to inquire about ${pageData.h1 || pageData.title}`)}" style="display: inline-flex; align-items: center; justify-content: center; padding: 14px 28px; background-color: #f97316; color: #ffffff; font-weight: 700; border-radius: 9999px; text-decoration: none; font-size: 0.95rem; box-shadow: 0 10px 25px rgba(249,115,22,0.3);">
+          <a href="https://wa.me/923445979486?text=${encodeURIComponent(`Hello RS Travel, I want to inquire about ${pageData.h1 || pageData.title}`)}" style="display: inline-flex; align-items: center; justify-content: center; padding: 14px 28px; background-color: #f97316; color: #ffffff; font-weight: 700; border-radius: 9999px; text-decoration: none; font-size: 0.95rem; box-shadow: 0 10px 25px rgba(249,115,22,0.3);">
             WhatsApp Consultation Desk
           </a>
           <a href="tel:+92512000147" style="display: inline-flex; align-items: center; justify-content: center; padding: 14px 28px; background-color: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15); color: #ffffff; font-weight: 700; border-radius: 9999px; text-decoration: none; font-size: 0.95rem;">
@@ -558,6 +592,11 @@ allPreRenderPages.forEach((pageData, route) => {
   // Replace <title>
   html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(pageData.title)}</title>`);
 
+  // Replace or add <meta name="robots" ... />
+  if (pageData.robots) {
+    html = html.replace(/<meta\s+name=["']robots["']\s+content=["'][\s\S]*?["']\s*\/?>/i, `<meta name="robots" content="${escapeHtml(pageData.robots)}" />`);
+  }
+
   // Replace <meta name="description" ... />
   html = html.replace(/<meta\s+name=["']description["']\s+content=["'][\s\S]*?["']\s*\/?>/i, `<meta name="description" content="${escapeHtml(pageData.description)}" />`);
 
@@ -578,9 +617,9 @@ allPreRenderPages.forEach((pageData, route) => {
   html = html.replace(/<meta\s+property=["']og:description["']\s+content=["'][\s\S]*?["']\s*\/?>/i, `<meta property="og:description" content="${escapeHtml(pageData.description)}" />`);
   html = html.replace(/<meta\s+property=["']og:url["']\s+content=["'][\s\S]*?["']\s*\/?>/i, `<meta property="og:url" content="${canonicalUrl}" />`);
 
-  html = html.replace(/<meta\s+property=["']twitter:title["']\s+content=["'][\s\S]*?["']\s*\/?>/i, `<meta property="twitter:title" content="${escapeHtml(pageData.title)}" />`);
-  html = html.replace(/<meta\s+property=["']twitter:description["']\s+content=["'][\s\S]*?["']\s*\/?>/i, `<meta property="twitter:description" content="${escapeHtml(pageData.description)}" />`);
-  html = html.replace(/<meta\s+property=["']twitter:url["']\s+content=["'][\s\S]*?["']\s*\/?>/i, `<meta property="twitter:url" content="${canonicalUrl}" />`);
+  html = html.replace(/<meta\s+(?:property|name)=["']twitter:title["']\s+content=["'][\s\S]*?["']\s*\/?>/i, `<meta name="twitter:title" content="${escapeHtml(pageData.title)}" />`);
+  html = html.replace(/<meta\s+(?:property|name)=["']twitter:description["']\s+content=["'][\s\S]*?["']\s*\/?>/i, `<meta name="twitter:description" content="${escapeHtml(pageData.description)}" />`);
+  html = html.replace(/<meta\s+(?:property|name)=["']twitter:url["']\s+content=["'][\s\S]*?["']\s*\/?>/i, `<meta name="twitter:url" content="${canonicalUrl}" />`);
 
   // Inject Schemas into <head>
   const schemaScripts = `
@@ -612,6 +651,9 @@ allPreRenderPages.forEach((pageData, route) => {
 
   const targetFilePath = path.join(targetDir, 'index.html');
   fs.writeFileSync(targetFilePath, html, 'utf-8');
+  if (route === '/404') {
+    fs.writeFileSync(path.join(DIST_DIR, '404.html'), html, 'utf-8');
+  }
   generatedCount++;
 });
 

@@ -14,8 +14,8 @@ export function SEOBlock() {
           <div className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/15 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-accent">
             <Award size={14} /> Pakistan's #1 Authority
           </div>
-          <h2 className="text-2xl font-black text-white uppercase tracking-tight">
-            Pakistan's Top <span className="text-accent">Visa Consultancy</span> & Travel Agency
+          <h2 className="text-2xl font-black text-white tracking-tight">
+            Pakistan's Top <span className="text-accent">Visa Consultancy</span> &amp; Travel Agency
           </h2>
           <p className="text-xs leading-relaxed text-white/70">
             <strong>RS Travel and Tours</strong> is Islamabad’s premier IATA-accredited agency providing full-scope consular assistance for UK, USA, Schengen, Canada, and Australia visit visas. Located on Fazal-e-Haq Road in Blue Area, we combine 15+ years of consular file preparation with an industry-leading 98% approval rate.

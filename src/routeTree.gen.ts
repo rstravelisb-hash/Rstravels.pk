@@ -9,123 +9,44 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as VisaServicesRouteImport } from './routes/visa-services'
-import { Route as VisaConsultantIslamabadRouteImport } from './routes/visa-consultant-islamabad'
-import { Route as UmrahRouteImport } from './routes/umrah'
-import { Route as TravelInsuranceRouteImport } from './routes/travel-insurance'
-import { Route as TravelAgencyIslamabadRouteImport } from './routes/travel-agency-islamabad'
-import { Route as ThankYouRouteImport } from './routes/thank-you'
-import { Route as TestimonialsRouteImport } from './routes/testimonials'
-import { Route as TermsRouteImport } from './routes/terms'
-import { Route as ProfileAssessmentRouteImport } from './routes/profile-assessment'
-import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
-import { Route as PassportServicesRouteImport } from './routes/passport-services'
-import { Route as PakistanVisaRouteImport } from './routes/pakistan-visa'
-import { Route as HotelBookingRouteImport } from './routes/hotel-booking'
-import { Route as FaqRouteImport } from './routes/faq'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as ConsultationRouteImport } from './routes/consultation'
-import { Route as AirTicketingRouteImport } from './routes/air-ticketing'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AirTicketingRouteImport } from './routes/air-ticketing'
+import { Route as ConsultationRouteImport } from './routes/consultation'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as HotelBookingRouteImport } from './routes/hotel-booking'
+import { Route as PakistanVisaRouteImport } from './routes/pakistan-visa'
+import { Route as PassportServicesRouteImport } from './routes/passport-services'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as ProfileAssessmentRouteImport } from './routes/profile-assessment'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as TermsAndConditionsRouteImport } from './routes/terms-and-conditions'
+import { Route as TestimonialsRouteImport } from './routes/testimonials'
+import { Route as ThankYouRouteImport } from './routes/thank-you'
+import { Route as TravelAgencyIslamabadRouteImport } from './routes/travel-agency-islamabad'
+import { Route as TravelInsuranceRouteImport } from './routes/travel-insurance'
+import { Route as UmrahRouteImport } from './routes/umrah'
+import { Route as VisaConsultantIslamabadRouteImport } from './routes/visa-consultant-islamabad'
+import { Route as VisaServicesRouteImport } from './routes/visa-services'
 import { Route as CountriesIndexRouteImport } from './routes/countries/index'
 import { Route as CountriesSlugRouteImport } from './routes/countries.$slug'
-import { Route as CountriesSouthernAfricaCountryRouteImport } from './routes/countries.southern-africa.$country'
-import { Route as CountriesSouthAsiaCountryRouteImport } from './routes/countries.south-asia.$country'
-import { Route as CountriesSouthAmericaCountryRouteImport } from './routes/countries.south-america.$country'
-import { Route as CountriesSchengenCountryRouteImport } from './routes/countries.schengen.$country'
-import { Route as CountriesOceaniaCountryRouteImport } from './routes/countries.oceania.$country'
-import { Route as CountriesNorthAfricaCountryRouteImport } from './routes/countries.north-africa.$country'
-import { Route as CountriesMiddleEastCountryRouteImport } from './routes/countries.middle-east.$country'
-import { Route as CountriesEuropeOthersCountryRouteImport } from './routes/countries.europe-others.$country'
-import { Route as CountriesEastAsiaCountryRouteImport } from './routes/countries.east-asia.$country'
-import { Route as CountriesCentralAsiaCountryRouteImport } from './routes/countries.central-asia.$country'
 import { Route as CountriesAmericasCountryRouteImport } from './routes/countries.americas.$country'
+import { Route as CountriesCentralAsiaCountryRouteImport } from './routes/countries.central-asia.$country'
+import { Route as CountriesEastAsiaCountryRouteImport } from './routes/countries.east-asia.$country'
+import { Route as CountriesEuropeOthersCountryRouteImport } from './routes/countries.europe-others.$country'
+import { Route as CountriesMiddleEastCountryRouteImport } from './routes/countries.middle-east.$country'
+import { Route as CountriesNorthAfricaCountryRouteImport } from './routes/countries.north-africa.$country'
+import { Route as CountriesOceaniaCountryRouteImport } from './routes/countries.oceania.$country'
+import { Route as CountriesSchengenCountryRouteImport } from './routes/countries.schengen.$country'
+import { Route as CountriesSouthAmericaCountryRouteImport } from './routes/countries.south-america.$country'
+import { Route as CountriesSouthAsiaCountryRouteImport } from './routes/countries.south-asia.$country'
+import { Route as CountriesSouthernAfricaCountryRouteImport } from './routes/countries.southern-africa.$country'
 import { Route as CountriesSlugVisaVisaTypeRouteImport } from './routes/countries.$slug_.visa.$visaType'
 
-const VisaServicesRoute = VisaServicesRouteImport.update({
-  id: '/visa-services',
-  path: '/visa-services',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const VisaConsultantIslamabadRoute = VisaConsultantIslamabadRouteImport.update({
-  id: '/visa-consultant-islamabad',
-  path: '/visa-consultant-islamabad',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const UmrahRoute = UmrahRouteImport.update({
-  id: '/umrah',
-  path: '/umrah',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TravelInsuranceRoute = TravelInsuranceRouteImport.update({
-  id: '/travel-insurance',
-  path: '/travel-insurance',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TravelAgencyIslamabadRoute = TravelAgencyIslamabadRouteImport.update({
-  id: '/travel-agency-islamabad',
-  path: '/travel-agency-islamabad',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ThankYouRoute = ThankYouRouteImport.update({
-  id: '/thank-you',
-  path: '/thank-you',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TestimonialsRoute = TestimonialsRouteImport.update({
-  id: '/testimonials',
-  path: '/testimonials',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TermsRoute = TermsRouteImport.update({
-  id: '/terms',
-  path: '/terms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProfileAssessmentRoute = ProfileAssessmentRouteImport.update({
-  id: '/profile-assessment',
-  path: '/profile-assessment',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
-  id: '/privacy-policy',
-  path: '/privacy-policy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PassportServicesRoute = PassportServicesRouteImport.update({
-  id: '/passport-services',
-  path: '/passport-services',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PakistanVisaRoute = PakistanVisaRouteImport.update({
-  id: '/pakistan-visa',
-  path: '/pakistan-visa',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HotelBookingRoute = HotelBookingRouteImport.update({
-  id: '/hotel-booking',
-  path: '/hotel-booking',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const FaqRoute = FaqRouteImport.update({
-  id: '/faq',
-  path: '/faq',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ConsultationRoute = ConsultationRouteImport.update({
-  id: '/consultation',
-  path: '/consultation',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AirTicketingRoute = AirTicketingRouteImport.update({
-  id: '/air-ticketing',
-  path: '/air-ticketing',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -133,9 +54,94 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const AirTicketingRoute = AirTicketingRouteImport.update({
+  id: '/air-ticketing',
+  path: '/air-ticketing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConsultationRoute = ConsultationRouteImport.update({
+  id: '/consultation',
+  path: '/consultation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HotelBookingRoute = HotelBookingRouteImport.update({
+  id: '/hotel-booking',
+  path: '/hotel-booking',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PakistanVisaRoute = PakistanVisaRouteImport.update({
+  id: '/pakistan-visa',
+  path: '/pakistan-visa',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PassportServicesRoute = PassportServicesRouteImport.update({
+  id: '/passport-services',
+  path: '/passport-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProfileAssessmentRoute = ProfileAssessmentRouteImport.update({
+  id: '/profile-assessment',
+  path: '/profile-assessment',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsAndConditionsRoute = TermsAndConditionsRouteImport.update({
+  id: '/terms-and-conditions',
+  path: '/terms-and-conditions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TestimonialsRoute = TestimonialsRouteImport.update({
+  id: '/testimonials',
+  path: '/testimonials',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ThankYouRoute = ThankYouRouteImport.update({
+  id: '/thank-you',
+  path: '/thank-you',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TravelAgencyIslamabadRoute = TravelAgencyIslamabadRouteImport.update({
+  id: '/travel-agency-islamabad',
+  path: '/travel-agency-islamabad',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TravelInsuranceRoute = TravelInsuranceRouteImport.update({
+  id: '/travel-insurance',
+  path: '/travel-insurance',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UmrahRoute = UmrahRouteImport.update({
+  id: '/umrah',
+  path: '/umrah',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VisaConsultantIslamabadRoute = VisaConsultantIslamabadRouteImport.update({
+  id: '/visa-consultant-islamabad',
+  path: '/visa-consultant-islamabad',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VisaServicesRoute = VisaServicesRouteImport.update({
+  id: '/visa-services',
+  path: '/visa-services',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CountriesIndexRoute = CountriesIndexRouteImport.update({
@@ -148,57 +154,10 @@ const CountriesSlugRoute = CountriesSlugRouteImport.update({
   path: '/countries/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CountriesSouthernAfricaCountryRoute =
-  CountriesSouthernAfricaCountryRouteImport.update({
-    id: '/countries/southern-africa/$country',
-    path: '/countries/southern-africa/$country',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const CountriesSouthAsiaCountryRoute =
-  CountriesSouthAsiaCountryRouteImport.update({
-    id: '/countries/south-asia/$country',
-    path: '/countries/south-asia/$country',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const CountriesSouthAmericaCountryRoute =
-  CountriesSouthAmericaCountryRouteImport.update({
-    id: '/countries/south-america/$country',
-    path: '/countries/south-america/$country',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const CountriesSchengenCountryRoute =
-  CountriesSchengenCountryRouteImport.update({
-    id: '/countries/schengen/$country',
-    path: '/countries/schengen/$country',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const CountriesOceaniaCountryRoute = CountriesOceaniaCountryRouteImport.update({
-  id: '/countries/oceania/$country',
-  path: '/countries/oceania/$country',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CountriesNorthAfricaCountryRoute =
-  CountriesNorthAfricaCountryRouteImport.update({
-    id: '/countries/north-africa/$country',
-    path: '/countries/north-africa/$country',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const CountriesMiddleEastCountryRoute =
-  CountriesMiddleEastCountryRouteImport.update({
-    id: '/countries/middle-east/$country',
-    path: '/countries/middle-east/$country',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const CountriesEuropeOthersCountryRoute =
-  CountriesEuropeOthersCountryRouteImport.update({
-    id: '/countries/europe-others/$country',
-    path: '/countries/europe-others/$country',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const CountriesEastAsiaCountryRoute =
-  CountriesEastAsiaCountryRouteImport.update({
-    id: '/countries/east-asia/$country',
-    path: '/countries/east-asia/$country',
+const CountriesAmericasCountryRoute =
+  CountriesAmericasCountryRouteImport.update({
+    id: '/countries/americas/$country',
+    path: '/countries/americas/$country',
     getParentRoute: () => rootRouteImport,
   } as any)
 const CountriesCentralAsiaCountryRoute =
@@ -207,10 +166,57 @@ const CountriesCentralAsiaCountryRoute =
     path: '/countries/central-asia/$country',
     getParentRoute: () => rootRouteImport,
   } as any)
-const CountriesAmericasCountryRoute =
-  CountriesAmericasCountryRouteImport.update({
-    id: '/countries/americas/$country',
-    path: '/countries/americas/$country',
+const CountriesEastAsiaCountryRoute =
+  CountriesEastAsiaCountryRouteImport.update({
+    id: '/countries/east-asia/$country',
+    path: '/countries/east-asia/$country',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CountriesEuropeOthersCountryRoute =
+  CountriesEuropeOthersCountryRouteImport.update({
+    id: '/countries/europe-others/$country',
+    path: '/countries/europe-others/$country',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CountriesMiddleEastCountryRoute =
+  CountriesMiddleEastCountryRouteImport.update({
+    id: '/countries/middle-east/$country',
+    path: '/countries/middle-east/$country',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CountriesNorthAfricaCountryRoute =
+  CountriesNorthAfricaCountryRouteImport.update({
+    id: '/countries/north-africa/$country',
+    path: '/countries/north-africa/$country',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CountriesOceaniaCountryRoute = CountriesOceaniaCountryRouteImport.update({
+  id: '/countries/oceania/$country',
+  path: '/countries/oceania/$country',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CountriesSchengenCountryRoute =
+  CountriesSchengenCountryRouteImport.update({
+    id: '/countries/schengen/$country',
+    path: '/countries/schengen/$country',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CountriesSouthAmericaCountryRoute =
+  CountriesSouthAmericaCountryRouteImport.update({
+    id: '/countries/south-america/$country',
+    path: '/countries/south-america/$country',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CountriesSouthAsiaCountryRoute =
+  CountriesSouthAsiaCountryRouteImport.update({
+    id: '/countries/south-asia/$country',
+    path: '/countries/south-asia/$country',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CountriesSouthernAfricaCountryRoute =
+  CountriesSouthernAfricaCountryRouteImport.update({
+    id: '/countries/southern-africa/$country',
+    path: '/countries/southern-africa/$country',
     getParentRoute: () => rootRouteImport,
   } as any)
 const CountriesSlugVisaVisaTypeRoute =
@@ -233,6 +239,7 @@ export interface FileRoutesByFullPath {
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/profile-assessment': typeof ProfileAssessmentRoute
   '/terms': typeof TermsRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/testimonials': typeof TestimonialsRoute
   '/thank-you': typeof ThankYouRoute
   '/travel-agency-islamabad': typeof TravelAgencyIslamabadRoute
@@ -268,6 +275,7 @@ export interface FileRoutesByTo {
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/profile-assessment': typeof ProfileAssessmentRoute
   '/terms': typeof TermsRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/testimonials': typeof TestimonialsRoute
   '/thank-you': typeof ThankYouRoute
   '/travel-agency-islamabad': typeof TravelAgencyIslamabadRoute
@@ -304,6 +312,7 @@ export interface FileRoutesById {
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/profile-assessment': typeof ProfileAssessmentRoute
   '/terms': typeof TermsRoute
+  '/terms-and-conditions': typeof TermsAndConditionsRoute
   '/testimonials': typeof TestimonialsRoute
   '/thank-you': typeof ThankYouRoute
   '/travel-agency-islamabad': typeof TravelAgencyIslamabadRoute
@@ -341,6 +350,7 @@ export interface FileRouteTypes {
     | '/privacy-policy'
     | '/profile-assessment'
     | '/terms'
+    | '/terms-and-conditions'
     | '/testimonials'
     | '/thank-you'
     | '/travel-agency-islamabad'
@@ -376,6 +386,7 @@ export interface FileRouteTypes {
     | '/privacy-policy'
     | '/profile-assessment'
     | '/terms'
+    | '/terms-and-conditions'
     | '/testimonials'
     | '/thank-you'
     | '/travel-agency-islamabad'
@@ -411,6 +422,7 @@ export interface FileRouteTypes {
     | '/privacy-policy'
     | '/profile-assessment'
     | '/terms'
+    | '/terms-and-conditions'
     | '/testimonials'
     | '/thank-you'
     | '/travel-agency-islamabad'
@@ -447,6 +459,7 @@ export interface RootRouteChildren {
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   ProfileAssessmentRoute: typeof ProfileAssessmentRoute
   TermsRoute: typeof TermsRoute
+  TermsAndConditionsRoute: typeof TermsAndConditionsRoute
   TestimonialsRoute: typeof TestimonialsRoute
   ThankYouRoute: typeof ThankYouRoute
   TravelAgencyIslamabadRoute: typeof TravelAgencyIslamabadRoute
@@ -472,123 +485,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/visa-services': {
-      id: '/visa-services'
-      path: '/visa-services'
-      fullPath: '/visa-services'
-      preLoaderRoute: typeof VisaServicesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/visa-consultant-islamabad': {
-      id: '/visa-consultant-islamabad'
-      path: '/visa-consultant-islamabad'
-      fullPath: '/visa-consultant-islamabad'
-      preLoaderRoute: typeof VisaConsultantIslamabadRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/umrah': {
-      id: '/umrah'
-      path: '/umrah'
-      fullPath: '/umrah'
-      preLoaderRoute: typeof UmrahRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/travel-insurance': {
-      id: '/travel-insurance'
-      path: '/travel-insurance'
-      fullPath: '/travel-insurance'
-      preLoaderRoute: typeof TravelInsuranceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/travel-agency-islamabad': {
-      id: '/travel-agency-islamabad'
-      path: '/travel-agency-islamabad'
-      fullPath: '/travel-agency-islamabad'
-      preLoaderRoute: typeof TravelAgencyIslamabadRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/thank-you': {
-      id: '/thank-you'
-      path: '/thank-you'
-      fullPath: '/thank-you'
-      preLoaderRoute: typeof ThankYouRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/testimonials': {
-      id: '/testimonials'
-      path: '/testimonials'
-      fullPath: '/testimonials'
-      preLoaderRoute: typeof TestimonialsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/terms': {
-      id: '/terms'
-      path: '/terms'
-      fullPath: '/terms'
-      preLoaderRoute: typeof TermsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/profile-assessment': {
-      id: '/profile-assessment'
-      path: '/profile-assessment'
-      fullPath: '/profile-assessment'
-      preLoaderRoute: typeof ProfileAssessmentRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacy-policy': {
-      id: '/privacy-policy'
-      path: '/privacy-policy'
-      fullPath: '/privacy-policy'
-      preLoaderRoute: typeof PrivacyPolicyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/passport-services': {
-      id: '/passport-services'
-      path: '/passport-services'
-      fullPath: '/passport-services'
-      preLoaderRoute: typeof PassportServicesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pakistan-visa': {
-      id: '/pakistan-visa'
-      path: '/pakistan-visa'
-      fullPath: '/pakistan-visa'
-      preLoaderRoute: typeof PakistanVisaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/hotel-booking': {
-      id: '/hotel-booking'
-      path: '/hotel-booking'
-      fullPath: '/hotel-booking'
-      preLoaderRoute: typeof HotelBookingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/faq': {
-      id: '/faq'
-      path: '/faq'
-      fullPath: '/faq'
-      preLoaderRoute: typeof FaqRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/consultation': {
-      id: '/consultation'
-      path: '/consultation'
-      fullPath: '/consultation'
-      preLoaderRoute: typeof ConsultationRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/air-ticketing': {
-      id: '/air-ticketing'
-      path: '/air-ticketing'
-      fullPath: '/air-ticketing'
-      preLoaderRoute: typeof AirTicketingRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -598,11 +499,130 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/air-ticketing': {
+      id: '/air-ticketing'
+      path: '/air-ticketing'
+      fullPath: '/air-ticketing'
+      preLoaderRoute: typeof AirTicketingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/consultation': {
+      id: '/consultation'
+      path: '/consultation'
+      fullPath: '/consultation'
+      preLoaderRoute: typeof ConsultationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hotel-booking': {
+      id: '/hotel-booking'
+      path: '/hotel-booking'
+      fullPath: '/hotel-booking'
+      preLoaderRoute: typeof HotelBookingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pakistan-visa': {
+      id: '/pakistan-visa'
+      path: '/pakistan-visa'
+      fullPath: '/pakistan-visa'
+      preLoaderRoute: typeof PakistanVisaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/passport-services': {
+      id: '/passport-services'
+      path: '/passport-services'
+      fullPath: '/passport-services'
+      preLoaderRoute: typeof PassportServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/profile-assessment': {
+      id: '/profile-assessment'
+      path: '/profile-assessment'
+      fullPath: '/profile-assessment'
+      preLoaderRoute: typeof ProfileAssessmentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms-and-conditions': {
+      id: '/terms-and-conditions'
+      path: '/terms-and-conditions'
+      fullPath: '/terms-and-conditions'
+      preLoaderRoute: typeof TermsAndConditionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/testimonials': {
+      id: '/testimonials'
+      path: '/testimonials'
+      fullPath: '/testimonials'
+      preLoaderRoute: typeof TestimonialsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/thank-you': {
+      id: '/thank-you'
+      path: '/thank-you'
+      fullPath: '/thank-you'
+      preLoaderRoute: typeof ThankYouRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/travel-agency-islamabad': {
+      id: '/travel-agency-islamabad'
+      path: '/travel-agency-islamabad'
+      fullPath: '/travel-agency-islamabad'
+      preLoaderRoute: typeof TravelAgencyIslamabadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/travel-insurance': {
+      id: '/travel-insurance'
+      path: '/travel-insurance'
+      fullPath: '/travel-insurance'
+      preLoaderRoute: typeof TravelInsuranceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/umrah': {
+      id: '/umrah'
+      path: '/umrah'
+      fullPath: '/umrah'
+      preLoaderRoute: typeof UmrahRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/visa-consultant-islamabad': {
+      id: '/visa-consultant-islamabad'
+      path: '/visa-consultant-islamabad'
+      fullPath: '/visa-consultant-islamabad'
+      preLoaderRoute: typeof VisaConsultantIslamabadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/visa-services': {
+      id: '/visa-services'
+      path: '/visa-services'
+      fullPath: '/visa-services'
+      preLoaderRoute: typeof VisaServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/countries/': {
@@ -619,67 +639,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CountriesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/countries/southern-africa/$country': {
-      id: '/countries/southern-africa/$country'
-      path: '/countries/southern-africa/$country'
-      fullPath: '/countries/southern-africa/$country'
-      preLoaderRoute: typeof CountriesSouthernAfricaCountryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/countries/south-asia/$country': {
-      id: '/countries/south-asia/$country'
-      path: '/countries/south-asia/$country'
-      fullPath: '/countries/south-asia/$country'
-      preLoaderRoute: typeof CountriesSouthAsiaCountryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/countries/south-america/$country': {
-      id: '/countries/south-america/$country'
-      path: '/countries/south-america/$country'
-      fullPath: '/countries/south-america/$country'
-      preLoaderRoute: typeof CountriesSouthAmericaCountryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/countries/schengen/$country': {
-      id: '/countries/schengen/$country'
-      path: '/countries/schengen/$country'
-      fullPath: '/countries/schengen/$country'
-      preLoaderRoute: typeof CountriesSchengenCountryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/countries/oceania/$country': {
-      id: '/countries/oceania/$country'
-      path: '/countries/oceania/$country'
-      fullPath: '/countries/oceania/$country'
-      preLoaderRoute: typeof CountriesOceaniaCountryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/countries/north-africa/$country': {
-      id: '/countries/north-africa/$country'
-      path: '/countries/north-africa/$country'
-      fullPath: '/countries/north-africa/$country'
-      preLoaderRoute: typeof CountriesNorthAfricaCountryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/countries/middle-east/$country': {
-      id: '/countries/middle-east/$country'
-      path: '/countries/middle-east/$country'
-      fullPath: '/countries/middle-east/$country'
-      preLoaderRoute: typeof CountriesMiddleEastCountryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/countries/europe-others/$country': {
-      id: '/countries/europe-others/$country'
-      path: '/countries/europe-others/$country'
-      fullPath: '/countries/europe-others/$country'
-      preLoaderRoute: typeof CountriesEuropeOthersCountryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/countries/east-asia/$country': {
-      id: '/countries/east-asia/$country'
-      path: '/countries/east-asia/$country'
-      fullPath: '/countries/east-asia/$country'
-      preLoaderRoute: typeof CountriesEastAsiaCountryRouteImport
+    '/countries/americas/$country': {
+      id: '/countries/americas/$country'
+      path: '/countries/americas/$country'
+      fullPath: '/countries/americas/$country'
+      preLoaderRoute: typeof CountriesAmericasCountryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/countries/central-asia/$country': {
@@ -689,11 +653,67 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CountriesCentralAsiaCountryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/countries/americas/$country': {
-      id: '/countries/americas/$country'
-      path: '/countries/americas/$country'
-      fullPath: '/countries/americas/$country'
-      preLoaderRoute: typeof CountriesAmericasCountryRouteImport
+    '/countries/east-asia/$country': {
+      id: '/countries/east-asia/$country'
+      path: '/countries/east-asia/$country'
+      fullPath: '/countries/east-asia/$country'
+      preLoaderRoute: typeof CountriesEastAsiaCountryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/countries/europe-others/$country': {
+      id: '/countries/europe-others/$country'
+      path: '/countries/europe-others/$country'
+      fullPath: '/countries/europe-others/$country'
+      preLoaderRoute: typeof CountriesEuropeOthersCountryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/countries/middle-east/$country': {
+      id: '/countries/middle-east/$country'
+      path: '/countries/middle-east/$country'
+      fullPath: '/countries/middle-east/$country'
+      preLoaderRoute: typeof CountriesMiddleEastCountryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/countries/north-africa/$country': {
+      id: '/countries/north-africa/$country'
+      path: '/countries/north-africa/$country'
+      fullPath: '/countries/north-africa/$country'
+      preLoaderRoute: typeof CountriesNorthAfricaCountryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/countries/oceania/$country': {
+      id: '/countries/oceania/$country'
+      path: '/countries/oceania/$country'
+      fullPath: '/countries/oceania/$country'
+      preLoaderRoute: typeof CountriesOceaniaCountryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/countries/schengen/$country': {
+      id: '/countries/schengen/$country'
+      path: '/countries/schengen/$country'
+      fullPath: '/countries/schengen/$country'
+      preLoaderRoute: typeof CountriesSchengenCountryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/countries/south-america/$country': {
+      id: '/countries/south-america/$country'
+      path: '/countries/south-america/$country'
+      fullPath: '/countries/south-america/$country'
+      preLoaderRoute: typeof CountriesSouthAmericaCountryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/countries/south-asia/$country': {
+      id: '/countries/south-asia/$country'
+      path: '/countries/south-asia/$country'
+      fullPath: '/countries/south-asia/$country'
+      preLoaderRoute: typeof CountriesSouthAsiaCountryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/countries/southern-africa/$country': {
+      id: '/countries/southern-africa/$country'
+      path: '/countries/southern-africa/$country'
+      fullPath: '/countries/southern-africa/$country'
+      preLoaderRoute: typeof CountriesSouthernAfricaCountryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/countries/$slug_/visa/$visaType': {
@@ -719,6 +739,7 @@ const rootRouteChildren: RootRouteChildren = {
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   ProfileAssessmentRoute: ProfileAssessmentRoute,
   TermsRoute: TermsRoute,
+  TermsAndConditionsRoute: TermsAndConditionsRoute,
   TestimonialsRoute: TestimonialsRoute,
   ThankYouRoute: ThankYouRoute,
   TravelAgencyIslamabadRoute: TravelAgencyIslamabadRoute,
