@@ -5,6 +5,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { ServiceCard } from "@/components/site/ServiceCard";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import { ServiceCrossLinksHub } from "@/components/site/InternalCrossLinks";
+import { FAQAccordion } from "@/components/site/FAQAccordion";
 import React, { Suspense } from "react";
 const BookingWidget = React.lazy(() => import("@/components/site/BookingWidget").then(m => ({ default: m.BookingWidget })));
 import {
@@ -68,71 +69,110 @@ export const Route = createFileRoute("/visa-services")({
 
 const ICONS = [Plane, Heart, Users, Globe2, GraduationCap, Briefcase];
 
+const VISA_SERVICE_FAQS = [
+  {
+    q: "What is the visa approval rate when applying through RS Travel and Tours?",
+    a: "RS Travel maintains an industry-leading 98% file compliance approval rate across UK, USA, Schengen, Canada, and Australia applications through forensic document auditing, bank statement reconciliation, and consular interview preparation.",
+  },
+  {
+    q: "Which countries do you process visit and tourist visas for from Pakistan?",
+    a: "We process visas for over 90 destinations worldwide, including all 29 Schengen states (Germany, France, Italy, Spain, Switzerland), the United Kingdom, United States (B1/B2), Canada, Australia, Japan, UAE (Dubai), Saudi Arabia, Malaysia, and Turkey.",
+  },
+  {
+    q: "Can RS Travel help if I have a previous visa refusal or rejection?",
+    a: "Yes. Our senior consular review desk specializes in refusal appeals and fresh applications after rejection (including US Section 214(b) and UK Paragraph V 4.2). We analyze your refusal notice, identify the exact evidentiary gaps, and prepare a legal representation brief.",
+  },
+  {
+    q: "What documents are required to start my visa file in Islamabad?",
+    a: "Basic requirements include your original valid passport, CNIC, 6-month bank statement with account maintenance certificate, FBR tax returns (NTN), employment letter or business registration, and NADRA Family Registration Certificate (FRC).",
+  },
+  {
+    q: "Do you provide embassy-verified flight reservations and hotel vouchers?",
+    a: "Yes. As an IATA-accredited agency, we generate live verifiable flight itineraries and hotel reservation vouchers that meet strict consular verification criteria without requiring you to purchase expensive non-refundable tickets upfront.",
+  },
+];
+
 function VisaServices() {
   const serviceJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://rstravel.pk/visa-services#service",
-    "name": "Visit & Tourist Visa Consultancy Islamabad",
-    "serviceType": "International Visa Consultation & File Preparation",
-    "description": "Comprehensive documentation, appointment scheduling, interview preparation, and file auditing for UK, USA, Canada, Schengen, and Australia visas.",
-    "provider": {
-      "@type": "TravelAgency",
-      "@id": "https://rstravel.pk/#organization",
-      "name": "RS Travel and Tours",
-      "url": "https://rstravel.pk/",
-      "telephone": "+92 51 2000147",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
-        "addressLocality": "Islamabad",
-        "addressRegion": "Islamabad Capital Territory",
-        "postalCode": "44000",
-        "addressCountry": "PK"
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://rstravel.pk/visa-services#service",
+        "name": "Visit & Tourist Visa Consultancy Islamabad",
+        "serviceType": "International Visa Consultation & File Preparation",
+        "description": "Comprehensive documentation, appointment scheduling, interview preparation, and file auditing for UK, USA, Canada, Schengen, and Australia visas.",
+        "provider": {
+          "@type": "TravelAgency",
+          "@id": "https://rstravel.pk/#organization",
+          "name": "RS Travel and Tours",
+          "url": "https://rstravel.pk/",
+          "telephone": "+92 51 2000147",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Office no 6 Mezzanine floor Ratta Mansion Fazal-e-Haq Road Blue Area",
+            "addressLocality": "Islamabad",
+            "addressRegion": "Islamabad Capital Territory",
+            "postalCode": "44000",
+            "addressCountry": "PK"
+          }
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Visa Processing & Documentation Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Embassy Visa File Preparation & Documentation Auditing",
+                "description": "Professional vetting of NADRA FRC, MRC, tax returns (FBR), and employment records according to strict embassy requirements."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Custom Visa Cover Letter & Travel Itinerary Drafting",
+                "description": "Legally structured, embassy-compliant cover letters, purpose of visit statements, and verified day-by-day travel plans."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Bank Statement Evaluation & Financial Proof Alignment",
+                "description": "Analysis of closing balance, cash-flow credibility, and tax filing consistency to satisfy consular officer requirements."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Visa Refusal & Rejection Appeal Review",
+                "description": "Comprehensive analysis of refusal letters (Section 214b, Paragraph V 4.2, etc.) and corrective file re-submission strategy."
+              }
+            }
+          ]
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Islamabad" },
+          { "@type": "City", "name": "Rawalpindi" },
+          { "@type": "Country", "name": "Pakistan" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://rstravel.pk/visa-services#faq",
+        "mainEntity": VISA_SERVICE_FAQS.map((faq) => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
+          }
+        }))
       }
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Visa Processing & Documentation Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Embassy Visa File Preparation & Documentation Auditing",
-            "description": "Professional vetting of NADRA FRC, MRC, tax returns (FBR), and employment records according to strict embassy requirements."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Custom Visa Cover Letter & Travel Itinerary Drafting",
-            "description": "Legally structured, embassy-compliant cover letters, purpose of visit statements, and verified day-by-day travel plans."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Bank Statement Evaluation & Financial Proof Alignment",
-            "description": "Analysis of closing balance, cash-flow credibility, and tax filing consistency to satisfy consular officer requirements."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Visa Refusal & Rejection Appeal Review",
-            "description": "Comprehensive analysis of refusal letters (Section 214b, Paragraph V 4.2, etc.) and corrective file re-submission strategy."
-          }
-        }
-      ]
-    },
-    "areaServed": [
-      { "@type": "City", "name": "Islamabad" },
-      { "@type": "City", "name": "Rawalpindi" },
-      { "@type": "Country", "name": "Pakistan" }
     ]
   };
 
@@ -413,6 +453,20 @@ function VisaServices() {
               </div>
             </div>
           </Reveal>
+
+          {/* Frequently Asked Questions (AEO & SERP Direct Answers) */}
+          <div className="my-16">
+            <div className="text-center mb-10">
+              <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary mb-3">
+                <HelpCircle size={14} /> Clear Consular Answers
+              </span>
+              <h2 className="text-2xl md:text-3xl font-bold">Frequently Asked Questions</h2>
+              <p className="text-sm text-muted-foreground mt-2 max-w-xl mx-auto">
+                Direct, transparent answers regarding visa processing times, financial requirements, and refusal recovery.
+              </p>
+            </div>
+            <FAQAccordion items={VISA_SERVICE_FAQS} />
+          </div>
 
           {/* Companion Consular & Travel Solutions Silo */}
           <ServiceCrossLinksHub currentService="/visa-services" />

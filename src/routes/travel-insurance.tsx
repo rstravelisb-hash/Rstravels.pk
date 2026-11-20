@@ -3,7 +3,8 @@ import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { EEATExpertiseSection } from "@/components/site/EEATExpertiseSection";
 import { ServiceCrossLinksHub } from "@/components/site/InternalCrossLinks";
-import { ShieldCheck, HeartPulse, CalendarX2, Globe2, ArrowRight, CheckCircle2, Award, FileText, Briefcase } from "lucide-react";
+import { FAQAccordion } from "@/components/site/FAQAccordion";
+import { ShieldCheck, HeartPulse, CalendarX2, Globe2, ArrowRight, CheckCircle2, Award, FileText, Briefcase, HelpCircle } from "lucide-react";
 
 export const Route = createFileRoute("/travel-insurance")({
   head: () => ({
@@ -42,22 +43,57 @@ export const Route = createFileRoute("/travel-insurance")({
   component: TravelInsurance,
 });
 
+const INSURANCE_FAQS = [
+  {
+    q: "Is travel medical insurance mandatory for Schengen visa applications from Pakistan?",
+    a: "Yes. All 29 Schengen member states mandate proof of valid travel medical insurance with minimum emergency medical coverage of €30,000, valid across the entire Schengen area and covering medical repatriation and emergency hospital care.",
+  },
+  {
+    q: "How fast can RS Travel issue an embassy-approved travel insurance policy?",
+    a: "We issue official, digitally verifiable policies within 15 minutes at our Blue Area, Islamabad office or instantly via WhatsApp once you share your passport copy and travel dates.",
+  },
+  {
+    q: "Which insurance companies do you partner with for visa insurance in Islamabad?",
+    a: "We are direct authorized partners with Pakistan's premier insurance corporations including Jubilee Life Insurance, Adamjee Insurance, and United Insurance, guaranteeing 100% embassy acceptance without third-party markups.",
+  },
+  {
+    q: "What is the cost of Schengen travel insurance in Pakistan?",
+    a: "Rates vary depending on travel duration, typically starting from PKR 3,500 to PKR 12,000 for standard single-trip European itineraries from 7 days up to 1 month.",
+  },
+];
+
 function TravelInsurance() {
   const insuranceSchema = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://rstravel.pk/travel-insurance#service",
-    "name": "Schengen & Global Travel Medical Insurance Islamabad",
-    "serviceType": "Embassy Approved Travel Insurance",
-    "description": "Instant Schengen-compliant travel medical insurance with €30,000 to $100,000 coverage issued via Jubilee, Adamjee, and EFU from Blue Area, Islamabad.",
-    "provider": {
-      "@type": "TravelAgency",
-      "@id": "https://rstravel.pk/#organization",
-      "name": "RS Travel and Tours",
-      "telephone": "+92 51 2000147",
-      "url": "https://rstravel.pk/"
-    },
-    "areaServed": "Pakistan"
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://rstravel.pk/travel-insurance#service",
+        "name": "Schengen & Global Travel Medical Insurance Islamabad",
+        "serviceType": "Embassy Approved Travel Insurance",
+        "description": "Instant Schengen-compliant travel medical insurance with €30,000 to $100,000 coverage issued via Jubilee, Adamjee, and United Insurance from Blue Area, Islamabad.",
+        "provider": {
+          "@type": "TravelAgency",
+          "@id": "https://rstravel.pk/#organization",
+          "name": "RS Travel and Tours",
+          "telephone": "+92 51 2000147",
+          "url": "https://rstravel.pk/"
+        },
+        "areaServed": "Pakistan"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://rstravel.pk/travel-insurance#faq",
+        "mainEntity": INSURANCE_FAQS.map((faq) => ({
+          "@type": "Question",
+          "name": faq.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.a
+          }
+        }))
+      }
+    ]
   };
 
   const PARTNERS = [
@@ -239,6 +275,20 @@ function TravelInsurance() {
                   Simply send us a picture of your passport via WhatsApp, or visit our office in Blue Area, Islamabad. Our agents will generate your official, verifiable travel insurance certificate within <strong>15 minutes</strong>.
                 </p>
               </div>
+            </div>
+
+            {/* AEO Direct-Answer FAQs */}
+            <div className="mt-16">
+              <div className="text-center mb-8">
+                <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary mb-3">
+                  <HelpCircle size={14} /> Insurance Advisory
+                </span>
+                <h3 className="text-2xl md:text-3xl font-bold">Frequently Asked Questions</h3>
+                <p className="text-sm text-muted-foreground mt-2 max-w-xl mx-auto">
+                  Essential facts regarding minimum policy coverage, embassy acceptance, and instant issuance in Islamabad.
+                </p>
+              </div>
+              <FAQAccordion items={INSURANCE_FAQS} />
             </div>
 
             {/* Cross-Service Solutions Silo */}
