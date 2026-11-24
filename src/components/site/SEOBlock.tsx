@@ -36,6 +36,8 @@ export function SEOBlock() {
             <MapPin size={15} className="text-accent" /> Islamabad & Rawalpindi Visa Hubs
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs font-medium text-white/70">
+            <li><Link to="/visa-consultant-islamabad" className="hover:text-accent transition-colors flex items-center gap-1.5 font-bold text-accent"><span>→</span> Visa Consultant Islamabad</Link></li>
+            <li><Link to="/travel-agency-islamabad" className="hover:text-accent transition-colors flex items-center gap-1.5 font-bold text-accent"><span>→</span> Travel Agency Islamabad</Link></li>
             <li><Link to="/countries/$slug" params={{ slug: "united-kingdom" }} className="hover:text-accent transition-colors flex items-center gap-1.5"><span>→</span> UK Visit Visa Islamabad</Link></li>
             <li><Link to="/countries/$slug" params={{ slug: "united-states" }} className="hover:text-accent transition-colors flex items-center gap-1.5"><span>→</span> USA B1/B2 Interview Prep</Link></li>
             <li><Link to="/countries/$slug" params={{ slug: "schengen" }} className="hover:text-accent transition-colors flex items-center gap-1.5"><span>→</span> Schengen Visa Blue Area</Link></li>

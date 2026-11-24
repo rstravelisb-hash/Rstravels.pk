@@ -353,14 +353,18 @@ function AirTicketing() {
 
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { route: "Islamabad → London", code: "ISB → LHR", airlines: "PIA, Emirates, Turkish" },
-              { route: "Islamabad → Dubai", code: "ISB → DXB", airlines: "Emirates, flydubai, PIA" },
-              { route: "Islamabad → Toronto", code: "ISB → YYZ", airlines: "Turkish, Emirates, Qatar" },
-              { route: "Islamabad → Jeddah", code: "ISB → JED", airlines: "PIA, Saudi, flynas" },
+              { route: "Islamabad → London", code: "ISB → LHR", airlines: "British Airways, PIA, Emirates" },
+              { route: "Islamabad → Dubai", code: "ISB → DXB", airlines: "Emirates, flydubai, Serene" },
+              { route: "Islamabad → Toronto", code: "ISB → YYZ", airlines: "Turkish Airlines, Qatar, Etihad" },
+              { route: "Islamabad → Jeddah & Umrah", code: "ISB → JED", airlines: "Saudia, PIA Direct, flynas" },
               { route: "Islamabad → New York", code: "ISB → JFK", airlines: "Emirates, Turkish, Qatar" },
-              { route: "Islamabad → Istanbul", code: "ISB → IST", airlines: "Turkish Airlines" },
-              { route: "Islamabad → Melbourne", code: "ISB → MEL", airlines: "Emirates, Qatar, Thai" },
+              { route: "Islamabad → Manchester", code: "ISB → MAN", airlines: "British Airways, Qatar Airways" },
+              { route: "Islamabad → Karachi", code: "ISB → KHI", airlines: "PIA, Airblue, Fly Jinnah" },
+              { route: "Islamabad → Melbourne", code: "ISB → MEL", airlines: "Emirates, Qatar Airways" },
+              { route: "Islamabad → Istanbul", code: "ISB → IST", airlines: "Turkish Airlines Direct" },
               { route: "Islamabad → Doha", code: "ISB → DOH", airlines: "Qatar Airways, PIA" },
+              { route: "Confirmed Visa Flight Itinerary", code: "EMBASSY PNR", airlines: "Live Verifiable GDS Reservation" },
+              { route: "Student Discount Tickets", code: "40KG-46KG", airlines: "BA, Etihad, Qatar Student Fares" },
             ].map((r, i) => (
               <div
                 key={r.code}

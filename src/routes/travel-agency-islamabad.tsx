@@ -238,6 +238,79 @@ function TravelAgencyIslamabadPage() {
               </Reveal>
             ))}
           </div>
+
+          {/* High-Intent Search Hub: Popular Routes & Fares */}
+          <div className="mt-16 rounded-[2rem] border border-border/60 bg-card p-8 md:p-12 shadow-soft">
+            <div className="max-w-3xl mb-8">
+              <span className="text-xs font-bold uppercase tracking-wider text-primary">Direct GDS Live Fares</span>
+              <h3 className="text-2xl font-bold mt-2">Popular Flights & Travel Routes from Islamabad (ISB)</h3>
+              <p className="text-muted-foreground text-sm mt-2">
+                As an IATA accredited travel agency in Blue Area, Islamabad, we issue direct airline e-tickets with exclusive student discounts and verified PNR reservations.
+              </p>
+            </div>
+
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 text-sm">
+              <div className="p-5 rounded-2xl bg-secondary/30 border border-border/50 space-y-2">
+                <p className="font-bold text-foreground flex items-center justify-between">
+                  <span>Islamabad to London (LHR)</span>
+                  <span className="text-xs text-primary font-semibold">UK Flights</span>
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Daily flights via British Airways, Qatar Airways, and Emirates. Extra 23kg student baggage allowance available.
+                </p>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-secondary/30 border border-border/50 space-y-2">
+                <p className="font-bold text-foreground flex items-center justify-between">
+                  <span>Islamabad to Toronto (YYZ)</span>
+                  <span className="text-xs text-primary font-semibold">Canada Flights</span>
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Best connecting fares via Turkish Airlines, Etihad, and Qatar Airways with seamless baggage transfers.
+                </p>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-secondary/30 border border-border/50 space-y-2">
+                <p className="font-bold text-foreground flex items-center justify-between">
+                  <span>Islamabad to Jeddah & Madinah</span>
+                  <span className="text-xs text-emerald-500 font-semibold">Umrah Flights</span>
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Direct flights on PIA and Saudia. 15-day and 30-day Umrah package airfares with Haramain high-speed train connectivity.
+                </p>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-secondary/30 border border-border/50 space-y-2">
+                <p className="font-bold text-foreground flex items-center justify-between">
+                  <span>Islamabad to Dubai & Gulf</span>
+                  <span className="text-xs text-primary font-semibold">Middle East</span>
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Multiple daily non-stop departures on Emirates, Flydubai, and Serene Air with instant UAE 30/60 days tourist visas.
+                </p>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-secondary/30 border border-border/50 space-y-2">
+                <p className="font-bold text-foreground flex items-center justify-between">
+                  <span>Islamabad to Karachi (KHI)</span>
+                  <span className="text-xs text-primary font-semibold">Domestic Travel</span>
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Cheapest domestic airfares on PIA, Airblue, and Fly Jinnah with flexible date change policies.
+                </p>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-secondary/30 border border-border/50 space-y-2">
+                <p className="font-bold text-foreground flex items-center justify-between">
+                  <span>Confirmed Visa Itineraries</span>
+                  <span className="text-xs text-primary font-semibold">Embassy Proof</span>
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Live verifiable flight reservations and hotel vouchers accepted by Schengen, UK, US, and Canadian embassies.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

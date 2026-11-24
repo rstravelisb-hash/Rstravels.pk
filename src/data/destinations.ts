@@ -251,7 +251,7 @@ export const DESTINATIONS: Destination[] = [
       "Bank Statement (Last 6 months) with verifiable source of income",
       "Last 3 years Tax Returns (FBR) and NTN Certificate",
       "Professional Docs: Salary slips + Job letter OR Business Letterhead/NTN",
-      "Visa Fee: £135 (approx 48,000 PKR) - Standard 6-month visa",
+      "Visa Fee: £115 (approx 41,500 PKR) - Standard 6-month visa",
       "TB Test Certificate (Only if applying for stay > 6 months)",
     ],
     stepByStep: [
@@ -280,7 +280,7 @@ export const DESTINATIONS: Destination[] = [
       },
       {
         q: "How much is the UK visit visa fee?",
-        a: "The standard visitor visa for up to 6 months is currently £135.",
+        a: "The standard visitor visa for up to 6 months is currently £115 (payable online in USD/GBP via UKVI).",
       },
     ],
     visas: [
@@ -306,7 +306,7 @@ export const DESTINATIONS: Destination[] = [
           "Detailed Cover Letter and Planned Itinerary",
           "Polio Vaccination Card (Yellow card)",
         ],
-        fees: "£135 Embassy Fee + Service Charges",
+        fees: "£115 Embassy Fee + Service Charges",
         processingTime: "Typically 3 weeks (Priority options available for 5 working days).",
         tips: [
           "The UKVI is very strict about the source of funds; ensure all large deposits are explained.",
@@ -710,7 +710,7 @@ export const DESTINATIONS: Destination[] = [
     faqs: [
       { q: "How long is an Australian visitor visa valid for?", a: "Typically up to 3 years with multiple entries, allowing stays up to 3 or 6 months per visit." },
       { q: "Is a medical checkup required?", a: "Usually not for short-term visitor visas unless you are over 75 or plan to stay longer than 6 months." },
-      { q: "What is the subclass 600 visa fee?", a: "The base application charge is currently AUD $250 (Tourist stream, offshore), payable online via ImmiAccount." },
+      { q: "What is the subclass 600 visa fee?", a: "The base application charge is currently AUD $195 (Tourist stream, offshore), payable online via ImmiAccount." },
     ],
     visas: [
       {
@@ -731,7 +731,7 @@ export const DESTINATIONS: Destination[] = [
           "Property Documents (optional but recommended to show ties)",
           "Planned Itinerary and Cover Letter",
         ],
-        fees: "AUD $250 Home Affairs Application Charge + Service Charges",
+        fees: "AUD $195 Home Affairs Application Charge + Service Charges",
         processingTime: "Typically 2 to 4 weeks (can vary by season).",
         tips: [
           "Ensure all documents are clear color scans.",

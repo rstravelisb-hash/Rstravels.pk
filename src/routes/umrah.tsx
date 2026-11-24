@@ -426,10 +426,12 @@ function UmrahPage() {
 
             <div className="grid sm:grid-cols-2 gap-5 relative z-10">
               {[
-                { t: "Authorized Umrah Visa Agent", d: "Direct processing in Blue Area, ISB via official Saudi portals" },
-                { t: "Confirmed Hotel Bookings", d: "Guaranteed Makkah & Madinah proximity before you pay" },
-                { t: "Best Umrah Airfares", d: "Exclusive blocked group rates from Islamabad & Lahore" },
-                { t: "24/7 Pilgrim Support", d: "Dedicated Pakistani support team on the ground in KSA" }
+                { t: "Authorized Umrah Visa Agent", d: "Direct electronic Umrah visa issuance via the official Saudi Nusuk platform within 24–48 hours." },
+                { t: "Direct Flights from Islamabad", d: "Confirmed return air tickets on PIA and Saudia from Islamabad (ISB) to Jeddah (JED) & Madinah (MED)." },
+                { t: "Walking Distance Haram Hotels", d: "Guaranteed front-row luxury in Makkah Clock Tower, Swissôtel, and Madinah central area before you pay." },
+                { t: "Haramain Train & VIP Transport", d: "High-speed Haramain bullet train tickets and private luxury GMC/Yukon family transfers in Saudi Arabia." },
+                { t: "Guided Holy Ziyarat Tours", d: "Comprehensive guided visits to Jabal-e-Noor, Cave of Hira, Masjid Quba, and Mount Uhud in both holy cities." },
+                { t: "24/7 Dedicated Ground Support", d: "Experienced Pakistani pilgrim coordinators stationed in Makkah and Madinah around the clock." }
               ].map((item) => (
                 <div key={item.t} className="flex items-start gap-4 p-5 rounded-[1.5rem] bg-card/60 backdrop-blur-sm border border-white/10 shadow-sm hover:shadow-md hover:bg-card transition-all duration-300 hover:-translate-y-1">
                   <div className="h-10 w-10 rounded-xl bg-emerald-500/10 flex items-center justify-center shrink-0 border border-emerald-500/20">

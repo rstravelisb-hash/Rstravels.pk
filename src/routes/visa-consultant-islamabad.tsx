@@ -200,7 +200,7 @@ function VisaConsultantIslamabadPage() {
               },
               {
                 country: "European Union",
-                title: "Schengen Visa (27 States)",
+                title: "Schengen Visa (29 States)",
                 desc: "Complete VFS/Gerry's file compilation for France, Germany, Italy, Spain, Switzerland, and Netherlands.",
                 link: "/countries/schengen",
               },
@@ -236,6 +236,79 @@ function VisaConsultantIslamabadPage() {
                 </div>
               </Reveal>
             ))}
+          </div>
+
+          {/* Islamabad Consular Ecosystem & Application Centers */}
+          <div className="mt-16 rounded-[2rem] border border-border/60 bg-card p-8 md:p-12 shadow-soft">
+            <div className="max-w-3xl mb-8">
+              <span className="text-xs font-bold uppercase tracking-wider text-primary">Local Consular Ecosystem</span>
+              <h3 className="text-2xl font-bold mt-2">Islamabad Diplomatic Enclave & Visa Centers We Cover</h3>
+              <p className="text-muted-foreground text-sm mt-2">
+                Our Blue Area office is strategically located minutes from all primary visa submission drop boxes and biometric centers in the Twin Cities.
+              </p>
+            </div>
+
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 text-sm">
+              <div className="p-5 rounded-2xl bg-secondary/30 border border-border/50 space-y-2">
+                <p className="font-bold text-foreground flex items-center justify-between">
+                  <span>Gerry's Visa Drop Box</span>
+                  <span className="text-xs text-primary font-semibold">Islamabad</span>
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Document indexing, appointment booking, and file submission for Germany, Italy, Netherlands, and Turkey visas.
+                </p>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-secondary/30 border border-border/50 space-y-2">
+                <p className="font-bold text-foreground flex items-center justify-between">
+                  <span>VFS Global & Gerry's</span>
+                  <span className="text-xs text-primary font-semibold">Diplomatic Enclave</span>
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Biometrics appointment scheduling and digital document upload for UK, Canada, Australia, and Schengen applications.
+                </p>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-secondary/30 border border-border/50 space-y-2">
+                <p className="font-bold text-foreground flex items-center justify-between">
+                  <span>US Embassy Islamabad</span>
+                  <span className="text-xs text-primary font-semibold">Consular Section</span>
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  DS-160 online application, MRV fee voucher issuance, expedited interview appointment tracking, and mock interviews.
+                </p>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-secondary/30 border border-border/50 space-y-2">
+                <p className="font-bold text-foreground flex items-center justify-between">
+                  <span>Bank Statement Audits</span>
+                  <span className="text-xs text-primary font-semibold">Financial Proof</span>
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Reconciliation of closing balance (PKR 1.5M - 2.5M), account maintenance certificate, and cash flow legitimacy.
+                </p>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-secondary/30 border border-border/50 space-y-2">
+                <p className="font-bold text-foreground flex items-center justify-between">
+                  <span>Refusal Recovery (214b)</span>
+                  <span className="text-xs text-primary font-semibold">Legal Rebuttal</span>
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Overcoming US INA Section 214(b) and UK Paragraph V 4.2 refusals by establishing strong socio-economic ties to Pakistan.
+                </p>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-secondary/30 border border-border/50 space-y-2">
+                <p className="font-bold text-foreground flex items-center justify-between">
+                  <span>NADRA & MOFA Services</span>
+                  <span className="text-xs text-primary font-semibold">Attestation</span>
+                </p>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  Guidance on Family Registration Certificates (FRC), Marriage Registration (MRC), and Apostille document attestation.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
